@@ -1,0 +1,16 @@
+---
+import BlogCard from './BlogCard.astro';
+import type { BlogPost } from '../i18n/types';
+
+interface Props {
+  posts: BlogPost[];
+}
+
+const { posts } = Astro.props;
+---
+
+<div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-10">
+  {posts.map((post, i) => (
+    <BlogCard post={post} index={i} />
+  ))}
+</div>

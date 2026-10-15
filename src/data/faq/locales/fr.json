@@ -1,0 +1,162 @@
+[
+  {
+    "id": "status",
+    "q": "Où puis-je vérifier si les astuces Dota 2 sont en ligne ?",
+    "a": "La bannière de statut en direct se trouve sur {siteDomain} et sur la chaîne Discord #status. Vérifiez toujours après une mise à jour Dota 2 ou VAC."
+  },
+  {
+    "id": "after-buy",
+    "q": "Que se passe-t-il après mon achat ?",
+    "a": "Votre portail déverrouille le chargeur, le guide de configuration et la bibliothèque de configuration via notre paiement sécurisé. Suivez le guide avant de lancer Dota 2."
+  },
+  {
+    "id": "ban-risk",
+    "q": "Puis-je être banni en utilisant des astuces Dota tierces ?",
+    "a": "Oui, toute modification comporte des risques. Les systèmes de CRDV et de rapports évoluent. Lisez l'état actuel et acceptez le risque avant utilisation."
+  },
+  {
+    "id": "platforms",
+    "q": "Quelles plateformes sont prises en charge ?",
+    "a": "Dota 2 via Steam sur Windows 10/11 64 bits uniquement.macOS et Linux ne sont pas pris en charge."
+  },
+  {
+    "id": "license-move",
+    "q": "Puis-je déplacer ma licence vers un nouveau PC ?",
+    "a": "Oui: utilisez la réinitialisation HWID dans votre portail ou ouvrez un ticket Discord. Les limites dépendent de votre niveau."
+  },
+  {
+    "id": "products-page",
+    "q": "Où les produits et utilitaires sont-ils répertoriés ?",
+    "a": "Les <a href=\"/products/dota-2-cheats/\">Produits Dota 2</a> répertorient les niveaux de triche, <a href=\"/products/dota-2-cheats/hwid-spoofer/\">HWID Spoofer</a>, <a href=\"/products/dota-2-cheats/ugc/\">UGC</a> et <a href=\"/products/dota-2-cheats/unlock-all/\">Skin Changer</a> avec listes de fonctionnalités et paiement via notre partenaire."
+  },
+  {
+    "id": "what-is-esp",
+    "q": "Qu'est-ce que le hack de carte / ESP de Dota 2 ?",
+    "a": "Le hack de carte et le héros ESP montrent les positions ennemies, les wards, les runes et les camps de la jungle à travers le brouillard de guerre. Le <a href=\"/products/dota-2-cheats/\">niveau Lite (map hack & ESP)</a> couvre les overlays d'awareness. Le <a href=\"/products/dota-2-cheats/\">Niveau Pro (scripts inclus)</a> et <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> ajoutent des modules de script en plus."
+  },
+  {
+    "id": "esp-vs-scripts",
+    "q": "Quelle est la différence entre le hack de carte et les scripts ?",
+    "a": "Le maphack et l'ESP sont des superpositions d'informations: ils ne lancent pas de capacités. Auto Combo, Orbwalker et Smart Cast sont des scripts du <a href=\"/products/dota-2-cheats/\">niveau Pro (scripts inclus)</a> et <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>. Vous pouvez exécuter le mode awareness uniquement au <a href=\"/products/dota-2-cheats/\">niveau Lite (map hack & ESP)</a>."
+  },
+  {
+    "id": "which-tier-esp",
+    "q": "De quel niveau ai-je besoin uniquement pour le maphack ?",
+    "a": "Le <a href=\"/products/dota-2-cheats/\">niveau Lite (map hack & ESP)</a> concerne uniquement l'awareness: Hero ESP, localisateur de wards, timers de runes et zoom hack. Le <a href=\"/products/dota-2-cheats/\">niveau Pro (scripts inclus)</a> ajoute des scripts.<a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> ajoute des bots et le kill steal et Skin Changer."
+  },
+  {
+    "id": "which-tier-scripts",
+    "q": "Quel niveau inclut les scripts Auto Combo ?",
+    "a": "Le <a href=\"/products/dota-2-cheats/\">niveau Pro (scripts inclus)</a> est livré avec Auto Combo, Orbwalker, Smart Cast et Activator.<a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> inclut tout ce qui est dans Pro plus Auto Farm Bot et Auto Kill Steal. Le <a href=\"/products/dota-2-cheats/\">Niveau Lite (map hack & ESP)</a> n'a pas d'automatisation de script."
+  },
+  {
+    "id": "rank-lite-vs-pro",
+    "q": "Comment classez-vous Lite vs Pro vs Elite ?",
+    "a": "Connaissance de la carte uniquement → <a href=\"/products/dota-2-cheats/\">Niveau Lite (map hack & ESP)</a>. Teamfights en classé avec scripts → <a href=\"/products/dota-2-cheats/\">Niveau Pro (scripts inclus)</a>. Suite complète de bots et correctifs prioritaires → <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>. Comparez sur chaque page de triche ou sur la <a href=\"/faq/\">FAQ complète</a>."
+  },
+  {
+    "id": "elite-slots",
+    "q": "Pourquoi les emplacements Elite sont-ils limités ?",
+    "a": "Elite est une version privée avec prise en charge directe des développeurs et livraison prioritaire des correctifs. Les capuchons de fente maintiennent les cycles de patch rapides. Vérifiez la bannière d'état avant de procéder au paiement."
+  },
+  {
+    "id": "stream-proof",
+    "q": "OBS peut-il capturer ma superposition ?",
+    "a": "Le mode résistant au streaming sur le <a href=\"/products/dota-2-cheats/\">Niveau Lite (map hack & ESP)</a>, <a href=\"/products/dota-2-cheats/\">Niveau Pro (scripts inclus)</a> et <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> masque les superpositions d'OBS et du partage Discord. Testez un enregistrement local avant de passer en direct."
+  },
+  {
+    "id": "undetected",
+    "q": "Les tricheurs Dota 2 non détectés sont-ils garantis ?",
+    "a": "Non. Non détecté correspond à l'état actuel sur la page du produit et ne constitue pas une garantie permanente. Arrêtez-vous si la build affiche une mise à jour, des tests ou une détection."
+  },
+  {
+    "id": "esp-safer",
+    "q": "Le maphack est-il plus sûr que les scripts ?",
+    "a": "ESP est plus silencieux en replay que les modèles de bots évidents, mais cela reste une triche. VAC n'ignore pas les superpositions parce que vous avez laissé les scripts désactivés."
+  },
+  {
+    "id": "hwid-when",
+    "q": "Quand ai-je besoin du HWID Spoofer ?",
+    "a": "Utilisez <a href=\"/products/dota-2-cheats/hwid-spoofer/\">HWID Spoofer</a> lorsque de nouveaux comptes Steam échouent instantanément sur un PC mais fonctionnent ailleurs: blocage HWID. Pas pour les cas VAC portant uniquement sur un compte; consultez plutôt <a href=\"/products/dota-2-cheats/ugc/\">UGC</a>."
+  },
+  {
+    "id": "ugc-what",
+    "q": "Qu’est-ce que l’UGC ?",
+    "a": "L'<a href=\"/products/dota-2-cheats/ugc/\">UGC</a> (Unban & Governance Control) est un espace de travail d'appel pour les restrictions Steam et les bannissements VAC: flux de travail personnalisés et suivi des cas, et non un service de déban garanti."
+  },
+  {
+    "id": "skin-changer",
+    "q": "Skin Changer modifie-t-il mon inventaire Steam ?",
+    "a": "<a href=\"/products/dota-2-cheats/unlock-all/\">Skin Changer</a> affiche un aperçu des produits cosmétiques localement sur votre client. Les autres joueurs voient votre véritable inventaire. Inclus avec <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>; disponible de manière autonome pour un aperçu cosmétique uniquement."
+  },
+  {
+    "id": "external-loader",
+    "q": "Le chargeur est-il injecté dans le dossier Steam ?",
+    "a": "DotaCheats s'exécute en externe avec la synchronisation de la configuration cloud: aucun fichier n'est injecté dans le répertoire Dota 2. Le risque VAC s’applique toujours. Voir les <a href=\"/products/dota-2-cheats/\">Produits Dota 2</a>."
+  },
+  {
+    "id": "blog-vs-cheats",
+    "q": "Les codes de triche des blogs sont-ils les mêmes que les codes de triche classés ?",
+    "a": "Les articles de blog sur les commandes de la console Valve s'appliquent uniquement dans les salons personnalisés avec les astuces activées. Les astuces Dota classées sont des produits distincts: voir le <a href=\"/products/dota-2-cheats/\">Niveau Lite (map hack & ESP)</a>, <a href=\"/products/dota-2-cheats/\">Niveau Pro (scripts inclus)</a> et <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>."
+  },
+  {
+    "id": "blog-setup",
+    "q": "Où les guides de configuration de blog pointent-ils pour l’achat ?",
+    "a": "Les guides renvoient aux pages de niveau et aux <a href=\"/products/dota-2-cheats/\">produits Dota 2</a>. Le paiement s'effectue via notre partenaire sécurisé: ne collez jamais de fichiers de chargement à partir de DM Discord aléatoires."
+  },
+  {
+    "id": "compare-plans",
+    "q": "Où puis-je comparer les forfaits côte à côte ?",
+    "a": "Chaque page de niveau de triche comprend un tableau de comparaison. La <a href=\"/faq/\">FAQ complète</a> rassemble les réponses aux produits, aux astuces et aux blogs en un seul endroit."
+  },
+  {
+    "id": "who-lite",
+    "q": "Qui devrait rester sur Lite ?",
+    "a": "Les joueurs qui souhaitent uniquement connaître la carte (ESP, wards, runes) et ne toucheront pas à l'automatisation des scripts. Si vous continuez à activer les scripts combo, achetez plutôt le <a href=\"/products/dota-2-cheats/\">niveau Pro (scripts inclus)</a>."
+  },
+  {
+    "id": "who-pro",
+    "q": "Qui devrait acheter Pro ?",
+    "a": "Joueurs classés qui veulent Auto Combo, Orbwalker et Activator avec hack de carte inclus. Pro est le niveau le plus populaire sur {siteDomain}."
+  },
+  {
+    "id": "who-elite",
+    "q": "Qui devrait acheter Elite ?",
+    "a": "Les opérateurs qui souhaitent Auto Farm Bot, Auto Kill Steal, Skin Changer et la livraison prioritaire de correctifs lorsque les emplacements sont ouverts."
+  },
+  {
+    "id": "vac-update",
+    "q": "Que dois-je faire après une mise à jour VAC ?",
+    "a": "Vérifiez le statut de {siteDomain} et le #statut de Discord. Ne lancez pas tant que la bannière n'est pas affichée en ligne. Chargez des préréglages conservateurs après n’importe quel patch."
+  },
+  {
+    "id": "discord-help",
+    "q": "Comment puis-je obtenir de l'aide pour l'installation ?",
+    "a": "Ouvrez Discord après l'achat avec votre e-mail de commande, la version Windows et la version du client Dota 2. Le personnel parcourt la configuration du chargeur en direct."
+  },
+  {
+    "id": "turbo-ranked",
+    "q": "Les niveaux fonctionnent-ils en Turbo et en mode Classé ?",
+    "a": "Oui: le <a href=\"/products/dota-2-cheats/\">Niveau Lite (map hack & ESP)</a>, le <a href=\"/products/dota-2-cheats/\">Niveau Pro (scripts inclus)</a> et <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> incluent Turbo et les préréglages classés dans le portail. Ajustez les limites de distance et le délai de script avant votre première file d'attente."
+  },
+  {
+    "id": "zoom-hack",
+    "q": "Quel niveau inclut le hack de zoom ?",
+    "a": "Le hack Zoom est livré au <a href=\"/products/dota-2-cheats/\">Niveau Lite (map hack & ESP)</a> et continue jusqu'au <a href=\"/products/dota-2-cheats/\">Niveau Pro (scripts inclus)</a> et <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>. La caméra étendue facilite la vision des voies sans investir dans les services."
+  },
+  {
+    "id": "auto-farm",
+    "q": "Quel niveau inclut Auto Farm Bot ?",
+    "a": "Auto Farm Bot, Lane Control AI et Auto Courier Manager sont <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> uniquement. Le <a href=\"/products/dota-2-cheats/\">niveau Pro (scripts inclus)</a> couvre les scripts de combat sans farm bots."
+  },
+  {
+    "id": "private-cheats",
+    "q": "Que sont les astuces privées de Dota 2 ?",
+    "a": "Privé signifie les clés par utilisateur et les versions maintenues, et non les packs zip publics. DotaCheats propose une livraison de portail pour les niveaux ESP, scripts et map hack."
+  },
+  {
+    "id": "faq-more",
+    "q": "Où est la FAQ complète ?",
+    "a": "Ce site comprend des FAQ d'atterrissage et des sections par page. Consultez la <a href=\"/faq/\">FAQ complète</a> pour toutes les réponses sur les produits, les astuces et les blogs, ou lisez les <a href=\"/blog/\">guides de blog</a> pour des guides détaillés."
+  }
+]

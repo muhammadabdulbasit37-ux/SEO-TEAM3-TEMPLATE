@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getHwidSpooferPage } from '../../data/products';
+import { pageTitle } from '../../config/seo';
+import { breadcrumbSchema, productSchema } from '../../utils/schema';
+import ProductDetail from '../../components/ProductDetail.astro';
+import { useLocale } from '../../i18n';
+import { getFeaturedPlan } from '../../data/productPricing';
+import { HWID_SPOOFER_PATH, PRODUCT_BASE } from '../../config/site';
+
+const { locale, t, lp } = useLocale(Astro.currentLocale);
+const product = getHwidSpooferPage(locale);
+
+if (!product) {
+  return Astro.redirect(lp('/'));
+}
+
+const pagePath = HWID_SPOOFER_PATH;
+const defaultPlan = getFeaturedPlan(product.slug);
+const breadcrumbs = [
+  { name: t.common.breadcrumbHome, path: '/' },
+  { name: product.title, path: pagePath },
+];
+---
+
+<BaseLayout
+  title={pageTitle(product.title, undefined, locale)}
+  description={product.desc}
+  jsonLd={[
+    productSchema({
+      name: product.title,
+      description: product.desc,
+      url: lp(pagePath),
+      offerUrl: product.buyUrl,
+      image: product.images[0]?.src,
+      sku: product.slug,
+      locale,
+      priceUsd: defaultPlan?.priceUsd,
+    }),
+    breadcrumbSchema(breadcrumbs),
+  ]}
+>
+  <ProductDetail product={product} breadcrumbs={breadcrumbs} />
+
+  <section class="border-t border-border pb-12 pt-6">
+    <div class="mx-auto max-w-6xl px-5">
+      <a href={lp(PRODUCT_BASE)} class="text-sm font-medium text-primary hover:underline">
+        {t.products.backToCheats}
+      </a>
+    </div>
+  </section>
+</BaseLayout>

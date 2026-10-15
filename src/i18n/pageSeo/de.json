@@ -1,0 +1,42 @@
+{
+  "/": {
+    "title": "Dota 2 Cheats & Hacks | Skripte, Map Hack & ESP",
+    "description": "Dota 2-Cheats für PC: Skripte, Karten-Hack, Zoom-Hack und Skin-Changer-Stufen werden mit jedem Patch auf {siteDomain} aktualisiert."
+  },
+  "/product/": {
+    "title": "Dota 2 Elite Cheats | Bots & Full Map Hack",
+    "description": "Elite-Stufe: Auto-Farm-Bot, Kill-Steal, Skin-Changer, komplette Map-Hack-Suite und Priority-Patch-Lieferung auf {siteDomain}."
+  },
+  "/products/dota-2-cheats/utilities/": {
+    "title": "Dota 2-Dienstprogramme | HWID, UGC und Skin Changer",
+    "description": "Wählen Sie HWID Spoofer, UGC oder Skin Changer, wenn jedes Dienstprogramm passt und auf vollständige Produktseiten verlinkt."
+  },
+  "/blog/": {
+    "title": "Dota 2 Cheats-Anleitungen und Patchnotizen",
+    "description": "Einrichtungsanleitungen, Vergleiche zwischen Lite und Pro, VAC-Patch-Checklisten und Ranglisten-Konfigurationstipps für Dota-Cheats."
+  },
+  "/forum/": {
+    "title": "Dota 2 Community-Forum | DotaCheats",
+    "description": "Treten Sie mit Dota-Spielern zusammen, um über Helden, Builds, Patch-Änderungen, Anleitungen und Community-Momente zu diskutieren."
+  },
+  "/faq/": {
+    "title": "FAQ | Dota 2 Cheats, Produkte & Setup",
+    "description": "Antworten zu Cheat-Stufen, Karten-Hack, Skripten, HWID-Tools, Checkout und Blog-Anleitungen auf {siteDomain}."
+  },
+  "/terms/": {
+    "title": "Allgemeine Geschäftsbedingungen | DotaCheats",
+    "description": "Kaufbedingungen, Lizenznutzung und Rückerstattungsrichtlinien für DotaCheats-Produkte, die über {siteDomain} verkauft werden."
+  },
+  "/privacy/": {
+    "title": "Datenschutzrichtlinie | DotaCheats",
+    "description": "Wie {siteDomain} Analysen, Cookies und Kontaktdaten verwendet, wenn Sie surfen oder Support anfordern."
+  },
+  "/about/": {
+    "title": "Über DotaCheats",
+    "description": "Was DotaCheats veröffentlicht: Dota 2-Cheat-Stufen, Dienstprogramme, Anleitungen und Statushinweise auf {siteDomain}."
+  },
+  "/support/": {
+    "title": "Unterstützung | DotaCheats",
+    "description": "Erhalten Sie Hilfe bei der Einrichtung des Loaders, der HWID und beim Auschecken für Dota 2-Cheat-Stufen und -Dienstprogramme."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "/": {
+    "title": "Astuces et hacks Dota 2 | Scripts, maphack et ESP",
+    "description": "Astuces Dota 2 pour PC classées: scripts, maphack, zoom hack et niveaux de skin changer mis à jour à chaque patch sur {siteDomain}."
+  },
+  "/product/": {
+    "title": "Dota 2 Astuces Élite | Bots et maphack complète",
+    "description": "Niveau Elite: farm bot automatique, kill steal, skin changer, suite de maphack complet et livraison prioritaire de correctifs sur {siteDomain}."
+  },
+  "/products/dota-2-cheats/utilities/": {
+    "title": "Utilitaires Dota 2 | HWID, UGC et changeur de peau",
+    "description": "Choisissez HWID Spoofer, UGC ou Skin Changer, lorsque chaque utilitaire s'adapte et renvoie à des pages de produits complètes."
+  },
+  "/blog/": {
+    "title": "Guides de triche et notes de mise à jour Dota 2",
+    "description": "Guides d'installation, comparaisons Lite vs Pro, listes de contrôle des correctifs VAC et conseils de configuration classés pour les tricheurs Dota."
+  },
+  "/forum/": {
+    "title": "Forum communautaire Dota 2 | Astuces Dota",
+    "description": "Rejoignez les joueurs de Dota pour discuter des héros, des builds, des modifications de correctifs, des guides et des moments communautaires."
+  },
+  "/faq/": {
+    "title": "FAQ | Dota 2 Astuces, produits et configuration",
+    "description": "Réponses sur les niveaux de triche, le maphack, les scripts, les outils HWID, la caisse et les guides de blog sur {siteDomain}."
+  },
+  "/terms/": {
+    "title": "Conditions générales | Astuces Dota",
+    "description": "Conditions d'achat, utilisation de la licence et politique de remboursement pour les produits DotaCheats vendus via {siteDomain}."
+  },
+  "/privacy/": {
+    "title": "Politique de confidentialité | Astuces Dota",
+    "description": "Comment {siteDomain} utilise des analyses, des cookies et des données de contact lorsque vous naviguez ou demandez de l'aide."
+  },
+  "/about/": {
+    "title": "À propos de DotaCheats",
+    "description": "Ce que DotaCheats publie: niveaux de triche Dota 2, utilitaires, guides et notes d'état sur {siteDomain}."
+  },
+  "/support/": {
+    "title": "Assistance | Astuces Dota",
+    "description": "Obtenez de l'aide sur la configuration du chargeur, le HWID et le paiement des niveaux de triche et des utilitaires Dota 2."
+  }
+}

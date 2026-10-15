@@ -1,0 +1,34 @@
+---
+import { useLocale } from '../i18n';
+
+const { locale, t, lp } = useLocale(Astro.currentLocale);
+import WorkflowSection from './WorkflowSection.astro';
+import SectionHeader from './SectionHeader.astro';
+import Icon from './icons/Icon.astro';
+import { ROUTES } from '../utils/path';
+import SiteFaqSection from './SiteFaqSection.astro';
+import { getLandingFaqs } from '../data/faq';
+import { Button } from '@/components/starwind/button';
+
+const homeFaqs = getLandingFaqs(locale);
+
+---
+
+<WorkflowSection />
+
+<section id="blog" class="border-y border-border bg-muted/20 py-16 md:py-24" aria-labelledby="blog-title">
+  <div class="mx-auto max-w-6xl px-5">
+    <SectionHeader eyebrow={t.blog.eyebrow} title={t.blog.title} desc={t.blog.subtitle} titleId="blog-title" />
+
+    <p class="mt-10 text-center text-muted-foreground" data-reveal="fade">{t.blog.emptyArchive}</p>
+
+    <div class="mt-10 flex justify-start lg:justify-center" data-reveal>
+      <Button as="a" href={lp(ROUTES.blog)} variant="outline">
+        {t.blog.viewAll}
+        <Icon name="arrowRight" size={17} />
+      </Button>
+    </div>
+  </div>
+</section>
+
+<SiteFaqSection id="faq" titleId="faq-title" items={homeFaqs} />

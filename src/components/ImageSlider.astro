@@ -1,0 +1,138 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { HERO_IMAGE_SIZES, HERO_IMAGE_WIDTHS } from '../utils/responsiveImage';
+
+interface Slide {
+  src: string;
+  alt: string;
+  caption: string;
+  captionDesc: string;
+}
+
+interface Props {
+  images: Slide[];
+  id: string;
+  variant?: 'default' | 'hero';
+  class?: string;
+}
+
+const { images, id, variant = 'default', class: className } = Astro.props;
+const isHero = variant === 'hero';
+const slides = isHero && images.length > 1 ? [...images, images[0]] : images;
+const count = images.length;
+---
+
+<div
+  class:list={[
+    'hero-auto relative hidden w-full rounded-xl border border-border bg-card p-2 shadow-sm lg:block',
+    className,
+  ]}
+  id={id}
+  data-slides={count}
+  style={`--hero-slides:${count}`}
+>
+  <div class="hero-auto__viewport overflow-hidden rounded-lg">
+    <div class="hero-auto__track">
+      {slides.map((img, i) => (
+        <figure class="hero-auto__slide aspect-[16/10] overflow-hidden bg-muted/30">
+          <ResponsiveImage
+            src={img.src}
+            alt={i === count ? '' : img.alt}
+            width={960}
+            height={540}
+            widths={HERO_IMAGE_WIDTHS}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            sizes={HERO_IMAGE_SIZES}
+            desktopOnly
+            class="h-full w-full object-cover"
+          />
+        </figure>
+      ))}
+    </div>
+  </div>
+  {count > 1 && (
+    <div class="pointer-events-none absolute inset-x-2 bottom-3 flex justify-center" aria-hidden="true">
+      <div class="flex items-center gap-1 rounded-full border border-white/10 bg-black/45 px-1.5 py-1 backdrop-blur-sm">
+        {images.map((_, i) => (
+          <span class="hero-auto__dot" style={`--i:${i}`} />
+        ))}
+      </div>
+    </div>
+  )}
+</div>
+
+<style>
+  .hero-auto__track {
+    display: flex;
+    width: calc((var(--hero-slides) + 1) * 100%);
+  }
+
+  .hero-auto__slide {
+    flex: 0 0 calc(100% / (var(--hero-slides) + 1));
+    min-width: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-auto[data-slides='7'] .hero-auto__track {
+      animation: hero-auto-slide-7 33.6s linear infinite;
+    }
+  }
+
+  .hero-auto__dot {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-auto__dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 999px;
+    background: rgb(255 255 255 / 35%);
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-auto[data-slides='7'] .hero-auto__dot::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 999px;
+      background: var(--primary-text, var(--primary));
+      transform: translate(-50%, -50%) scaleX(0);
+      transform-origin: left center;
+      animation: hero-auto-dot-7 33.6s linear infinite;
+      animation-delay: calc(var(--i) * 4.8s);
+    }
+  }
+
+  .hero-auto:hover .hero-auto__track,
+  .hero-auto:hover .hero-auto__dot::after {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-auto__track {
+      width: 100%;
+      animation: none;
+    }
+
+    .hero-auto__slide {
+      flex-basis: 100%;
+    }
+
+    .hero-auto__slide:not(:first-child),
+    .hero-auto__dot::after {
+      display: none;
+    }
+  }
+</style>
