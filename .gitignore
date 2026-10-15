@@ -22,3 +22,10 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local Lighthouse / CWV audit outputs (not part of the site)
+lighthouse-*.json
+lh-*.json
+lh-tmp.json
+cwv-*.json
+lh-q*.png
