@@ -1,10 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { SITE_DOMAIN } from '../src/config/site-url.mjs';
 
 const root = process.cwd();
 const dist = path.join(root, 'dist');
 const key = process.env.INDEXNOW_KEY?.trim();
-const host = process.env.INDEXNOW_HOST?.trim() || 'dotacheats.com';
+const host = process.env.INDEXNOW_HOST?.trim() || SITE_DOMAIN;
 
 if (!key) {
   console.log('IndexNow: skipped (INDEXNOW_KEY not set).');
@@ -41,9 +42,4 @@ const response = await fetch('https://api.indexnow.org/indexnow', {
   body: JSON.stringify(payload),
 });
 
-if (response.ok) {
-  console.log(`IndexNow: submitted ${urlList.length} URL(s) (HTTP ${response.status}).`);
-} else {
-  const body = await response.text();
-  console.warn(`IndexNow: ping failed HTTP ${response.status}: ${body.slice(0, 200)}`);
-}
+console.log(`IndexNow: ${response.status} (${urlList.length} URLs)`);

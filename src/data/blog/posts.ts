@@ -1,4 +1,4 @@
 import type { BlogPostFull } from './types';
+import { blogPostsEn } from './posts/en-articles';
 
-/** Articles are added here. The blog index stays empty until new posts are published. */
-export const blogPosts: BlogPostFull[] = [];
+export const blogPosts: BlogPostFull[] = blogPostsEn;

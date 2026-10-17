@@ -2,14 +2,34 @@
 import type { ProductAcquisition, ProductSlide } from '../../data/products';
 import { productAcquisitionStepIcons } from '../../data/sectionIcons';
 import Icon from '../icons/Icon.astro';
+import { useLocale } from '../../i18n';
 
 interface Props {
   images: ProductSlide[];
   acquisition: ProductAcquisition;
   productName: string;
+  experience?: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    previewLabel: string;
+    accessDividerTop: string;
+    accessDividerBottom: string;
+  };
 }
 
-const { images, acquisition, productName } = Astro.props;
+const { images, acquisition, productName, experience } = Astro.props;
+const { t } = useLocale(Astro.currentLocale);
+const xp = experience ??
+  t.products.experience ?? {
+  eyebrow: 'Experience',
+  title: 'Loader layers · After checkout',
+  subtitle:
+    'Use the screenshots above for module layout; below is what each layer does and how portal access works after purchase.',
+  previewLabel: 'In-game layers',
+  accessDividerTop: 'Preview',
+  accessDividerBottom: 'Access',
+};
 
 const calloutLabels = ['A', 'B', 'C', 'D', 'E', 'F'];
 ---
@@ -21,19 +41,18 @@ const calloutLabels = ['A', 'B', 'C', 'D', 'E', 'F'];
 >
   <div class="mx-auto max-w-6xl px-5 md:px-6">
     <header class="product-experience__header">
-      <p class="product-experience__eyebrow">Experience</p>
+      <p class="product-experience__eyebrow">{xp.eyebrow}</p>
       <h2 id="product-experience-title" class="product-experience__title">
-        In the client · After you buy
+        {xp.title}
       </h2>
       <p class="product-experience__subtitle">
-        Use the screenshots above for {productName}, below is what each layer means and how access works
-        after checkout.
+        {xp.subtitle}
       </p>
     </header>
 
     <div class="product-experience__grid">
       <div class="product-experience__column product-experience__column--preview">
-        <h3 class="product-experience__column-head" id="product-experience-preview-label">In-game layers</h3>
+        <h3 class="product-experience__column-head" id="product-experience-preview-label">{xp.previewLabel}</h3>
         <ul class="product-experience__callouts list-none p-0" aria-labelledby="product-experience-preview-label">
           {
             images.map((slide, index) => (
@@ -53,9 +72,9 @@ const calloutLabels = ['A', 'B', 'C', 'D', 'E', 'F'];
       </div>
 
       <div class="product-experience__divider" aria-hidden="true">
-        <span class="product-experience__divider-cap product-experience__divider-cap--top">Preview</span>
+        <span class="product-experience__divider-cap product-experience__divider-cap--top">{xp.accessDividerTop}</span>
         <span class="product-experience__divider-line" />
-        <span class="product-experience__divider-cap product-experience__divider-cap--bottom">Access</span>
+        <span class="product-experience__divider-cap product-experience__divider-cap--bottom">{xp.accessDividerBottom}</span>
       </div>
 
       <aside

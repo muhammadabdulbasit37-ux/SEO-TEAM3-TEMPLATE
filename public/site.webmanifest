@@ -1,7 +1,7 @@
 {
-  "name": "DotaCheats",
-  "short_name": "DotaCheats",
-  "description": "Dota 2 cheats with scripts, map hack, zoom hack and skin changer for PC.",
+  "name": "EFT CHEATS",
+  "short_name": "EFT CHEATS",
+  "description": "Escape From Tarkov cheats with player ESP, loot ESP, aimbot and no recoil for PMC raids.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -12,7 +12,14 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/brand/eft-cheats-logo-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
     },
     {
       "src": "/favicon-32.png",

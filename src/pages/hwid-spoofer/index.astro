@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getHwidSpooferPage } from '../../data/products';
-import { pageTitle } from '../../config/seo';
+import { resolvePageSeo } from '../../config/seo';
 import { breadcrumbSchema, productSchema } from '../../utils/schema';
 import ProductDetail from '../../components/ProductDetail.astro';
 import { useLocale } from '../../i18n';
@@ -21,11 +21,12 @@ const breadcrumbs = [
   { name: t.common.breadcrumbHome, path: '/' },
   { name: product.title, path: pagePath },
 ];
+const seo = resolvePageSeo(pagePath, locale);
 ---
 
 <BaseLayout
-  title={pageTitle(product.title, undefined, locale)}
-  description={product.desc}
+  title={seo.title}
+  description={seo.description}
   jsonLd={[
     productSchema({
       name: product.title,

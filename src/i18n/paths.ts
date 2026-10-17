@@ -10,7 +10,8 @@ export function stripLocalePrefix(pathname: string): string {
       return rest.startsWith('/') ? rest : `/${rest}`;
     }
   }
-  if (pathname !== '/' && !pathname.endsWith('/')) return `${pathname}/`;
+  const [base, query] = pathname.split('?');
+  if (base !== '/' && !base.endsWith('/')) return query === undefined ? `${base}/` : `${base}/?${query}`;
   return pathname;
 }
 

@@ -11,22 +11,6 @@ export interface PageSeoEntry {
   description: string;
 }
 
-/** Routes with explicit SEO entries, keep in sync across en + locale JSON files. */
-export const PAGE_SEO_ROUTES = [
-  '/',
-  '/product/',
-  '/hwid-spoofer/',
-  '/blog/',
-  '/forum/',
-  '/faq/',
-  '/terms/',
-  '/privacy/',
-  '/about/',
-  '/support/',
-] as const;
-
-export type PageSeoRoute = (typeof PAGE_SEO_ROUTES)[number];
-
 export function normalizeSeoPath(pathname: string): string {
   let path = pathname || '/';
   if (!path.startsWith('/')) path = `/${path}`;

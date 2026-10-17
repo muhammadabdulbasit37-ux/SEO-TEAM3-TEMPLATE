@@ -1,24 +1,28 @@
 /**
  * Partner checkout destinations (affiliate / ref links).
- * Never put these on visible `href`s, buy buttons use `/go/…` and this map redirects on click.
+ * Visible buy buttons use `/go/…` from `checkout.ts`. These URLs are the 302 targets only.
  */
 export const CHECKOUT_URLS = {
-  dota2: 'https://zadeyo.com/products/dota-2',
+  eftCheats: 'https://zadeyo.com/go/BASIT?to=%2Fproducts%2Fescape-from-tarkov',
   hwidSpoofer: 'https://zadeyo.com/go/BASIT?to=%2Fproducts%2Fhwid-spoofer',
 };
+
+const EFT_CHECKOUT = CHECKOUT_URLS.eftCheats;
 
 const PREFIXED_LOCALES = ['es', 'de', 'fr'];
 
 /** Checkout paths → external product URLs (Node serve, Astro middleware, static `_redirects`). */
 export const CHECKOUT_PATH_REDIRECTS = new Map([
-  ['/go/dota-2', CHECKOUT_URLS.dota2],
-  ['/go/dota-2/', CHECKOUT_URLS.dota2],
+  ['/go/escape-from-tarkov', EFT_CHECKOUT],
+  ['/go/escape-from-tarkov/', EFT_CHECKOUT],
+  ['/go/dota-2', EFT_CHECKOUT],
+  ['/go/dota-2/', EFT_CHECKOUT],
   ['/go/hwid-spoofer', CHECKOUT_URLS.hwidSpoofer],
   ['/go/hwid-spoofer/', CHECKOUT_URLS.hwidSpoofer],
-  ['/go/skin-changer', CHECKOUT_URLS.dota2],
-  ['/go/skin-changer/', CHECKOUT_URLS.dota2],
-  ['/go/ugc', CHECKOUT_URLS.dota2],
-  ['/go/ugc/', CHECKOUT_URLS.dota2],
+  ['/go/skin-changer', EFT_CHECKOUT],
+  ['/go/skin-changer/', EFT_CHECKOUT],
+  ['/go/ugc', EFT_CHECKOUT],
+  ['/go/ugc/', EFT_CHECKOUT],
 ]);
 
 function stripLocaleFromCheckoutPath(pathname) {

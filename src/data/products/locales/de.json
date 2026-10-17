@@ -1,204 +1,95 @@
 {
-  "sharedGoodToKnow": "Dota 2 und VAC erhalten regelmäßig Updates. Bestätigen Sie die Modulverfügbarkeit im Live-Statusbereich auf dotacheats.com, bevor Sie es kaufen oder starten. Das Overlay-Verhalten kann nach Patches in Lobbys, Wiederholungen und im Zuschauermodus unterschiedlich sein.",
-  "sharedLimitations": "Software von Drittanbietern in Dota 2 kann gegen die Nutzungsbedingungen von Valve verstoßen und zu VAC-Sperren oder Kontomaßnahmen führen. Sie nutzen diese Software auf eigenes Risiko. Kompatibilität und Verfügbarkeit können sich nach Spiel-, VAC- oder Windows-Updates ohne Vorankündigung ändern.",
+  "sharedGoodToKnow": "Escape From Tarkov und BattlEye erhalten regelmäßig Updates. Bestätigen Sie die Modulverfügbarkeit im Live-Statusbereich unter {siteDomain}, bevor Sie es kaufen oder starten. Cloud DMA ist ein separater Kauf, wenn die volle Funktionalität erforderlich ist.",
+  "sharedLimitations": "Software von Drittanbietern in Escape From Tarkov kann gegen die Bedingungen von Battlestate Games verstoßen und zu BattlEye-Sperren oder Kontoaktionen führen. Sie nutzen diese Software auf eigenes Risiko. Kompatibilität und Verfügbarkeit können sich nach Spiel-, BattlEye- oder Windows-Updates ohne Vorankündigung ändern.",
   "acquisitionSteps": [
     {
       "num": "01",
       "title": "Überprüfen Sie den aktuellen Status",
-      "desc": "Überprüfen Sie vor dem Kauf das Live-Banner auf dotacheats.com und Discord #status, insbesondere nach einem Dota 2- oder VAC-Update."
+      "desc": "Überprüfen Sie vor dem Kauf das Live-Banner auf {siteDomain} und Discord #status, insbesondere nach einem Escape From Tarkov- oder BattlEye-Update."
     },
     {
       "num": "02",
       "title": "Wählen Sie Ihre Zugriffsstufe",
-      "desc": "Wählen Sie Elite-Dota-Cheats oder das Dienstprogramm, das Ihrem Ziel entspricht. Überprüfen Sie die Funktionsliste vor dem Bezahlen über unseren sicheren Bezahlvorgang."
+      "desc": "Wählen Sie Escape From Tarkov Cheats oder das Dienstprogramm, das Ihrem Ziel entspricht. Sehen Sie sich die Funktionsliste vor dem Bezahlen über unseren Partner-Checkout an."
     },
     {
       "num": "03",
       "title": "Kontaktieren Sie das Team",
-      "desc": "Öffnen Sie Discord und bestätigen Sie die Verfügbarkeit, die Steam-Plattform und die Zahlungsdetails, während Ihre Bestell-E-Mail bereit ist."
+      "desc": "Öffnen Sie Discord und bestätigen Sie die Verfügbarkeit, die Windows-Einrichtung und die Zahlungsdetails, während Ihre Bestell-E-Mail bereit ist."
     },
     {
       "num": "04",
       "title": "Folgen Sie der geführten Einrichtung",
-      "desc": "Verwenden Sie ausschließlich das Betreiberportal, den Patch-Loader und die Einrichtungsanleitung. Testen Sie in einer Lobby, laden Sie Voreinstellungen und stellen Sie dann die Rangfolge oder den Turbo ein."
+      "desc": "Verwenden Sie ausschließlich das Betreiberportal, den Patch-Loader und die Einrichtungsanleitung. Testen Sie offline, laden Sie Voreinstellungen und führen Sie dann PMC-Raids durch, wenn der Status „Online“ lautet."
     }
   ],
   "systemRequirements": [
-    "Unterstützte 64-Bit-Edition von Windows 10 oder Windows 11.",
-    "Aktueller Dota 2-Client über Steam mit den neuesten Patches.",
-    "Administratorzugriff für Loader-Installation und Patch-Updates.",
-    "Stabile Internetverbindung für Portalzugriff und Patch-Bereitstellung.",
-    "Ein System, das die veröffentlichten Hardwareanforderungen von Dota 2 erfüllt."
+    "Windows 10 oder 11 64-Bit (Intel oder AMD).",
+    "Stabiler Internet- und Loader-Zugang nach dem Kauf.",
+    "Aktueller Escape From Tarkov-Client; Überprüfen Sie den Status nach größeren Patches.",
+    "Cloud DMA ist ein separater Kauf, wenn die volle Funktionalität erforderlich ist."
   ],
   "gallery": [
     {
-      "alt": "Dota 2-Karten-Hack, der die Positionen feindlicher Helden und die Standorte von Schutzzaubern zeigt",
-      "caption": "Bewusstsein für Kartenhacks",
-      "captionDesc": "Verfolgung der gegnerischen Position, Schutz-ESP und Runen-Timer während eines Ranglisten-Mid-Pushs."
+      "alt": "Escape From Tarkov-Egoperspektive mit Spieler-ESP, der rot hervorgehobene Figuren, Skelettumrisse und Entfernungsmarkierungen in einem sonnenbeschienenen Industriehof zeigt.",
+      "caption": "Spieler-ESP bei Tageslicht-Raids",
+      "captionDesc": "Rote und grüne Spieler-Highlights, Skelett-Drahtgitter und Entfernungsanzeigen auf einer Industriekarte im Freien."
     },
     {
-      "alt": "Dota 2 Auto Combo-Skript-Landing-Invoker-Combo-Sequenz",
-      "caption": "Auto-Combo-Skripte",
-      "captionDesc": "Invoker Tornado → EMP → Meteorkette mit aktiver Smart Cast-Vorhersage."
+      "alt": "Escape From Tarkov-Nachtsichtszene mit skelettierten ESP-, PMC- und Scav-Etiketten und Zählerständen, die durch Innenwände sichtbar sind.",
+      "caption": "Skelett-ESP bei Nacht",
+      "captionDesc": "Strichmännchenskelette, Namensschilder und Entfernungsmarkierungen durch Wände in einem grün getönten Indoor-Raid."
     },
     {
-      "alt": "Dota 2 Zoom Hack erweiterte Kameraansicht der gesamten Spur",
-      "caption": "Erweiterter Kamerazoom",
-      "captionDesc": "Zoom-Hack, der die volle Spursicht für eine sicherere Positionierung und Vermeidung von Ganks zeigt."
-    },
-    {
-      "alt": "Dota 2 Skin Changer zeigt eine Vorschau der Arcana-Kosmetik auf Hero",
-      "caption": "Vorschau von Skin Changer",
-      "captionDesc": "Lokale Arkana- und Unsterblichkeitsvorschau über „Alle entsperren“, nur clientseitig."
-    },
-    {
-      "alt": "Dota 2 Auto Kill Steal erledigt Gegner mit niedrigen HP mit Zeus Ultimate",
-      "caption": "Auto-Kill-Steal",
-      "captionDesc": "Erkennung der tödlichen Schwelle, die den Finger des Todes zum perfekten Zeitpunkt aktiviert."
-    },
-    {
-      "alt": "Dota 2 Auto Farm Bot räumt Dschungelcamps effizient auf",
-      "caption": "Auto Farm Bot",
-      "captionDesc": "Dschungelpfade mit Stapeltimer und Kuriermanager für maximale GPM."
-    },
-    {
-      "alt": "Dota 2 Hero ESP mit Namensschildern und Entfernungsanzeige",
-      "caption": "Hero ESP-Overlay",
-      "captionDesc": "Heldennamensschilder, Teamfarben und Distanzmarkierungen durch den Nebel des Krieges."
+      "alt": "Escape From Tarkov-Ziel aus der ersten Person mit roten Wallhack-Silhouetten und Waffenetiketten, die durch eine Betonwand im Freien sichtbar sind.",
+      "caption": "ESP durch Hardcover",
+      "captionDesc": "Rote feindliche Silhouetten und Waffenrufe, die durch eine Betonbarriere gerendert werden, während sie auf das Visier zielen."
     }
   ],
   "tiers": {
-    "lite": {
-      "about": [
-        {
-          "type": "p",
-          "text": "Dota 2 Lite wurde für Spieler entwickelt, die sich zunächst mit der Karte vertraut machen möchten. Im Ranglistenmodus gewinnt man mehr Kämpfe, wenn man die Positionen der Gegner, die Platzierung von Schutzzaubern und das Timing der Runen kennt, als die bloße Mechanik: Lite verschafft Ihnen diesen Vorteil ohne Skriptautomatisierung."
-        },
-        {
-          "type": "h2",
-          "text": "Von Natur aus als sicher eingestuft"
-        },
-        {
-          "type": "p",
-          "text": "Lite überspringt Auto Combo- und Bot-Module vollständig. Ihr Gameplay sieht natürlich aus, während Karten-Hack, Zoom-Hack und Runen-Timer Sie auf dem Laufenden halten. Der Stream-Proof-Modus verbirgt Overlays vor der OBS-Erfassung für Inhaltsersteller."
-        }
-      ],
-      "body": [
-        {
-          "type": "h2",
-          "text": "Enthaltene Module"
-        },
-        {
-          "type": "p",
-          "text": "Helden-ESP mit Distanz- und Namensschildern, Ward- und Sentry-Locator, Runen-Spawn-Timer, Zoom-Hack und stream-sicherem Overlay. Lege Ranked- und Turbo-Presets im Portal an und lade sie vor der ersten Queue."
-        },
-        {
-          "type": "h2",
-          "text": "Upgrade-Pfad"
-        },
-        {
-          "type": "p",
-          "text": "Inhaber einer Lite-Lizenz können über das Portal ein Upgrade auf Pro oder Elite durchführen, ohne dass Konfigurationssicherungen verloren gehen. Vergleichen Sie die Stufen auf der Hauptproduktseite, bevor Sie über unseren sicheren Checkout zur Kasse gehen."
-        }
-      ],
-      "overview": {
-        "title": "Basierend auf einem klaren Dota 2-Awareness-Workflow",
-        "paragraphs": [
-          "Dota 2 Lite konzentriert sich auf Helden-ESP, Ward Locator, Runen-Timer und Zoom-Hack, alles, was Sie brauchen, um Ganks zu verfolgen und die Karte ohne Skriptautomatisierung zu kontrollieren. Die Module sind im Portal gruppiert, sodass Sie Entfernung, Farben und Stream-Proof-Modus vor Ihrer ersten Warteschlange anpassen können.",
-          "Lite ist der Einstiegspfad für Ranglisten- und Turbo-Spieler, die Kartenkenntnis bei minimalem Melderisiko wünschen. Keine automatische Kombination, keine Bots, nur lesbare Overlays, die in jedem Patch auf dotacheats.com gepflegt werden."
-        ]
-      },
-      "goodToKnow": "Dota 2 und VAC erhalten regelmäßig Updates. Bestätigen Sie die Modulverfügbarkeit im Live-Statusbereich auf dotacheats.com, bevor Sie es kaufen oder starten. Das Overlay-Verhalten kann nach Patches in Lobbys, Wiederholungen und im Zuschauermodus unterschiedlich sein.",
-      "limitations": "Software von Drittanbietern in Dota 2 kann gegen die Nutzungsbedingungen von Valve verstoßen und zu VAC-Sperren oder Kontomaßnahmen führen. Sie nutzen diese Software auf eigenes Risiko. Kompatibilität und Verfügbarkeit können sich nach Spiel-, VAC- oder Windows-Updates ohne Vorankündigung ändern.",
-      "acquisitionTitle": "So erhalten Sie Dota 2 Lite"
-    },
-    "pro": {
-      "about": [
-        {
-          "type": "p",
-          "text": "Dota 2 Pro ist der ideale Ort für Ranglisten-Grinder. Auto Combo, Orbwalker und Smart Cast helfen Ihnen, Teamkämpfe ohne offensichtliche Bot-Muster zu gewinnen, wenn Sie die Verzögerungseinstellung mithilfe unserer Portal-Voreinstellungen anpassen."
-        },
-        {
-          "type": "h2",
-          "text": "Skripte + Bewusstsein kombiniert"
-        },
-        {
-          "type": "p",
-          "text": "Pro übernimmt jedes Lite-Modul und fügt Auto Combo, Target Selector, Activator und Fähigkeitsradiuszeichnung hinzu. Sie sehen den Kampf, bevor er beginnt, und gewinnen ihn mit Skripten, die in den Standardeinstellungen menschlich bleiben."
-        }
-      ],
-      "body": [
-        {
-          "type": "h2",
-          "text": "Skripte und Automatisierung"
-        },
-        {
-          "type": "p",
-          "text": "Auto Combo, Orbwalker, Smart Cast mit Vorhersage, Zielauswahl und Aktivator für BKB, Hex und Orchid. Die Verzögerungseinstellung optimiert das Cast-Timing, sodass die Skripte in der Rangfolge natürlich bleiben. Beginnen Sie mit Portalvoreinstellungen, nicht mit Maximalreglern."
-        },
-        {
-          "type": "h2",
-          "text": "Empfohlene Paarung"
-        },
-        {
-          "type": "p",
-          "text": "Pro ist die beliebteste Stufe bei dotacheats.com, genug Feuerkraft für Lobbys mit hohem MMR ohne Elite-Slot-Limits. Koppeln Sie vor Ihrer ersten gewerteten Sitzung mit unserem Skript-Leitfaden im Blog."
-        }
-      ],
-      "overview": {
-        "title": "Basierend auf einem klaren Dota 2-Skript-Workflow",
-        "paragraphs": [
-          "Dota 2 Pro fügt zusätzlich zu jedem Lite-Modul Auto Combo, Orbwalker, Smart Cast und Activator hinzu. Heldenprofile, Verzögerungsabstimmung und Aktivierungsschlüssel befinden sich in einem Skript-Tab, optimiert für Ranglisten-Lobbys, wenn Sie mit Portalvoreinstellungen beginnen, nicht mit maximalen Schiebereglern.",
-          "Pro ist die beliebteste Stufe: genug Feuerkraft für Ranglisten und Turbo ohne Elite-Slot-Beschränkungen. Target Selector und Activator sorgen dafür, dass Sie mitten im Kampf effizient bleiben, während die Skripte in den Standardeinstellungen menschlich bleiben."
-        ]
-      },
-      "goodToKnow": "Dota 2 und VAC erhalten regelmäßig Updates. Bestätigen Sie die Modulverfügbarkeit im Live-Statusbereich auf dotacheats.com, bevor Sie es kaufen oder starten. Das Overlay-Verhalten kann nach Patches in Lobbys, Wiederholungen und im Zuschauermodus unterschiedlich sein.",
-      "limitations": "Software von Drittanbietern in Dota 2 kann gegen die Nutzungsbedingungen von Valve verstoßen und zu VAC-Sperren oder Kontomaßnahmen führen. Sie nutzen diese Software auf eigenes Risiko. Kompatibilität und Verfügbarkeit können sich nach Spiel-, VAC- oder Windows-Updates ohne Vorankündigung ändern.",
-      "acquisitionTitle": "So erhalten Sie Dota 2 Pro"
-    },
     "elite": {
       "about": [
         {
           "type": "p",
-          "text": "Dota 2 Elite ist der private Build für Spieler, die alles wollen: Auto Farm Bot, Auto Kill Steal, Auto Dagon, Skin Changer, vollständigen Karten-Hack und direkte Entwicklerunterstützung. Begrenzte Slots sorgen dafür, dass der Build wartbar ist und Patch-Zyklen schnell erfolgen."
+          "text": "Diese Lizenz deckt die wichtigsten Escape From Tarkov-Raids mit Player-ESP, Loot-ESP, Aimbot, No Recoil, Radar und Extraktionshelfern ab. Arena ist ein separater Produktschlüssel. Cloud DMA ist optional, wenn Sie vollständigen Hardware-Pass-Through benötigen."
         },
         {
           "type": "h2",
-          "text": "Gehen Sie verantwortungsvoll mit Elite um"
+          "text": "Schalten Sie ein, bevor Sie in die Warteschlange kommen"
         },
         {
           "type": "p",
-          "text": "Elitemacht erfordert disziplinierte Profile. Testen Sie in Lobbys, beginnen Sie mit konservativen Portalvoreinstellungen und skalieren Sie über Tage, nicht über Minuten. Die Mitarbeiter von Discord helfen Elite-Benutzern dabei, sich vor der ersten Rangliste einzustimmen."
+          "text": "Laden Sie die Portalvoreinstellungen zunächst offline, erhöhen Sie dann die ESP-Distanz und die Zielglättung über mehrere Sitzungen hinweg. Discord-Mitarbeiter helfen bei Loader-Registerkarten, wenn nach einem BattlEye-Patch ein Modulkonflikt auftritt."
         }
       ],
       "body": [
         {
           "type": "h2",
-          "text": "Vollständige Bot- und Finish-Suite"
+          "text": "Pläne und Lieferung"
         },
         {
           "type": "p",
-          "text": "Auto Farm Bot, Lane Control AI, Auto Kill Steal, Auto Dagon, Skin Changer und vollständiger Karten-Hack mit Rauchwarnungen. Nutzen Sie Lobby-Tests vor der Rangliste: Elite-Macht erfordert disziplinierte Profile, keine Wuteinstellungen."
+          "text": "Wählen Sie an der Kasse monatlich (35 $) oder lebenslang (150 $). Das Betreiberportal wird sofort mit Loader-Download, Preset-Bibliothek und Patchnotizen freigeschaltet. Überprüfen Sie vor jeder Sitzung das Live-Statusbanner."
         },
         {
           "type": "h2",
-          "text": "Verfügbarkeit"
+          "text": "Modullayout"
         },
         {
           "type": "p",
-          "text": "Elite wird auf dem Statusbanner als begrenzte Slots angezeigt. Öffnen Sie ein Discord-Ticket, wenn der Checkout geschlossen ist, die Mitarbeiter bestätigen vor dem Kauf die Verfügbarkeit der Plätze."
+          "text": "ESP, Beute, Ziel, Waffen, Radar und Dienstprogramme verfügen jeweils über eine eigene Lader-Registerkarte, sodass Sie die Kampfhilfen deaktivieren und gleichzeitig die Beutefilter während der Stash-Läufe beibehalten können."
         }
       ],
       "overview": {
-        "title": "Basierend auf einem vollständigen Dota 2-Operator-Workflow",
+        "title": "Eine Lizenz für PMC-Raids unter Windows",
         "paragraphs": [
-          "Dota 2 Elite ist der private Build mit Auto Farm Bot, Auto Kill Steal, Auto Dagon, Skin Changer, vollständigem Karten-Hack und Priority-Patch-Lieferung. Jedes Lite- und Pro-Modul ist im Lieferumfang enthalten, keine Kappen, keine Upsells im Loader.",
-          "Elite-Slots sind begrenzt, sodass Patch-Zyklen schnell bleiben und Builds wartbar bleiben. Der direkte Entwicklersupport in Discord hilft Ihnen, konservative Profile vor dem Ranking zu optimieren. Überprüfen Sie vor dem Kauf das Statusbanner auf dotacheats.com."
+          "Escape From Tarkov Cheats bündelt Bewusstseins- und Kampfmodule für Hauptangriffe: Spieler- und Beute-ESP, Aimbot, kein Rückstoß, Radar, Extraktionsmarkierungen und stromsichere Overlays. Der Loader gruppiert die Einstellungen nach Registerkarten, sodass Sie reine Beuteprofile oder vollständige Kampf-Loadouts ausführen können.",
+          "Die Lizenzen decken Windows 10 und 11 auf Intel oder AMD ab. Nur Raid-Zugriff, Arena ausgeschlossen; Fügen Sie Cloud DMA separat hinzu, wenn Ihr Setup dies erfordert. Monats- und Lebenszeitpläne werden an der Kasse aufgelistet, bestätigen Sie den Online-Status auf {siteDomain}, bevor Sie kaufen oder starten."
         ]
       },
-      "goodToKnow": "Dota 2 und VAC erhalten regelmäßig Updates. Bestätigen Sie die Modulverfügbarkeit im Live-Statusbereich auf dotacheats.com, bevor Sie es kaufen oder starten. Das Overlay-Verhalten kann nach Patches in Lobbys, Wiederholungen und im Zuschauermodus unterschiedlich sein.",
-      "limitations": "Software von Drittanbietern in Dota 2 kann gegen die Nutzungsbedingungen von Valve verstoßen und zu VAC-Sperren oder Kontomaßnahmen führen. Sie nutzen diese Software auf eigenes Risiko. Kompatibilität und Verfügbarkeit können sich nach Spiel-, VAC- oder Windows-Updates ohne Vorankündigung ändern.",
-      "acquisitionTitle": "So erhalten Sie Dota 2 Elite"
+      "goodToKnow": "Escape From Tarkov und BattlEye erhalten regelmäßig Updates. Bestätigen Sie die Modulverfügbarkeit im Live-Statusbereich unter {siteDomain}, bevor Sie es kaufen oder starten. Cloud DMA ist ein separater Kauf, wenn die volle Funktionalität erforderlich ist.",
+      "limitations": "Software von Drittanbietern in Escape From Tarkov kann gegen die Bedingungen von Battlestate Games verstoßen und zu BattlEye-Sperren oder Kontoaktionen führen. Sie nutzen diese Software auf eigenes Risiko. Kompatibilität und Verfügbarkeit können sich nach Spiel-, BattlEye- oder Windows-Updates ohne Vorankündigung ändern.",
+      "acquisitionTitle": "So erhalten Sie Escape From Tarkov Cheats"
     }
   },
   "utilities": {
@@ -206,91 +97,39 @@
       "body": [
         {
           "type": "h2",
-          "text": "Wenn Sie es brauchen"
+          "text": "Signalisiert, dass dieses Dienstprogramm passt"
         },
         {
           "type": "p",
-          "text": "Verwenden Sie diese Option, wenn neue Steam-Konten auf einem PC sofort ausfallen, woanders aber funktionieren, klassische HWID-Erzwingung. Nicht für reine Konto-VAC-Fälle verwenden; siehe stattdessen [UGC](/products/dota-2-cheats/ugc/)."
+          "text": "Greifen Sie zu, wenn neue Escape From Tarkov-Anmeldungen auf einem Computer sofort fehlschlagen, auf einem anderen jedoch erfolgreich sind, typische Hardware-Durchsetzung. Überspringen Sie es für Account-only-BattlEye-Ergebnisse. Kombinieren Sie ein sauberes Konto mit konservativen Voreinstellungen von [Escape From Tarkov Cheats](/product/), sobald die Kennungen frisch aussehen. Führen Sie zunächst den Portal-Kompatibilitätsscan durch, erstellen Sie einen Snapshot eines Windows-Wiederherstellungspunkts und bestätigen Sie nach einem Kaltstart, dass sich die Kennungen tatsächlich geändert haben, bevor Sie das Spiel öffnen."
         },
         {
           "type": "h2",
-          "text": "Vollständiger Arbeitsablauf"
+          "text": "Checklistenbestellung"
         },
         {
           "type": "p",
-          "text": "Wiederherstellungspunkt, Treiberbereinigung, Spoof-Anwendung, Kaltstart, Identifizierungsüberprüfung, dann konservatives Cheat-Profil vor der Rangliste. Die vollständige Checkliste finden Sie im Portal und in unserem HWID-Blogleitfaden."
+          "text": "Wiederherstellungspunkt, Treiberbereinigung, Spoof-Pass, Kaltstart, Identifizierungsüberprüfung, dann ein Low-Profile-Cheat-Profil vor dem Raid. Das Portal und der HWID-Blog-Leitfaden spiegeln dieselbe Schrittreihenfolge wider. Stapeln Sie nicht zwei Spoof-Tools. Gemeinsam genutzte PCs oder Arbeits-PCs sind möglicherweise nicht geeignet. Änderungen auf Treiberebene bleiben Ihr Risiko, lesen Sie die Statusseite auf {siteDomain} vor dem Auschecken und erneut vor der Veröffentlichung."
+        },
+        {
+          "type": "h2",
+          "text": "Systemanforderungen"
+        },
+        {
+          "type": "p",
+          "text": "Führe es unter 64-Bit Windows 10 oder 11 mit einem Administratorkonto aus. Lege zuerst einen Windows-Wiederherstellungspunkt an, halte die Verbindung stabil, während die Prüftools im Portal laufen, und schließe jeden Schritt der Portal-Anleitung ab, bevor du Escape From Tarkov wieder öffnest."
         }
       ],
       "overview": {
-        "title": "Basierend auf einem klaren Hardware-Wiederherstellungs-Workflow",
+        "title": "Hardware-First-Wiederherstellung für markierte Rigs",
         "paragraphs": [
-          "Der HWID-Spoofer hilft Dota 2-Spielern bei der Wiederherstellung, wenn VAC PC-Hardware meldet, das Steam-Konto aber immer noch sauber ist. Festplatten- und MAC-Profil-Tools werden mit einer Checkliste für Wiederherstellungspunkte, einem Kompatibilitätsscan und Schritten zur Post-Spoof-Verifizierung geliefert.",
-          "Verwenden Sie diesen Pfad, wenn neue Konten auf einem Computer sofort ausfallen, aber anderswo funktionieren, nicht für VAC-Fälle, die nur auf Konten beschränkt sind. Laden Sie nach dem Spoof ein konservatives Cheat-Profil von dotacheats.com, bevor Sie sich in die Warteschlange einreihen."
+          "BattlEye kann Sperren mit PC-Fingerabdrücken verknüpfen, während das Escape From Tarkov-Konto noch sauber aussieht. Dieses Dienstprogramm bündelt Festplatten-, MAC- und GPU-ID-Tools mit einer Checkliste für Wiederherstellungspunkte, einem Portal-Kompatibilitätsscan und Aufforderungen zur Überprüfung nach dem Neustart, um Änderungen vor einem erneuten Raid zu bestätigen.",
+          "Entscheiden Sie sich dafür, wenn brandneue Konten auf einer Anlage zusammenbrechen, woanders aber funktionieren, und nicht, wenn die Strafe nur auf das Konto beschränkt ist. Laden Sie nach dem Spoofing konservative Voreinstellungen von {siteDomain} und bestätigen Sie das Live-Status-Banner vor Ihrer ersten PMC-Sitzung."
         ]
       },
-      "goodToKnow": "Führen Sie vor dem Spoofing den Kompatibilitätsscan im Portal durch. Erstellen Sie zunächst einen Windows-Wiederherstellungspunkt. Überprüfen Sie die nach einem Kaltstart geänderten Kennungen, bevor Sie Dota 2 starten.",
-      "limitations": "Spoofing hilft nicht bei VAC-Fällen, die nur auf das Konto beschränkt sind. Stapeln Sie niemals zwei Spoof-Tools. Gemeinsam genutzte PCs oder Arbeits-PCs sind möglicherweise nicht geeignet. Sie akzeptieren alle Risiken aus Änderungen auf Fahrerebene.",
+      "goodToKnow": "Führen Sie den Portal-Kompatibilitätsscan durch, bevor ein Spoofing durchgeführt wird. Erstellen Sie zunächst einen Snapshot eines Windows-Wiederherstellungspunkts. Bestätigen Sie nach einem Kaltstart die Änderungen der Kennung, bevor Sie Escape From Tarkov starten.",
+      "limitations": "Entwickelt für Flags auf Hardwareebene, nicht für BattlEye-Einschränkungen nur für das Konto. Führen Sie niemals zwei Spoof-Tools gleichzeitig aus. Gemeinsam genutzte PCs oder Arbeits-PCs sind möglicherweise ungeeignet. Änderungen auf Fahrerebene bleiben Ihr Risiko; Lesen Sie vor dem Bezahlen die Statusseite auf {siteDomain}.",
       "acquisitionTitle": "So erhalten Sie den HWID-Spoofer"
-    },
-    "ugc": {
-      "body": [
-        {
-          "type": "h2",
-          "text": "Was UGC abdeckt"
-        },
-        {
-          "type": "p",
-          "text": "UGC (Unban & Governance Control) ist ein Arbeitsbereich für Einsprüche gegen Steam-Einschränkungen, VAC-Verbote, Handelssperren und Sicherheitsmarkierungen. Erstellen Sie benutzerdefinierte Arbeitsabläufe, automatisieren Sie Streitschritte und verfolgen Sie den Fallstatus über ein einziges Dashboard, kein garantierter Entbannungsdienst."
-        },
-        {
-          "type": "h2",
-          "text": "Realistische Erwartungen"
-        },
-        {
-          "type": "p",
-          "text": "Einige VAC-Verbote können nicht rückgängig gemacht werden. UGC organisiert Beweise und Folgemaßnahmen für die Überprüfung von Valve. Koppeln Sie es mit [HWID Spoofer](/products/dota-2-cheats/hwid-spoofer/), wenn die Hardware defekt ist, oder mit einem neuen Konto, wenn der Ruf zerstört ist."
-        }
-      ],
-      "overview": {
-        "title": "Basierend auf Kontowiederherstellungs- und Einspruchsworkflows",
-        "paragraphs": [
-          "UGC (Unban & Governance Control) hilft Ihnen bei der Wiederherstellung eingeschränkter Gaming-, Social- und Marktplatzkonten mit strukturierten Einspruchsabläufen und Automatisierung, nicht mit sofortiger Aufhebungsgarantie.",
-          "Erstellen Sie benutzerdefinierte Streitwege, verfolgen Sie den Fallstatus und bauen Sie Ihre Präsenz mit intelligenten Tools zur Einschränkungsverwaltung wieder auf. Der Support führt Sie über Discord durch jeden Schritt, wenn Sie praktische Hilfe benötigen."
-        ]
-      },
-      "goodToKnow": "Sammeln Sie Bestell-E-Mails, Plattformkontodetails und Einschränkungs-Screenshots, bevor Sie ein Ticket öffnen. UGC strukturiert Einsprüche, es umgeht nicht die Plattformüberprüfung.",
-      "limitations": "UGC garantiert keine Kontowiederherstellung. Die Ergebnisse variieren je nach Falltyp. Dauerhafte VAC-Sperren erfordern möglicherweise einen neuen Kontopfad, anstatt Berufung einzulegen.",
-      "acquisitionTitle": "So erhalten Sie UGC"
-    },
-    "unlock-all": {
-      "body": [
-        {
-          "type": "h2",
-          "text": "Nur lokale Vorschau"
-        },
-        {
-          "type": "p",
-          "text": "Kosmetikanzeige auf Ihrem Client zum Testen und zur Inhaltserstellung. Andere Spieler in Ihrer Lobby sehen Ihr tatsächliches Inventar, keine Vorschau-Skins."
-        },
-        {
-          "type": "h2",
-          "text": "Im Lieferumfang von Elite enthalten"
-        },
-        {
-          "type": "p",
-          "text": "Skin Changer wird innerhalb der Elite-Stufe geliefert. Kaufen Sie hier die Einzelversion, wenn Sie eine kosmetische Vorschau ohne vollständige Kampfmodule wünschen."
-        }
-      ],
-      "overview": {
-        "title": "Basierend auf einem lokalen Arbeitsablauf für die Kosmetikvorschau",
-        "paragraphs": [
-          "Mit „Alle freischalten“ können Sie Helden-Arcanas, Unsterbliche und exklusive Sets lokal in Dota 2 durchsuchen, durchsuchbare Kataloge, Favoriten und Loadout-Export, ohne Live-Steam-Käufe zu ändern.",
-          "Kosmetikanzeige auf Ihrem Client zum Testen und zur Inhaltserstellung. Andere Spieler sehen Ihr tatsächliches Inventar, keine Vorschau-Skins. Kostenlos im Lieferumfang von Elite enthalten; Standalone für kosmetische Vorschau ohne Kampfmodule verfügbar."
-        ]
-      },
-      "goodToKnow": "Schalten Sie alle kosmetischen Vorschauen lokal auf Ihrem Client frei. Andere Spieler in Ihrer Lobby sehen Ihr echtes Inventar, keine Vorschau-Skins. Im Elite-Stufe enthalten.",
-      "limitations": "Nur lokale Vorschau, das Steam-Inventar oder der Store-Status werden nicht geändert. Andere Spieler können keine Arcanas oder Sets in der Vorschau sehen.",
-      "acquisitionTitle": "So erhalten Sie „Alle freischalten“."
     }
   }
 }

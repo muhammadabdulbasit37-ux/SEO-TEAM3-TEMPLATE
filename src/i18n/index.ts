@@ -3,18 +3,41 @@ import { DEFAULT_LOCALE, isSiteLocale, type SiteLocale } from './locales';
 import { localizePath } from './paths';
 import { finalizeLocaleDictionary } from './brandTokens';
 import { en } from './en';
-import { es } from './es';
-import { de } from './de';
-import { fr } from './fr';
+import esDictionary from './dictionaries/es.json';
+import deDictionary from './dictionaries/de.json';
+import frDictionary from './dictionaries/fr.json';
 import esPageSeo from './pageSeo/es.json';
 import dePageSeo from './pageSeo/de.json';
 import frPageSeo from './pageSeo/fr.json';
 
+/** Support link targets (including checkout) come from `en`, which reads them from config. */
+function withEnglishSupportHrefs(dict: Omit<Translations, 'pageSeo'>): Omit<Translations, 'pageSeo'> {
+  return {
+    ...dict,
+    support: {
+      ...dict.support,
+      channels: dict.support.channels.map((channel, i) => ({
+        ...channel,
+        href: en.support.channels[i]?.href ?? channel.href,
+      })),
+    },
+  };
+}
+
 const dictionaries: Record<SiteLocale, Translations> = {
   en: finalizeLocaleDictionary(en),
-  es: finalizeLocaleDictionary({ ...es, pageSeo: esPageSeo as Translations['pageSeo'] }),
-  de: finalizeLocaleDictionary({ ...de, pageSeo: dePageSeo as Translations['pageSeo'] }),
-  fr: finalizeLocaleDictionary({ ...fr, pageSeo: frPageSeo as Translations['pageSeo'] }),
+  es: finalizeLocaleDictionary({
+    ...withEnglishSupportHrefs(esDictionary as Omit<Translations, 'pageSeo'>),
+    pageSeo: esPageSeo as Translations['pageSeo'],
+  }),
+  de: finalizeLocaleDictionary({
+    ...withEnglishSupportHrefs(deDictionary as Omit<Translations, 'pageSeo'>),
+    pageSeo: dePageSeo as Translations['pageSeo'],
+  }),
+  fr: finalizeLocaleDictionary({
+    ...withEnglishSupportHrefs(frDictionary as Omit<Translations, 'pageSeo'>),
+    pageSeo: frPageSeo as Translations['pageSeo'],
+  }),
 };
 
 export function getTranslations(locale: string | undefined): Translations {
@@ -39,10 +62,6 @@ export {
   localeFromPathname,
   stripLocalePrefix,
 } from './paths';
-
-export function avatarSrc(style: string, seed: string) {
-  return `https://api.dicebear.com/9.x/${style}/png?seed=${seed}&size=28&backgroundColor=0a0d10,7f3dee,181f26,e9a82f,11161b`;
-}
 
 /** @deprecated Use getTranslations(Astro.currentLocale) in pages and layouts. */
 export const t = en;

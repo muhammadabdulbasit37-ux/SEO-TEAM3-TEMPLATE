@@ -9,12 +9,16 @@ import { useLocale } from '../i18n';
 import { resolvePageSeo } from '../config/seo';
 import { faqPageSchema, organizationSchema, websiteSchema } from '../utils/schema';
 import { getLandingFaqs } from '../data/faq';
-import { webpSrc } from '../utils/responsiveImage';
+import { getHeroSlides } from '../data/products';
+import { HERO_IMAGE_WIDTHS, responsiveSrcSet, webpSrc } from '../utils/responsiveImage';
 
 const { locale, t } = useLocale(Astro.currentLocale);
 const seo = resolvePageSeo('/', locale);
 const homeFaqs = getLandingFaqs(locale);
-const heroLcpImage = webpSrc('/images/gameplay/dota-2-map-hack.png', 512);
+const heroSlide = getHeroSlides(locale)[0];
+const heroLcpImage = heroSlide ? webpSrc(heroSlide.src, HERO_IMAGE_WIDTHS[0]!) : '';
+/** Must match the slider's desktop `<source>` so the preload and the render pick the same file. */
+const heroLcpSrcSet = heroSlide ? responsiveSrcSet(heroSlide.src, HERO_IMAGE_WIDTHS) : '';
 ---
 
 <BaseLayout
@@ -34,6 +38,8 @@ const heroLcpImage = webpSrc('/images/gameplay/dota-2-map-hack.png', 512);
     rel="preload"
     as="image"
     href={heroLcpImage}
+    imagesrcset={heroLcpSrcSet}
+    imagesizes="(min-width: 1024px) 490px, 1px"
     type="image/webp"
     media="(min-width: 1024px)"
     fetchpriority="high"

@@ -6,9 +6,11 @@ export function withTrailingSlash(path: string): string {
   if (!path || path.startsWith('http') || path.startsWith('#') || path.startsWith('mailto:')) {
     return path;
   }
-  const [pathname, hash = ''] = path.split('#');
+  const [beforeHash, hash = ''] = path.split('#');
+  const [pathname, query = ''] = beforeHash.split('?');
   const normalized = pathname === '/' || pathname.endsWith('/') ? pathname : `${pathname}/`;
-  return hash ? `${normalized}#${hash}` : normalized;
+  const withQuery = query ? `${normalized}?${query}` : normalized;
+  return hash ? `${withQuery}#${hash}` : withQuery;
 }
 
 const legacyProductRoot = '/products/dota-2-cheats';

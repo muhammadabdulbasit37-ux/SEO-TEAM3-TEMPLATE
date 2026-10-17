@@ -1,15 +1,16 @@
 import { openAccordionFromTrigger, openDrawerFromTrigger, reinitDeferredStarwind, setupDeferredStarwind } from './deferred-starwind';
 
-function bootWidgets() {
+async function bootWidgets() {
   setupDeferredStarwind();
 
   if (document.querySelector('[data-media-slider]')) {
-    void import('./product-media-slider').then((mod) => mod.setupProductMediaSliders());
+    const mod = await import('./product-media-slider');
+    mod.setupProductMediaSliders();
   }
 }
 
-function boot() {
-  bootWidgets();
+async function boot() {
+  await bootWidgets();
   document.documentElement.dataset.deferredBoot = '1';
   window.__openDeferredDrawer = (trigger) => {
     void openDrawerFromTrigger(trigger);
@@ -23,7 +24,7 @@ function boot() {
   };
 }
 
-boot();
+await boot();
 
 document.addEventListener('astro:page-load', () => {
   if (document.documentElement.dataset.deferredBoot === '1') bootWidgets();

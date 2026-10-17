@@ -2,7 +2,7 @@
 import '../styles/blog-sidebar.css';
 import Icon from './icons/Icon.astro';
 import { blogPostPath, ROUTES } from '../utils/path';
-import { checkoutPath } from '../config/checkout';
+import { HWID_CHECKOUT_PATH, PRIMARY_CHECKOUT_PATH } from '../config/checkout';
 import { useLocale } from '../i18n';
 
 const { t, lp } = useLocale(Astro.currentLocale);
@@ -39,9 +39,14 @@ const toc = post.body
     id: slugify('text' in block ? block.text : ''),
   }));
 
+const forumNav = t.nav.find((link) => link.id === 'forum');
+const supportNav = t.nav.find((link) => link.id === 'support');
+
 const productLinks: { label: string; href: string; icon: IconName }[] = [
   { label: cheatsNav?.label ?? 'Product', href: ROUTES.cheats, icon: 'sidebarElite' },
   { label: hwidNav?.label ?? 'HWID Spoofer', href: ROUTES.hwidSpoofer, icon: 'sidebarHwid' },
+  { label: forumNav?.label ?? 'Forum', href: ROUTES.forum, icon: 'messageCircle' },
+  { label: supportNav?.label ?? 'Support', href: ROUTES.support, icon: 'headphones' },
 ];
 ---
 
@@ -122,12 +127,22 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
     </ul>
     <Button
       as="a"
-      href={checkoutPath('dota2')}
+      href={PRIMARY_CHECKOUT_PATH}
       variant="primary"
       size="sm"
       class="blog-sidebar__cta mt-2.5 w-full min-w-0 justify-start"
     >
       <span class="truncate">{b.buyCta}</span>
+      <Icon name="arrowRight" size={16} class="shrink-0" />
+    </Button>
+    <Button
+      as="a"
+      href={HWID_CHECKOUT_PATH}
+      variant="outline"
+      size="sm"
+      class="blog-sidebar__cta mt-2 w-full min-w-0 justify-start"
+    >
+      <span class="truncate">{b.buyHwidCta}</span>
       <Icon name="arrowRight" size={16} class="shrink-0" />
     </Button>
   </section>

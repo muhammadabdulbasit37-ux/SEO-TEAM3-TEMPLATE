@@ -34,6 +34,8 @@ export interface TierCard {
   name: string;
   title: string;
   desc: string;
+  /** Product page hero blurb; falls back to `desc` when omitted. */
+  heroDesc?: string;
   features: string[];
   more: number;
   href: string;
@@ -59,6 +61,9 @@ export interface BlogPost {
   desc: string;
   date: string;
   readTime: string;
+  imageAlt?: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export interface FaqItem {
@@ -69,13 +74,6 @@ export interface FaqItem {
 
 export interface StepItem {
   step: string;
-  title: string;
-  desc: string;
-}
-
-export interface ToolkitItem {
-  num: string;
-  label: string;
   title: string;
   desc: string;
 }
@@ -108,8 +106,6 @@ export interface Translations {
     titleLine2: string;
     subtitle: string;
     ctaPrimary: string;
-    modesLabel: string;
-    modes: string[];
     metrics: { label: string; strong: string }[];
     statusPills: string[];
   };
@@ -162,10 +158,32 @@ export interface Translations {
     explore: string;
     buyNow: string;
     viewDetails: string;
-    spooferHubNote: string;
-    spooferHubLink: string;
     backToCheats: string;
     showcaseHeading: string;
+    experience?: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      previewLabel: string;
+      accessDividerTop: string;
+      accessDividerBottom: string;
+    };
+    /** HWID utility page section copy (wording only; layout shared with main product). */
+    hwidPage?: {
+      showcaseHeading: string;
+      overviewSubtitle: string;
+      highlights: { eyebrow: string; title: string; desc: string };
+      featuresSection: { eyebrow: string; title: string; desc: string };
+      experience: {
+        eyebrow: string;
+        title: string;
+        subtitle: string;
+        previewLabel: string;
+        accessDividerTop: string;
+        accessDividerBottom: string;
+      };
+      highlightsMore: string;
+    };
     swipeHint: string;
     checkoutEyebrow: string;
     checkoutSelect: string;
@@ -186,29 +204,19 @@ export interface Translations {
     latestTitle: string;
     latestSubtitle: string;
     filterAll: string;
-    sortLabel: string;
-    sortNewest: string;
-    sortOldest: string;
-    sortShortRead: string;
-    sortLongRead: string;
     emptyFilter: string;
     emptyArchive: string;
     viewAll: string;
     read: string;
     articleActionsAria: string;
     buyCta: string;
+    buyHwidCta: string;
     moreArticles: string;
     sidebarAria: string;
     tocTitle: string;
     relatedTitle: string;
     filterToolbarAria: string;
     items: BlogPost[];
-  };
-  toolkit: {
-    eyebrow: string;
-    title: string;
-    subtitle: string;
-    items: ToolkitItem[];
   };
   workflow: {
     eyebrow: string;
@@ -222,11 +230,6 @@ export interface Translations {
     ctaSecondary: string;
     ctaSecondaryHref: string;
     items: WorkflowItem[];
-  };
-  fieldNotes: {
-    eyebrow: string;
-    title: string;
-    items: { num: string; title: string; desc: string }[];
   };
   support: {
     eyebrow: string;
@@ -287,12 +290,10 @@ export interface Translations {
     breadcrumbForum: string;
     breadcrumbFaq: string;
     breadcrumbAbout: string;
-    breadcrumbCompareUtilities: string;
     breadcrumbPrivacy: string;
     breadcrumbTerms: string;
     breadcrumbSupport: string;
     contactSupport: string;
-    backToProducts: string;
   };
   notFound: {
     metaDescription: string;
@@ -320,8 +321,6 @@ export interface Translations {
       sortPopular: string;
       sortLatest: string;
       sortTop: string;
-      searchPlaceholder: string;
-      searchAria: string;
       filterAria: string;
       filterAll: string;
       resultsCount: string;
@@ -363,33 +362,19 @@ export interface Translations {
     utilities: {
       title: string;
       description: string;
-      tableAria: string;
-      tableUtility: string;
-      tableBestFor: string;
-      tableProductPage: string;
       viewDetails: string;
       includes: string;
-      moreFeatures: string;
-      backToProducts: string;
       schemaName: string;
-      useCases: {
-        'hwid-spoofer': string;
-      };
     };
   };
   pageSeo: Record<string, { title: string; description: string }>;
   ui: {
     skipLink: string;
-    browseCheats: string;
     /** Compact header CTA (fits navbar beside language + theme). */
     browseCheatsNav: string;
-    browseCheatsMobile: string;
     homeAria: string;
-    checkoutAria: string;
     menuOpen: string;
-    menuClose: string;
     themeLight: string;
-    themeDark: string;
     languageSwitcherLabel: string;
     languageNames: {
       en: string;

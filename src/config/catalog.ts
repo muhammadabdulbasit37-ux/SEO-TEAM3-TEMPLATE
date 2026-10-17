@@ -16,16 +16,7 @@ export const CHEATS_PRIMARY_SLUG = 'elite' as const;
 /** Cheat slugs referenced in copy and checkout, only the store slug is a public page. */
 export const CHEAT_PRODUCT_SLUGS = [CHEATS_PRIMARY_SLUG] as const;
 
-export type CheatProductSlug = (typeof CHEAT_PRODUCT_SLUGS)[number];
-
 /** @deprecated Use `CHEAT_PRODUCT_SLUGS`, kept for scripts that expect `PRODUCT_SLUGS`. */
 export const PRODUCT_SLUGS = CHEAT_PRODUCT_SLUGS;
 
-export type ProductSlug = CheatProductSlug;
-
 export const HWID_SPOOFER_SLUG = 'hwid-spoofer';
-
-/** Public sellable pages: cheats store + HWID Spoofer. */
-export const STORE_PRODUCT_SLUGS = [CHEATS_PRIMARY_SLUG, HWID_SPOOFER_SLUG] as const;
-
-export const PRODUCT_ELITE_PATH = PRODUCT_BASE;

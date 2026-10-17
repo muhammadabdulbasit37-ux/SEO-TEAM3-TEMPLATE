@@ -8,10 +8,13 @@ import Icon from './icons/Icon.astro';
 import { ROUTES } from '../utils/path';
 import SiteFaqSection from './SiteFaqSection.astro';
 import { getLandingFaqs } from '../data/faq';
+import { getBlogPosts } from '../data/blog';
+import BlogCard from './BlogCard.astro';
 import { Button } from '@/components/starwind/button';
 
 const homeFaqs = getLandingFaqs(locale);
-
+const recentPosts = getBlogPosts(locale).slice(0, 3);
+const f = t.pages.forum;
 ---
 
 <WorkflowSection />
@@ -20,12 +23,28 @@ const homeFaqs = getLandingFaqs(locale);
   <div class="mx-auto max-w-6xl px-5">
     <SectionHeader eyebrow={t.blog.eyebrow} title={t.blog.title} desc={t.blog.subtitle} titleId="blog-title" />
 
-    <p class="mt-10 text-center text-muted-foreground" data-reveal="fade">{t.blog.emptyArchive}</p>
+    {
+      recentPosts.length > 0 ? (
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-10" data-reveal-stagger>
+          {recentPosts.map((post, index) => (
+            <BlogCard post={post} index={index} showDate />
+          ))}
+        </div>
+      ) : (
+        <p class="mt-10 text-center text-muted-foreground" data-reveal="fade">
+          {t.blog.emptyArchive}
+        </p>
+      )
+    }
 
-    <div class="mt-10 flex justify-start lg:justify-center" data-reveal>
+    <div class="mt-10 flex flex-wrap justify-start gap-3 lg:justify-center" data-reveal>
       <Button as="a" href={lp(ROUTES.blog)} variant="outline">
         {t.blog.viewAll}
         <Icon name="arrowRight" size={17} />
+      </Button>
+      <Button as="a" href={lp(ROUTES.forum)} variant="outline">
+        {f.title}
+        <Icon name="messageCircle" size={17} />
       </Button>
     </div>
   </div>

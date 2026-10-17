@@ -1,162 +1,122 @@
 [
   {
     "id": "status",
-    "q": "Wo überprüfe ich, ob Dota 2-Cheats online sind?",
-    "a": "Das Live-Status-Banner ist auf dotacheats.com und im Discord #status-Kanal zu finden. Überprüfen Sie immer nach einem Dota 2- oder VAC-Update."
+    "q": "Wo überprüfe ich, ob Escape From Tarkov-Cheats online sind?",
+    "a": "Das Live-Status-Banner befindet sich auf {siteDomain} und im Discord #status-Kanal. Schauen Sie immer nach einem Escape From Tarkov- oder BattlEye-Update nach."
   },
   {
     "id": "after-buy",
     "q": "Was passiert nach dem Kauf?",
-    "a": "Ihr Portal schaltet den Loader, die Setup-Anleitung und die Konfigurationsbibliothek über unseren sicheren Checkout frei. Befolgen Sie die Anleitung, bevor Sie Dota 2 starten."
+    "a": "Ihr Portal schaltet den Loader, die Setup-Anleitung und die Konfigurationsbibliothek über unseren Partner-Checkout frei. Befolgen Sie die Anleitung, bevor Sie Escape From Tarkov starten."
   },
   {
     "id": "ban-risk",
-    "q": "Kann ich mit Dota-Cheats von Drittanbietern gesperrt werden?",
-    "a": "Ja, jede Änderung birgt Risiken. VAC- und Berichtssysteme entwickeln sich weiter. Lesen Sie vor der Verwendung den aktuellen Status und akzeptieren Sie das Risiko."
+    "q": "Kann ich für Escape From Tarkov-Cheats von Drittanbietern gesperrt werden?",
+    "a": "Ja, jede Änderung birgt Risiken. BattlEye- und Berichtssysteme entwickeln sich weiter. Lesen Sie vor der Verwendung den aktuellen Status und akzeptieren Sie das Risiko. Den Kontext finden Sie in unserem <a href=\"/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/\">BattlEye- und Tarkov-Cheats</a>-Leitfaden."
   },
   {
     "id": "platforms",
     "q": "Welche Plattformen werden unterstützt?",
-    "a": "Dota 2 nur über Steam unter Windows 10/11 64-Bit.macOS und Linux werden nicht unterstützt."
+    "a": "Escape From Tarkov nur unter Windows 10/11 64-Bit. macOS und Linux werden nicht unterstützt."
   },
   {
     "id": "license-move",
     "q": "Kann ich meine Lizenz auf einen neuen PC übertragen?",
-    "a": "Ja, nutzen Sie den HWID-Reset in Ihrem Portal oder öffnen Sie ein Discord-Ticket. Die Limits hängen von Ihrer Stufe ab."
+    "a": "Ja, nutzen Sie den HWID-Reset in Ihrem Portal oder eröffnen Sie ein Discord-Ticket. Die Limits hängen von Ihrer Stufe ab."
   },
   {
     "id": "products-page",
     "q": "Wo sind Produkte und Dienstprogramme aufgeführt?",
-    "a": "<a href=\"/products/dota-2-cheats/\">Dota 2-Produkte</a> listet Cheat-Stufen, <a href=\"/products/dota-2-cheats/hwid-spoofer/\">HWID-Spoofer</a>, <a href=\"/products/dota-2-cheats/ugc/\">UGC</a> und <a aufhref=\"/products/dota-2-cheats/unlock-all/\">Skin Changer</a> mit Funktionslisten und Kaufabwicklung über unseren Partner."
+    "a": "<a href=\"/product/\">Escape From Tarkov Cheats</a> und <a href=\"/hwid-spoofer/\">HWID-Spoofer</a> sind die beiden Produkte, die wir über unseren Partner verkaufen, Funktionslisten und Kaufabwicklung."
   },
   {
     "id": "what-is-esp",
-    "q": "Was ist Dota 2 Map Hack/ESP?",
-    "a": "Karten-Hack und Helden-ESP zeigen feindliche Positionen, Schutzzauber, Runen und Dschungellager durch den Nebel des Krieges.<a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack und ESP)</a> deckt Awareness-Overlays ab.<a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> und <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> fügen zusätzlich Skriptmodule hinzu."
+    "q": "Was ist Escape From Tarkov ESP?",
+    "a": "Spieler-ESP zeigt PMCs, Scavs und Bosse mit Kisten, Skeletten und Entfernungsanzeigen. Loot ESP hebt Container und wertvolle Gegenstände hervor.<a href=\"/product/\">Escape From Tarkov Cheats</a> umfasst Awareness-Overlays sowie optionale Aimbot- und keine Rückstoßmodule."
   },
   {
-    "id": "esp-vs-scripts",
-    "q": "Was ist der Unterschied zwischen Karten-Hack und Skripten?",
-    "a": "Map Hack und ESP sind Informationsüberlagerungen, sie wirken nicht auf Fähigkeiten. Auto Combo, Orbwalker und Smart Cast sind Skripte für <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> und <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>. Sie können Awareness-Only auf der <a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack und ESP)</a> ausführen."
-  },
-  {
-    "id": "which-tier-esp",
-    "q": "Welche Stufe benötige ich nur für den Karten-Hack?",
-    "a": "<a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack und ESP)</a> ist nur für das Bewusstsein gedacht: Helden-ESP, Ward Locator, Runen-Timer und Zoom-Hack.<a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> fügt Skripte hinzu.<a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> fügt Bots, Kill Steal und Skin Changer hinzu."
-  },
-  {
-    "id": "which-tier-scripts",
-    "q": "Welche Stufe umfasst Auto Combo-Skripte?",
-    "a": "<a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> beinhaltet Auto Combo, Orbwalker, Smart Cast und Activator.<a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> beinhaltet alles in Pro plus Auto Farm Bot und Auto Kill Steal.<a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack & ESP)</a> verfügt über keine Skriptautomatisierung."
-  },
-  {
-    "id": "rank-lite-vs-pro",
-    "q": "Wie ordnen Sie Lite vs. Pro vs. Elite ein?",
-    "a": "Nur Kartenbewusstsein → <a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack & ESP)</a>. Ranglisten-Schießereien mit Skripten → <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a>. Vollständige Bot-Suite und Prioritäts-Patches → <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>. Vergleichen Sie auf jeder Cheat-Seite oder in den <a href=\"/faq/\">vollständigen FAQ</a>."
+    "id": "esp-vs-aim",
+    "q": "Was ist der Unterschied zwischen ESP und Aimbot?",
+    "a": "ESP- und Beute-Highlights sind Informationseinblendungen; Sie bewegen Ihr Fadenkreuz nicht. Aimbot, No Recoil und Trigger Bot sind Kampfhilfen für <a href=\"/product/\">Escape From Tarkov Cheats</a>, die separat im Lader eingestellt werden."
   },
   {
     "id": "elite-slots",
-    "q": "Warum gibt es bei Elite nur begrenzte Slots?",
-    "a": "Elite ist ein privater Build mit direkter Entwicklerunterstützung und vorrangiger Patch-Bereitstellung. Steckplatzkappen sorgen für schnelle Patch-Zyklen. Überprüfen Sie vor dem Bezahlen das Statusbanner."
+    "q": "Warum sind die Slots für Escape From Tarkov Cheats begrenzt?",
+    "a": "Escape From Tarkov Cheats ist ein privater Build mit direkter Entwicklerunterstützung und vorrangiger Patch-Bereitstellung. Begrenzte Slots halten die Patch-Zyklen kurz. Überprüfen Sie vor dem Bezahlen das Statusbanner."
   },
   {
     "id": "stream-proof",
     "q": "Kann OBS mein Overlay erfassen?",
-    "a": "Der Stream-Proof-Modus auf der <a href=\"/products/dota-2-cheats/\">Lite-Stufe (Kartenhack und ESP)</a>, der <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> und <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> verbirgt Overlays von OBS und Discord-Freigabe. Testen Sie eine lokale Aufnahme, bevor Sie live gehen."
+    "a": "Der Stream-Proof-Modus für <a href=\"/product/\">Escape From Tarkov Cheats</a> verbirgt Overlays von OBS und Discord-Freigaben. Testen Sie eine lokale Aufnahme, bevor Sie live gehen."
   },
   {
-    "id": "undetected",
-    "q": "Sind unentdeckte Dota 2-Cheats garantiert?",
-    "a": "Nein. „Unentdeckt“ ist der aktuelle Status auf der Produktseite, keine dauerhafte Garantie. Stoppen Sie, wenn der Build aktualisiert, getestet oder erkannt wird."
+    "id": "build-status",
+    "q": "Bleibt der Build nach jedem Patch online?",
+    "a": "Nein. Der Online-Status wird nur zum Zeitpunkt des Kaufs auf der Produktseite und im Statusbanner angezeigt. Stoppen Sie, wenn der Build nach einem BattlEye-Update anzeigt, dass er aktualisiert, getestet oder offline ist."
   },
   {
     "id": "esp-safer",
-    "q": "Ist Map Hack sicherer als Skripte?",
-    "a": "ESP ist bei der Wiedergabe leiser als offensichtliche Bot-Muster, aber es ist immer noch ein Cheat. VAC ignoriert Overlays nicht, weil Sie Skripts weggelassen haben."
+    "q": "Ist ESP unauffälliger als Aimbot?",
+    "a": "ESP ist oft weniger offensichtlich als Maxed Aimbot, aber es ist immer noch ein Betrug. BattlEye ignoriert Overlays nicht, weil Sie die Zielhilfe deaktiviert haben."
   },
   {
     "id": "hwid-when",
-    "q": "Wann benötige ich den HWID-Spoofer?",
-    "a": "Verwenden Sie <a href=\"/products/dota-2-cheats/hwid-spoofer/\">HWID-Spoofer</a>, wenn neue Steam-Konten auf einem PC sofort ausfallen, woanders aber funktionieren: Hardware-Durchsetzung. Nicht für Nur-Konto-VAC-Fälle; siehe stattdessen <a href=\"/products/dota-2-cheats/ugc/\">UGC</a>."
-  },
-  {
-    "id": "ugc-what",
-    "q": "Was ist UGC?",
-    "a": "<a href=\"/products/dota-2-cheats/ugc/\">UGC</a> (Unban & Governance Control) ist ein Einspruchsarbeitsbereich für Steam-Einschränkungen und VAC-Verbote, benutzerdefinierte Arbeitsabläufe und Fallverfolgung, kein garantierter Entbannungsdienst."
-  },
-  {
-    "id": "skin-changer",
-    "q": "Ändert Skin Changer mein Steam-Inventar?",
-    "a": "<a href=\"/products/dota-2-cheats/unlock-all/\">Skin Changer</a> zeigt Kosmetika lokal auf Ihrem Client in der Vorschau an. Andere Spieler sehen Ihr echtes Inventar. Im Lieferumfang von <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> enthalten; Nur als eigenständige Version für die kosmetische Vorschau verfügbar."
+    "q": "Wann sollte ich den HWID-Spoofer zu meinem Setup hinzufügen?",
+    "a": "<a href=\"/hwid-spoofer/\">HWID-Spoofer</a> ist für den Fall gedacht, dass neue Escape From Tarkov-Anmeldungen auf einem PC scheitern, woanders aber erfolgreich sind, Hardware-Durchsetzung, keine Account-only-BattlEye-Ergebnisse. Nachdem die Kennungen überprüft wurden, dass sie sauber sind, koppeln Sie ein neues Konto mit <a href=\"/product/\">Escape From Tarkov Cheats</a> und überprüfen Sie den Status auf {siteDomain}, bevor Sie einen Raid starten."
   },
   {
     "id": "external-loader",
-    "q": "Wird der Loader in den Steam-Ordner eingefügt?",
-    "a": "DotaCheats läuft extern mit Cloud-Konfigurationssynchronisierung, es werden keine Dateien in das Dota 2-Verzeichnis eingefügt. Das VAC-Risiko besteht weiterhin. Siehe <a href=\"/products/dota-2-cheats/\">Dota 2-Produkte</a>."
+    "q": "Wird der Loader in den Spieleordner eingeschleust?",
+    "a": "EFT CHEATS läuft extern mit Cloud-Konfigurationssynchronisierung, es werden keine Dateien in das Escape From Tarkov-Verzeichnis eingefügt. Das BattlEye-Risiko besteht weiterhin. Siehe <a href=\"/product/\">Escape From Tarkov Cheats</a>."
   },
   {
     "id": "blog-vs-cheats",
-    "q": "Sind Blog-Cheat-Codes dasselbe wie Ranglisten-Cheats?",
-    "a": "Nein. Blogartikel über Valve-Konsolenbefehle gelten nur in benutzerdefinierten Lobbys mit aktivierten Cheats. Ranglisten-Dota-Cheats sind separate Produkte, siehe <a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack und ESP)</a>, <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> und <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>."
+    "q": "Sind Blog-Cheat-Codes dasselbe wie Live-Raid-Cheats?",
+    "a": "Nein. Blogartikel über Offline- oder lokale Tests ersetzen nicht den Live Loader. PMC-Raids verwenden <a href=\"/product/\">Escape From Tarkov Cheats</a>, wenn der Status online ist."
   },
   {
     "id": "blog-setup",
     "q": "Wo empfehlen Blog-Setup-Anleitungen den Kauf?",
-    "a": "Leitfäden verweisen auf Stufenseiten und <a href=\"/products/dota-2-cheats/\">Dota 2-Produkte</a>. Der Checkout läuft über unseren sicheren Partner, fügen Sie niemals Loader-Dateien von zufälligen Discord-DMs ein."
+    "a": "Leitfäden verweisen auf <a href=\"/product/\">Escape From Tarkov Cheats</a> und <a href=\"/hwid-spoofer/\">HWID Spoofer</a>. Der Checkout läuft über unseren Partner. Fügen Sie niemals Loader-Dateien von zufälligen Discord-DMs ein."
   },
   {
-    "id": "compare-plans",
-    "q": "Wo vergleiche ich Pläne nebeneinander?",
-    "a": "Jede Cheat-Stufenseite enthält eine Vergleichstabelle. Die <a href=\"/faq/\">vollständigen FAQ</a> sammeln Produkt-, Cheat- und Blog-Antworten an einem Ort."
-  },
-  {
-    "id": "who-lite",
-    "q": "Wer sollte auf Lite bleiben?",
-    "a": "Spieler, die nur Kartenbewusstsein wünschen: ESP, Schutzzauber, Runen, und die Skriptautomatisierung nicht berühren möchten. Wenn Sie weiterhin Kombinationsskripte aktivieren, kaufen Sie stattdessen die <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a>."
-  },
-  {
-    "id": "who-pro",
-    "q": "Wer sollte Pro kaufen?",
-    "a": "Ranglistenspieler, die Auto Combo, Orbwalker und Activator inklusive Karten-Hack wollen. Pro ist die beliebteste Stufe bei dotacheats.com."
-  },
-  {
-    "id": "who-elite",
-    "q": "Wer sollte Elite kaufen?",
-    "a": "Betreiber, die Auto Farm Bot, Auto Kill Steal, Skin Changer und vorrangige Patch-Lieferung wünschen, wenn Plätze frei sind."
+    "id": "who-cheats",
+    "q": "Wer sollte Escape From Tarkov Cheats kaufen?",
+    "a": "PMC-Raider, die Spieler-ESP, Beute-ESP, Aimbot, keinen Rückstoß und vorrangige Patch-Lieferung wünschen, wenn Plätze frei sind."
   },
   {
     "id": "vac-update",
-    "q": "Was soll ich nach einem VAC-Update tun?",
-    "a": "Überprüfen Sie den Status von dotacheats.com und den #Status von Discord. Starten Sie es erst, wenn das Banner online angezeigt wird. Laden Sie nach jedem Patch konservative Voreinstellungen."
+    "q": "Was soll ich nach einem BattlEye-Update tun?",
+    "a": "Überprüfen Sie den Status von {siteDomain} und den #Status von Discord. Starten Sie es erst, wenn das Banner online angezeigt wird. Laden Sie nach jedem Patch konservative Voreinstellungen."
   },
   {
     "id": "discord-help",
     "q": "Wie erhalte ich Installationshilfe?",
-    "a": "Öffnen Sie Discord nach dem Kauf mit Ihrer Bestell-E-Mail, der Windows-Version und dem Dota 2-Client-Build. Die Mitarbeiter gehen live durch die Einrichtung des Laders."
+    "a": "Öffnen Sie Discord nach dem Kauf mit Ihrer Bestell-E-Mail, der Windows-Version und dem Escape From Tarkov-Client-Build. Die Mitarbeiter gehen live durch die Einrichtung des Laders."
   },
   {
-    "id": "turbo-ranked",
-    "q": "Funktionieren Stufen in Turbo und Rangliste?",
-    "a": "Ja. <a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack und ESP)</a>, <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> und <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a> enthalten Turbo- und Ranglisten-Voreinstellungen im Portal. Passen Sie Distanzobergrenzen und Skriptverzögerungen vor Ihrer ersten Warteschlange an."
+    "id": "pmc-scav-raids",
+    "q": "Funktionieren Module in PMC- und Scav-Raids?",
+    "a": "Ja.<a href=\"/product/\">Escape From Tarkov Cheats</a> enthält PMC- und Scav-Voreinstellungen im Portal. Passen Sie die ESP-Entfernungsgrenzen und die Zielglättung vor Ihrem ersten Angriff an."
   },
   {
     "id": "zoom-hack",
-    "q": "Welche Stufe beinhaltet Zoom-Hack?",
-    "a": "Der Zoom-Hack wird auf der <a href=\"/products/dota-2-cheats/\">Lite-Stufe (Karten-Hack und ESP)</a> ausgeliefert und erstreckt sich über die <a href=\"/products/dota-2-cheats/\">Pro-Stufe (Skripte enthalten)</a> und <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>. Die erweiterte Kamera erleichtert die Sicht auf die Fahrspur, ohne dass zusätzliche Investitionen erforderlich sind."
+    "q": "Welche Stufe umfasst Radar und Extrakt-ESP?",
+    "a": "2D-Radar und Extraktionsmarker sind in <a href=\"/product/\">Escape From Tarkov Cheats</a> enthalten. Nutze sie zur Orientierung zwischen Gefechten und zur Planung deiner Extracts."
   },
   {
-    "id": "auto-farm",
-    "q": "Welche Stufe beinhaltet Auto Farm Bot?",
-    "a": "Auto Farm Bot, Lane Control AI und Auto Courier Manager sind nur <a href=\"/products/dota-2-cheats/elite/\">Dota 2 Elite</a>.<a href=\"/products/dota-2-cheats/\">Pro-Stufe (inklusive Skripte)</a> deckt Kampfskripte ohne Bot-Farming ab."
+    "id": "trigger-bot",
+    "q": "Enthält das Produkt einen Trigger-Bot?",
+    "a": "Der optionale Trigger-Bot wird zusammen mit dem Aimbot und ohne Rückstoß mit <a href=\"/product/\">Escape From Tarkov Cheats</a> geliefert. Beginnen Sie mit konservativen Verzögerungsvoreinstellungen im Portal."
   },
   {
     "id": "private-cheats",
-    "q": "Was sind private Dota 2-Cheats?",
-    "a": "Privat bedeutet Schlüssel pro Benutzer und verwaltete Builds, keine öffentlichen Zip-Pakete. DotaCheats bietet Portalbereitstellung für ESP, Skripte und Karten-Hack-Stufen."
+    "q": "Was sind private Escape From Tarkov-Cheats?",
+    "a": "Privat bedeutet Schlüssel pro Benutzer und verwaltete Builds, keine öffentlichen Zip-Pakete. EFT CHEATS liefert die Portalbereitstellung für die vollständige Raid-Suite mit einer Cheats-Lizenz."
   },
   {
     "id": "faq-more",
     "q": "Wo ist die vollständige FAQ?",
-    "a": "Diese Website enthält Landing-FAQs und Abschnitte pro Seite. Alle Produkt-, Cheat- und Blog-Antworten finden Sie in den <a href=\"/faq/\">vollständigen FAQ</a>, oder lesen Sie <a href=\"/blog/\">Blog-Anleitungen</a> für ausführliche Anleitungen."
+    "a": "Diese Website enthält Landing-FAQs und Abschnitte pro Seite. Alle Produkt-, Cheat- und Blog-Antworten finden Sie in den <a href=\"/faq/\">vollständigen FAQ</a> oder in den <a href=\"/blog/\">Blog-Anleitungen</a> für ausführliche Anleitungen."
   }
 ]

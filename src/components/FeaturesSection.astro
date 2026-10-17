@@ -23,7 +23,7 @@ function isScriptsHero(title: string) {
       data-reveal-stagger
     >
       {
-        s.items.map((item) => {
+        s.items.map((item, i) => {
           const scriptsHero = isScriptsHero(item.title);
           return (
             <article
@@ -39,7 +39,7 @@ function isScriptsHero(title: string) {
                     <header class="card-title-band px-5 py-4 sm:px-6 sm:py-5">
                       <div class="flex items-start gap-3">
                         <span class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                          <Icon name={featureIcons[item.title] ?? 'crosshair'} size={20} />
+                          <Icon name={featureIcons[i] ?? 'crosshair'} size={20} />
                         </span>
                         <div class="min-w-0 space-y-1.5">
                           <h3 class="font-[family-name:var(--font-heading)] text-lg font-bold leading-tight text-foreground md:text-xl">
@@ -82,7 +82,7 @@ function isScriptsHero(title: string) {
                     <header class="card-title-band space-y-2 px-5 py-4 sm:px-6">
                       <div class="flex items-start gap-2.5">
                         <span class="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                          <Icon name={featureIcons[item.title] ?? 'crosshair'} size={18} />
+                          <Icon name={featureIcons[i] ?? 'crosshair'} size={18} />
                         </span>
                         <div class="min-w-0 space-y-1">
                           <h3 class="font-[family-name:var(--font-heading)] text-base font-bold leading-tight text-foreground md:text-lg">

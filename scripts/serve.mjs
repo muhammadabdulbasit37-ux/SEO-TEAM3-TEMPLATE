@@ -6,7 +6,7 @@ import { resolvePathRedirect } from './redirects.mjs';
 import { resolveCheckoutPathRedirect } from '../src/config/checkout-redirects.mjs';
 import { resolveLocaleRoutingRedirect } from '../src/config/locale-routing.mjs';
 
-const CANONICAL_HOST = 'dotacheats.com';
+import { SITE_DOMAIN as CANONICAL_HOST } from '../src/config/site-url.mjs';
 const distDir = path.resolve('dist');
 const port = Number(process.env.PORT) || 3000;
 
@@ -231,6 +231,17 @@ const server = http.createServer((req, res) => {
   const pathRedirect = resolvePathRedirect(pathname);
   if (pathRedirect && pathRedirect !== pathname) {
     res.writeHead(301, { Location: `${pathRedirect}${query}${fragment}` });
+    res.end();
+    return;
+  }
+
+  const cleanPagePath = pathname.endsWith('/index.html')
+    ? pathname.slice(0, -'index.html'.length)
+    : !path.extname(pathname) && pathname !== pathname.toLowerCase()
+      ? `${pathname.toLowerCase().replace(/\/?$/, '/')}`
+      : null;
+  if (cleanPagePath) {
+    res.writeHead(301, { Location: `${cleanPagePath}${query}${fragment}` });
     res.end();
     return;
   }

@@ -1,6 +1,6 @@
 ---
 import { useLocale } from '../i18n';
-import { checkoutPath } from '../config/checkout';
+import { PRIMARY_CHECKOUT_PATH } from '../config/checkout';
 import { Button } from '@/components/starwind/button';
 import AnimatedThemeSwitch from './AnimatedThemeSwitch.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
@@ -12,6 +12,7 @@ import {
 } from '@/components/starwind/sheet';
 import Icon from './icons/Icon.astro';
 import SlideRevealButton from './SlideRevealButton.astro';
+import BrandLogo from './BrandLogo.astro';
 
 import type { IconName } from './icons/types';
 import type { NavId } from '../i18n/types';
@@ -27,7 +28,7 @@ const navIcons: Record<NavId, IconName> = {
   support: 'navSupport',
 };
 
-const purchaseUrl = checkoutPath('dota2');
+const purchaseUrl = PRIMARY_CHECKOUT_PATH;
 ---
 
 <header class="pointer-events-none fixed inset-x-0 top-0 z-50">
@@ -36,18 +37,19 @@ const purchaseUrl = checkoutPath('dota2');
     data-floating-nav
   >
     <div
-      class="site-header pointer-events-auto relative flex h-12 w-full max-w-6xl items-center justify-between gap-2 rounded-2xl border border-border/70 bg-background/95 px-3 text-foreground shadow-lg shadow-black/15 backdrop-blur-xl sm:h-14 sm:px-5 lg:grid lg:h-[3.75rem] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-center lg:gap-4 lg:border-border/40 lg:bg-background/35 lg:shadow-md lg:shadow-black/5 lg:backdrop-blur-2xl lg:supports-[backdrop-filter]:bg-background/25 lg:dark:border-white/10 lg:dark:bg-background/20 lg:dark:shadow-black/25"
+      class="site-header pointer-events-auto relative flex h-12 w-full max-w-6xl items-center justify-between gap-2 rounded-2xl border border-border/70 bg-background/95 px-3 text-foreground shadow-lg shadow-black/15 backdrop-blur-xl sm:h-14 sm:px-5 lg:grid lg:h-[3.75rem] lg:grid-cols-[minmax(max-content,1fr)_auto_minmax(max-content,1fr)] lg:items-center lg:gap-4 lg:border-border/40 lg:bg-background/35 lg:shadow-md lg:shadow-black/5 lg:backdrop-blur-2xl lg:supports-[backdrop-filter]:bg-background/25 lg:dark:border-white/10 lg:dark:bg-background/20 lg:dark:shadow-black/25"
     >
       <a
         href={lp('/')}
-        class="inline-flex min-w-0 shrink-0 items-center justify-self-start font-[family-name:var(--font-heading)] text-base font-bold tracking-wide sm:text-lg"
+        class="inline-flex min-w-0 shrink-0 items-center justify-self-start gap-2 font-[family-name:var(--font-heading)] text-base font-bold tracking-wide sm:text-lg"
         aria-label={t.ui.homeAria}
       >
-        <span class="truncate" aria-hidden="true">Dota<span class="text-primary">Cheats</span></span>
+        <BrandLogo size={32} class="size-8 shrink-0 rounded-md" priority />
+        <span class="truncate" aria-hidden="true">EFT<span class="text-primary">CHEATS</span></span>
       </a>
 
       <nav
-        class="hidden items-center justify-center gap-5 justify-self-center lg:flex xl:gap-6"
+        class="hidden items-center justify-center gap-2.5 justify-self-center lg:flex xl:gap-5"
         aria-label="Primary"
       >
         {t.nav.map((link) => {
@@ -60,12 +62,12 @@ const purchaseUrl = checkoutPath('dota2');
           return (
             <a
               href={lp(link.href)}
-              class="nav-link inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium leading-none text-muted-foreground transition-colors hover:text-primary"
+              class="nav-link inline-flex shrink-0 items-center gap-1 whitespace-nowrap text-xs font-medium xl:text-[0.8125rem] leading-none text-muted-foreground transition-colors hover:text-primary"
               data-nav-link
               {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
               {...(aria ? { 'aria-label': aria } : {})}
             >
-              <Icon name={navIcons[link.id] ?? 'navFeatures'} size={16} />
+              <Icon name={navIcons[link.id] ?? 'navFeatures'} size={15} />
               {headerLabel}
             </a>
           );

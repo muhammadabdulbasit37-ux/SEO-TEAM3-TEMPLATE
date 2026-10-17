@@ -116,10 +116,18 @@ const tagIcon = (tag: string): IconName => blogTagIcons[tag] ?? 'tag';
         {allPosts.length === 0 ? t.blog.emptyArchive : t.blog.emptyFilter}
       </p>
 
-      <div class="mt-12 flex justify-start lg:justify-center">
+      <div class="mt-12 flex flex-wrap justify-start gap-3 lg:justify-center">
         <Button as="a" href={lp(ROUTES.home)} variant="outline">
           <Icon name="chevronLeft" size={16} />
           {t.notFound.backHome}
+        </Button>
+        <Button as="a" href={lp(ROUTES.cheats)} variant="outline">
+          {t.nav.find((l) => l.id === 'products')?.label ?? 'Product'}
+          <Icon name="arrowRight" size={16} />
+        </Button>
+        <Button as="a" href={lp(ROUTES.forum)} variant="outline">
+          {t.nav.find((l) => l.id === 'forum')?.label ?? 'Forum'}
+          <Icon name="messageCircle" size={16} />
         </Button>
       </div>
     </div>

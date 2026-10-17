@@ -1,42 +1,42 @@
 {
   "/": {
-    "title": "Dota 2 Cheats & Hacks | Skripte, Map Hack & ESP",
-    "description": "Dota 2-Cheats für PC: Skripte, Karten-Hack, Zoom-Hack und Skin-Changer-Stufen werden mit jedem Patch auf {siteDomain} aktualisiert."
+    "title": "Escape From Tarkov Cheats | ESP, Aimbot & Loot-ESP für Raids",
+    "description": "Spieler-ESP, Loot-ESP, Aimbot und No-Recoil für PMC-Raids unter Windows, mit Loader-Updates nach Patches. Pläne vergleichen auf {siteDomain}."
   },
   "/product/": {
-    "title": "Dota 2 Elite Cheats | Bots & Full Map Hack",
-    "description": "Elite-Stufe: Auto-Farm-Bot, Kill-Steal, Skin-Changer, komplette Map-Hack-Suite und Priority-Patch-Lieferung auf {siteDomain}."
+    "title": "Tarkov Cheats | ESP, Loot ESP & Aimbot kaufen",
+    "description": "Volles Raid-Paket mit Spieler-ESP, Loot-Filtern, Aimbot und No-Recoil für Haupt-Tarkov-Karten, nicht Arena. Monats- und Lifetime-Pläne auf {siteDomain}."
   },
-  "/products/dota-2-cheats/utilities/": {
-    "title": "Dota 2-Dienstprogramme | HWID, UGC und Skin Changer",
-    "description": "Wählen Sie HWID Spoofer, UGC oder Skin Changer, wenn jedes Dienstprogramm passt und auf vollständige Produktseiten verlinkt."
+  "/hwid-spoofer/": {
+    "title": "HWID Spoofer | Escape From Tarkov Hardware-Reset",
+    "description": "Festplatten-, MAC- und GPU-Kennungen zurücksetzen, wenn neue Accounts auf einem PC scheitern. Portal-Checkliste mit Wiederherstellungspunkten, Spoof-Schritten und Verifikation vor dem nächsten Raid auf {siteDomain}."
   },
   "/blog/": {
-    "title": "Dota 2 Cheats-Anleitungen und Patchnotizen",
-    "description": "Einrichtungsanleitungen, Vergleiche zwischen Lite und Pro, VAC-Patch-Checklisten und Ranglisten-Konfigurationstipps für Dota-Cheats."
+    "title": "Tarkov Cheat Guides | ESP-Setup, Aimbot & BattlEye-Notizen",
+    "description": "Raid-Preset-Anleitungen, ESP- und Aim-Tuning, Loot-Filter und BattlEye-Status-Checklisten auf {siteDomain}."
   },
   "/forum/": {
-    "title": "Dota 2 Community-Forum | DotaCheats",
-    "description": "Treten Sie mit Dota-Spielern zusammen, um über Helden, Builds, Patch-Änderungen, Anleitungen und Community-Momente zu diskutieren."
+    "title": "Tarkov Cheats Forum | Setup-, Status- & HWID-Threads",
+    "description": "Schreibgeschützte Escape From Tarkov-Diskussionen zu Loadouts, Patches und Guides. Neue Threads und Antworten sind geschlossen."
   },
   "/faq/": {
-    "title": "FAQ | Dota 2 Cheats, Produkte & Setup",
-    "description": "Antworten zu Cheat-Stufen, Karten-Hack, Skripten, HWID-Tools, Checkout und Blog-Anleitungen auf {siteDomain}."
+    "title": "Escape From Tarkov Cheats FAQ | Setup, Pläne & BattlEye",
+    "description": "Antworten zu Escape From Tarkov Cheats: Setup, Monats- und Lifetime-Pläne, ESP- und Aim-Module, BattlEye-Status und Checkout-Hilfe auf {siteDomain}."
   },
   "/terms/": {
-    "title": "Allgemeine Geschäftsbedingungen | DotaCheats",
-    "description": "Kaufbedingungen, Lizenznutzung und Rückerstattungsrichtlinien für DotaCheats-Produkte, die über {siteDomain} verkauft werden."
+    "title": "Verkaufsbedingungen und Lizenznutzung",
+    "description": "Rückerstattungsregeln, Lizenzbeschränkungen, Lieferung an der Kasse und Offenlegung von Risiken für Produkte, die über {siteDomain} verkauft werden."
   },
   "/privacy/": {
-    "title": "Datenschutzrichtlinie | DotaCheats",
-    "description": "Wie {siteDomain} Analysen, Cookies und Kontaktdaten verwendet, wenn Sie surfen oder Support anfordern."
+    "title": "Datenschutz | Analyse- und Supportdaten",
+    "description": "Wie {siteDomain} Cookies, Analysen und die Informationen verwendet, die Sie beim Öffnen eines Support-Tickets senden."
   },
   "/about/": {
-    "title": "Über DotaCheats",
-    "description": "Was DotaCheats veröffentlicht: Dota 2-Cheat-Stufen, Dienstprogramme, Anleitungen und Statushinweise auf {siteDomain}."
+    "title": "Über eftcheat.net & EFT CHEATS",
+    "description": "Wer veröffentlicht Escape From Tarkov Cheats-Ressourcen, Statusnotizen und Supportkanäle auf {siteDomain}?"
   },
   "/support/": {
-    "title": "Unterstützung | DotaCheats",
-    "description": "Erhalten Sie Hilfe bei der Einrichtung des Loaders, der HWID und beim Auschecken für Dota 2-Cheat-Stufen und -Dienstprogramme."
+    "title": "Tarkov Cheats Support | Loader-, HWID- & Checkout-Hilfe",
+    "description": "Wenden Sie sich vor oder nach dem Bezahlen auf {siteDomain} an die Discord-Betreiber, wenn Sie Fragen zum Portalzugriff, zu Modulfehlern und zu Fragen zur Rechnung haben."
   }
 }

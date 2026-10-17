@@ -3,20 +3,6 @@
 /* Site-specific globals (Tailwind + Starwind live in starwind.css).
    Page CSS is imported only where used to keep inlined HTML smaller. */
 
-/* Centered page sections: max width matches Tailwind max-w-6xl */
-.section-shell {
-  width: 100%;
-  max-width: 72rem;
-  margin-inline: auto;
-  padding-inline: 1.25rem;
-}
-
-.section-intro {
-  max-width: 48rem;
-  margin-inline: auto;
-  text-align: center;
-}
-
 /* Shared section header: left-aligned, h1 title, small grey subtitle */
 .section-header {
   width: 100%;
@@ -117,21 +103,28 @@ html::-webkit-scrollbar,
 }
 
 #hero {
-  padding-top: calc(var(--floating-nav-clearance) + 2.75rem);
+  padding-top: calc(var(--floating-nav-clearance) + 0.75rem);
   padding-bottom: 4.5rem;
 }
 
 @media (min-width: 768px) {
   #hero {
-    padding-top: calc(var(--floating-nav-clearance) + 4rem);
+    padding-top: calc(var(--floating-nav-clearance) + 1rem);
     padding-bottom: 6.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   #hero {
-    padding-top: calc(var(--floating-nav-clearance) + 5rem);
+    padding-top: calc(var(--floating-nav-clearance) + 1.25rem);
     padding-bottom: 8rem;
+  }
+
+  #hero #hero-title {
+    font-size: clamp(2.25rem, 1.15rem + 2.35vw, 2.875rem);
+    white-space: nowrap;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
   }
 }
 
@@ -338,103 +331,6 @@ html.dark a.nav-link[data-nav-link]:hover .icon-app {
   to {
     transform: translate3d(-50%, 0, 0);
   }
-}
-
-/* Learn-more CTA (filled primary default; circle expands from right on hover) */
-.learn-more-btn {
-  --learn-more-hover-bg: color-mix(in oklch, var(--primary) 78%, black);
-
-  position: relative;
-  display: inline-block;
-  width: min(100%, 13.5rem);
-  height: 3rem;
-  cursor: pointer;
-  overflow: hidden;
-  border: 0;
-  border-radius: 1.625rem;
-  vertical-align: middle;
-  text-decoration: none;
-  background: var(--primary);
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
-  outline: none;
-}
-
-.learn-more-btn:focus-visible {
-  box-shadow: 0 0 0 3px color-mix(in oklch, var(--primary) 45%, transparent);
-}
-
-.learn-more-btn__circle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  margin: 0;
-  border-radius: 1.625rem;
-  background: var(--primary);
-  transition:
-    width 0.45s cubic-bezier(0.65, 0, 0.076, 1),
-    background-color 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-
-.learn-more-btn__arrow {
-  position: absolute;
-  top: 0;
-  right: 0.625rem;
-  bottom: 0;
-  width: 1.125rem;
-  height: 0.125rem;
-  margin: auto;
-  background: none;
-  transform: translate(-1rem, 0);
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-
-.learn-more-btn__arrow::before {
-  position: absolute;
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid var(--primary-foreground);
-  border-right: 0.125rem solid var(--primary-foreground);
-  transform: rotate(45deg);
-  content: '';
-}
-
-.learn-more-btn__text {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0 3.25rem 0 1.25rem;
-  color: var(--primary-foreground);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.25;
-  text-align: center;
-  text-transform: none;
-  transition: color 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-
-.learn-more-btn:hover .learn-more-btn__circle {
-  width: 100%;
-  background: var(--learn-more-hover-bg);
-}
-
-.learn-more-btn:hover .learn-more-btn__arrow {
-  background: var(--primary-foreground);
-  transform: translate(-1rem, 0);
-}
-
-.learn-more-btn:hover .learn-more-btn__text {
-  color: var(--primary-foreground);
 }
 
 /* Slide-reveal CTA (icon on right, expands from right on hover) */
@@ -797,6 +693,37 @@ html:not(.dark) .deployment-cta-secondary:hover {
   border-top: 1px solid var(--border);
 }
 
+/* Three hero slides, plus a clone of the first so the loop lands on the same frame. */
+@keyframes hero-auto-slide-3 {
+  0%,
+  28% {
+    transform: translate3d(0, 0, 0);
+  }
+  33.333%,
+  61% {
+    transform: translate3d(-25%, 0, 0);
+  }
+  66.666%,
+  94% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-75%, 0, 0);
+  }
+}
+
+@keyframes hero-auto-dot-3 {
+  0% {
+    transform: translate(-50%, -50%) scaleX(0);
+  }
+  28% {
+    transform: translate(-50%, -50%) scaleX(1);
+  }
+  33.333%,
+  100% {
+    transform: translate(-50%, -50%) scaleX(0);
+  }
+}
 
 /* Seven hero slides, plus a clone of the first so the loop lands on the same frame. */
 @keyframes hero-auto-slide-7 {
@@ -843,21 +770,6 @@ html:not(.dark) .deployment-cta-secondary:hover {
   14.3%,
   100% {
     transform: translate(-50%, -50%) scaleX(0);
-  }
-}
-
-@keyframes hero-embla-progress {
-  from {
-    width: 0%;
-  }
-  to {
-  width: 100%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-embla-progress {
-    animation: none !important;
   }
 }
 

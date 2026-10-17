@@ -4,12 +4,50 @@ import SectionHeader from '../SectionHeader.astro';
 import Icon from '../icons/Icon.astro';
 import { Button } from '@/components/starwind/button';
 import { Badge } from '@/components/starwind/badge';
+import { useLocale } from '../../i18n';
 
 interface Props {
   product: ProductPage;
+  productName: string;
+  header?: { eyebrow: string; title: string; desc: string };
+  moreNote?: string;
 }
 
-const { product } = Astro.props;
+const { product, productName, header, moreNote } = Astro.props;
+const { locale, t } = useLocale(Astro.currentLocale);
+
+const localeCopy = {
+  en: {
+    eyebrow: 'At a glance',
+    title: 'Key capabilities',
+    desc: `What ${productName} focuses on before you open the full module list.`,
+    more: 'Plus {count} additional modules in the operator portal. See the full list below.',
+    allModules: 'All modules',
+  },
+  es: {
+    eyebrow: 'De un vistazo',
+    title: 'Funciones clave',
+    desc: `Lo esencial de ${productName} antes de abrir la lista completa de módulos.`,
+    more: 'Además, {count} módulos más en el portal. Consulta la lista completa abajo.',
+    allModules: 'Todos los módulos',
+  },
+  de: {
+    eyebrow: 'Auf einen Blick',
+    title: 'Kernfunktionen',
+    desc: `Die Schwerpunkte von ${productName}, bevor du die vollständige Modulliste öffnest.`,
+    more: 'Dazu {count} weitere Module im Portal. Die vollständige Liste steht unten.',
+    allModules: 'Alle Module',
+  },
+  fr: {
+    eyebrow: 'En bref',
+    title: 'Fonctions clés',
+    desc: `L'essentiel de ${productName} avant d'ouvrir la liste complète des modules.`,
+    more: 'Plus {count} modules supplémentaires dans le portail. La liste complète est ci-dessous.',
+    allModules: 'Tous les modules',
+  },
+};
+
+const copy = localeCopy[locale];
 ---
 
 <section
@@ -18,9 +56,9 @@ const { product } = Astro.props;
 >
   <div class="mx-auto max-w-6xl px-5">
     <SectionHeader
-      eyebrow="At a glance"
-      title="Key capabilities"
-      desc={`What ${product.name} focuses on before you open the full module list.`}
+      eyebrow={header?.eyebrow ?? copy.eyebrow}
+      title={header?.title ?? copy.title}
+      desc={header?.desc ?? copy.desc}
       titleId="product-highlights-title"
     />
 
@@ -37,18 +75,21 @@ const { product } = Astro.props;
     {
       product.more > 0 && (
         <p class="product-detail__text-center mt-6 text-sm text-muted-foreground" data-reveal>
-          Plus {product.more} additional modules in the operator portal, see the full list below.
+          {(moreNote ?? copy.more).replace(
+            '{count}',
+            String(product.more),
+          )}
         </p>
       )
     }
 
     <div class="product-detail__inline-row mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:justify-center" data-reveal>
       <Button type="button" data-scroll-target="product-features" variant="outline" size="sm" class="w-full rounded-full sm:w-auto">
-        All modules
+        {copy.allModules}
         <Icon name="chevronDown" size={16} />
       </Button>
       <Button as="a" href={product.buyUrl} variant="primary" size="sm" class="w-full rounded-full sm:w-auto">
-        Buy now
+        {t.products.buyNow}
         <Icon name="arrowRight" size={16} />
       </Button>
     </div>

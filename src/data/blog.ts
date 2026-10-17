@@ -26,12 +26,6 @@ export function getNonFeaturedBlogPosts(locale: SiteLocale = 'en') {
   return getBlogPostsForLocale(locale).filter((p) => p.slug !== featured?.slug);
 }
 
-export function getFeaturedBlogPosts(limit = 3, locale: SiteLocale = 'en') {
-  const featured = getFeaturedBlogPost(locale);
-  const rest = getBlogPostsForLocale(locale).filter((p) => p.slug !== featured?.slug);
-  return featured ? [featured, ...rest].slice(0, limit) : getBlogPostsForLocale(locale).slice(0, limit);
-}
-
 export function getRelatedBlogPosts(slug: string, limit = 3, locale: SiteLocale = 'en') {
   const posts = getBlogPostsForLocale(locale);
   const current = getBlogPostLocale(slug, locale);
@@ -47,15 +41,6 @@ export function getBlogPostsBySlugs(slugs: string[], locale: SiteLocale = 'en') 
   return slugs
     .map((slug) => posts.find((p) => p.slug === slug))
     .filter((post): post is NonNullable<typeof post> => post != null);
-}
-
-export function getRelatedBlogPostsForProduct(relatedSlugs: string[], limit = 6, locale: SiteLocale = 'en') {
-  const curated = getBlogPostsBySlugs(relatedSlugs, locale);
-  if (curated.length >= limit) return curated.slice(0, limit);
-
-  const used = new Set(curated.map((p) => p.slug));
-  const fill = getBlogPostsForLocale(locale).filter((p) => !used.has(p.slug));
-  return [...curated, ...fill].slice(0, limit);
 }
 
 export function getBlogTags(locale: SiteLocale = 'en') {

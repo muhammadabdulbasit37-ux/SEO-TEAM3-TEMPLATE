@@ -1,6 +1,7 @@
 /** Static path redirects (301). Keys are pathname without query/hash. */
 const LOCALES = ['es', 'de', 'fr'];
 const LEGACY_PRODUCT = '/products/dota-2-cheats';
+const LEGACY_EFT_PRODUCT = '/products/escape-from-tarkov-cheats';
 const PRODUCT_HOME = '/product/';
 
 function addLocaleRedirects(map, fromPath, toPath) {
@@ -27,6 +28,8 @@ export const PATH_REDIRECTS = new Map([
   ['/product/compare/', '/blog/'],
   [`${LEGACY_PRODUCT}`, PRODUCT_HOME],
   [`${LEGACY_PRODUCT}/`, PRODUCT_HOME],
+  [`${LEGACY_EFT_PRODUCT}`, PRODUCT_HOME],
+  [`${LEGACY_EFT_PRODUCT}/`, PRODUCT_HOME],
   ['/cheats/lite', PRODUCT_HOME],
   ['/cheats/lite/', PRODUCT_HOME],
   ['/cheats/pro', PRODUCT_HOME],

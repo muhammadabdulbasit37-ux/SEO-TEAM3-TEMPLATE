@@ -39,8 +39,12 @@ const heroMarqueePills = [
       <div class="w-full max-w-xl space-y-6 text-left md:space-y-7 lg:max-w-2xl">
         <Badge variant="secondary" class="uppercase tracking-wider">{h.eyebrow}</Badge>
 
-        <h1 id="hero-title" class="text-4xl font-bold uppercase leading-tight md:text-5xl">
-          <span class="block text-primary">{h.titleLine2}</span>
+        <h1
+          id="hero-title"
+          class="text-xl font-bold uppercase leading-[1.05] tracking-tight sm:text-2xl md:text-3xl lg:whitespace-nowrap lg:text-[length:clamp(2.25rem,1.15rem+2.35vw,2.875rem)] lg:tracking-[-0.025em]"
+        >
+          <span>{h.titleLine1}</span>{' '}
+          <span class="text-primary">{h.titleLine2}</span>
         </h1>
 
         <p class="max-w-xl text-sm leading-relaxed text-neutral-500 dark:text-neutral-400 md:text-base">
@@ -63,7 +67,7 @@ const heroMarqueePills = [
       </div>
 
       <div class="mx-auto flex w-full max-w-xl flex-col items-center gap-5 lg:mx-0 lg:max-w-none lg:items-end">
-        <ImageSlider images={heroSlides} id="hero-slider" variant="hero" />
+        {heroSlides.length > 0 && <ImageSlider images={heroSlides} id="hero-slider" variant="hero" />}
         <div class="grid w-full grid-cols-2 gap-2.5 sm:gap-3 md:grid-cols-4 lg:grid-cols-2">
           {h.metrics.map((m, i) => (
             <div class="flex min-w-0 items-center gap-3 rounded-xl border border-border/80 bg-card/70 px-3 py-3 shadow-sm shadow-black/10 transition-colors hover:border-primary/40">
@@ -106,3 +110,14 @@ const heroMarqueePills = [
     </div>
   </div>
 </section>
+
+<style is:global>
+  @media (min-width: 1024px) {
+    #hero #hero-title {
+      font-size: clamp(2.25rem, 1.15rem + 2.35vw, 2.875rem) !important;
+      white-space: nowrap !important;
+      letter-spacing: -0.025em;
+      line-height: 1.05;
+    }
+  }
+</style>

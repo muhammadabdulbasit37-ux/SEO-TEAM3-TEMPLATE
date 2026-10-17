@@ -1,0 +1,855 @@
+{
+  "site": {
+    "name": "EFT CHEATS",
+    "domain": "eftcheat.net",
+    "title": "Cheats Escape From Tarkov | ESP, aimbot et ESP de butin",
+    "description": "Player ESP, loot ESP, aimbot et aucun recul pour les raids PMC sous Windows, avec mises à jour du chargeur après les correctifs. Comparez les forfaits sur {siteDomain}."
+  },
+  "nav": [
+    {
+      "id": "products",
+      "href": "/product/",
+      "label": "Produit",
+      "shortLabel": "Produit"
+    },
+    {
+      "id": "hwidSpoofer",
+      "href": "/hwid-spoofer/",
+      "label": "Spoofer HWID",
+      "shortLabel": "HWID"
+    },
+    {
+      "id": "blog",
+      "href": "/blog/",
+      "label": "Blogue"
+    },
+    {
+      "id": "forum",
+      "href": "/forum/",
+      "label": "Forum"
+    },
+    {
+      "id": "faq",
+      "href": "/faq/",
+      "label": "FAQ"
+    },
+    {
+      "id": "support",
+      "href": "/support/",
+      "label": "Assistance"
+    }
+  ],
+  "hero": {
+    "status": "Escape From Tarkov, patch build en ligne",
+    "eyebrow": "FOURNISSEUR DE CHEATS N°1",
+    "titleLine1": "Escape From Tarkov",
+    "titleLine2": "Cheats",
+    "subtitle": "Suivez PMCs, loot et extracts clairement, puis finissez les combats avec un aim et un recul réglés. Presets et mises à jour loader les jours de patch via {siteDomain}.",
+    "ctaPrimary": "Voir les produits",
+    "metrics": [
+      {
+        "label": "Streamproof",
+        "strong": "Oui"
+      },
+      {
+        "label": "Vitesse des correctifs",
+        "strong": "<24h"
+      },
+      {
+        "label": "Utilisateurs",
+        "strong": "300+"
+      },
+      {
+        "label": "Assistance en direct",
+        "strong": "24/7"
+      }
+    ],
+    "statusPills": [
+      "ESP actif",
+      "Radar en ligne",
+      "Build de saison",
+      "Aimbot prêt",
+      "Soft aim prêt",
+      "Sans recul",
+      "Streamproof",
+      "ESP butin",
+      "ESP squelette",
+      "Radar UAV",
+      "ESP extractions",
+      "Support 24/7",
+      "Livraison instantanée",
+      "Prêt pour les raids",
+      "Trigger bot",
+      "Choix de l'os",
+      "Statut en direct",
+      "Mises à jour auto"
+    ]
+  },
+  "features": {
+    "eyebrow": "Caractéristiques",
+    "title": "Tout ce dont vous avez besoin dans un seul paquet",
+    "subtitle": "Joueur ESP, loot ESP, aimbot et outils de raid pour Escape From Tarkov, maintenus après les correctifs.",
+    "items": [
+      {
+        "title": "ESP joueurs",
+        "subtitle": "Suivez les PMC et les Scavs.",
+        "desc": "Les cases des joueurs, les squelettes, les noms et les indications de distance restent lisibles lors de raids denses.",
+        "bullets": [
+          "Filtres PMC, Scav et Boss",
+          "Marqueurs de squelette et d'os",
+          "Étiquettes de nom et lectures de distance",
+          "Conseils de santé et d'équipement lorsqu'ils sont activés",
+          "Règles de couleur par faction"
+        ],
+        "tags": [
+          "escape from tarkov esp",
+          "player esp",
+          "skeleton esp"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-12 lg:col-start-1 lg:row-start-1"
+      },
+      {
+        "title": "ESP butin",
+        "subtitle": "Trouvez rapidement de la valeur.",
+        "desc": "Mettez en surbrillance les conteneurs, les clés, les médicaments et le butin de haut niveau sans parcourir tous les tiroirs.",
+        "bullets": [
+          "Filtres de catégories d'articles et niveaux de prix",
+          "Faits saillants du butin des conteneurs et des cadavres",
+          "Marqueurs de quête et d’objets clés",
+          "Étiquettes de distance et de nom"
+        ],
+        "tags": [
+          "loot esp",
+          "container esp",
+          "tarkov loot"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-8 lg:col-start-1 lg:row-start-2"
+      },
+      {
+        "title": "Aimbot",
+        "subtitle": "Aide à la visée contrôlée.",
+        "desc": "Visée douce et sélection des os avec FOV et curseurs de lissage adaptés aux raids, pas aux valeurs par défaut de la rage.",
+        "bullets": [
+          "FOV et commandes de lissage",
+          "Sélection des os et priorité de la cible",
+          "Contrôles de visibilité",
+          "Basculement de raccourci clavier par classe d'arme"
+        ],
+        "tags": [
+          "aimbot",
+          "soft aim",
+          "bone select"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-3"
+      },
+      {
+        "title": "Sans recul",
+        "subtitle": "Un système entièrement automatique plus stable.",
+        "desc": "Profils de compensation de recul par famille d'armes avec préréglages de portail pour les versions courantes.",
+        "bullets": [
+          "Profils de recul par arme",
+          "Curseurs de force avec capuchons",
+          "Paires avec les limites FOV de l'Aimbot",
+          "Enregistrer les profils dans le cloud"
+        ],
+        "tags": [
+          "no recoil",
+          "recoil control",
+          "weapon profiles"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-3"
+      },
+      {
+        "title": "Radar et extractions",
+        "subtitle": "Conscience de la carte en raid.",
+        "desc": "2D radar, extract markers and optional UAV-style hints for orientation between fights.",
+        "bullets": [
+          "Marqueurs d'extraction et de transition",
+          "2D radar with player blips",
+          "Aperçu du style UAV en option",
+          "Zoom et opacité personnalisés"
+        ],
+        "tags": [
+          "radar hack",
+          "extract esp",
+          "map awareness"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-8 lg:row-span-2 lg:col-start-1 lg:row-start-4"
+      },
+      {
+        "title": "Trigger bot",
+        "subtitle": "Tirez une fois aligné.",
+        "desc": "Aide au déclenchement en option lorsque le réticule atteint des cibles valides, avec retard et portes clés.",
+        "bullets": [
+          "Réglage du retard et du temps de maintien",
+          "L'équipe et le bot ignorent les règles",
+          "Basculer séparément de l'aimbot",
+          "Valeurs par défaut conservatrices dans le portail"
+        ],
+        "tags": [
+          "trigger bot",
+          "fire assist",
+          "tarkov cheats"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:col-start-9 lg:row-start-4"
+      },
+      {
+        "title": "Streamproof",
+        "subtitle": "Pensé pour les créateurs.",
+        "desc": "Gardez les superpositions sur votre moniteur pendant que le logiciel de capture enregistre un flux de jeu propre.",
+        "bullets": [
+          "Modes de capture OBS et Game Bar",
+          "Streamproof activable par module",
+          "Checklist de test dans la documentation du portail"
+        ],
+        "tags": [
+          "obs capture",
+          "stream proof",
+          "capture hide"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-6"
+      },
+      {
+        "title": "Utilitaires divers",
+        "subtitle": "Outils de qualité de vie Raid.",
+        "desc": "Vision nocturne, points forts de style thermique, aucun balancement et autres bascules regroupées dans un seul onglet utilitaires.",
+        "bullets": [
+          "Aucune aide au balancement et à l'endurance lorsqu'elle est activée",
+          "Modes de vision nocturne et de style thermique",
+          "Aides en réticule et FOV",
+          "Gestionnaire de raccourcis clavier"
+        ],
+        "tags": [
+          "no sway",
+          "night vision",
+          "tarkov utilities"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-6"
+      },
+      {
+        "title": "Config cloud et mises à jour",
+        "subtitle": "Le jour du patch est prêt.",
+        "desc": "Mêmes préréglages sur chaque PC ;les mises à jour du portail suivent les jours de patch Escape From Tarkov et BattlEye.",
+        "bullets": [
+          "Sauvegarde cloud pour les profils de curseur",
+          "Poussée du chargeur quelques heures après les correctifs",
+          "Discord #status pour les notes de construction"
+        ],
+        "tags": [
+          "cloud sync",
+          "auto update",
+          "presets"
+        ],
+        "bento": "sm:col-span-2 lg:col-span-4 lg:col-start-9 lg:row-start-2"
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Pourquoi nous",
+    "title": "Des outils Raid soutenus par des correctifs, pas des promesses",
+    "subtitle": "De nombreux magasins de triche proposent des chargeurs obsolètes, des préréglages de rage évidents et des robots de tickets. {siteDomain} se concentre sur les versions de chargeur du jour du patch, les valeurs par défaut d'ESP et d'objectif conservatrices, ainsi que les opérateurs Discord en direct.",
+    "usLabel": "EFT CHEATS",
+    "otherLabel": "Fournisseur type",
+    "rows": [
+      {
+        "title": "Mises à jour du chargeur le jour du patch",
+        "desc": "Les versions compatibles avec BattlEye ont été poussées quelques heures après les mises à jour d'Escape From Tarkov ;vérifiez le #statut de Discord avant de vous lancer dans un raid."
+      },
+      {
+        "title": "Objectif humanisé et paramètres par défaut de l'ESP",
+        "desc": "Les capuchons FOV, les filtres de lissage et de distance sont livrés de manière conservatrice dans le portail afin que les superpositions restent lisibles, et non les modes de rage du mur de la boîte."
+      },
+      {
+        "title": "Opérateurs Live Discord",
+        "desc": "De vrais ingénieurs pour la configuration du chargeur, les configurations de raid et les réinitialisations HWID : couverture 24h/24 et 7j/7, pas de tickets FAQ copiés-collés."
+      },
+      {
+        "title": "Chargeur externe + preuve de flux",
+        "desc": "Suite de superposition avec modes de capture OBS, pas d'injection de DLL risquée dans le processus Escape From Tarkov comme les anciens fournisseurs le vendent encore."
+      },
+      {
+        "title": "Synchronisation prédéfinie dans le cloud",
+        "desc": "Sauvegarde des profils PMC, Scav et par carte sur le portail, mêmes curseurs sur n'importe quel PC sans reconstruction à partir de zéro."
+      },
+      {
+        "title": "Réinitialisation du HWID et déplacements de licence",
+        "desc": "Effacements HWID et transferts de machines gérés via les opérations Discord, la plupart des fournisseurs verrouillent une plate-forme ou facturent pour chaque échange."
+      }
+    ],
+    "metrics": [
+      {
+        "value": "<24h",
+        "title": "Retournement des correctifs",
+        "desc": "Temps moyen pour expédier une version de chargeur après des changements majeurs dans Escape From Tarkov ou BattlEye."
+      },
+      {
+        "value": "24/7",
+        "title": "Assistance opérateur",
+        "desc": "Ingénieurs Discord en poste pour l'installation, les configurations et les problèmes de compte."
+      },
+      {
+        "value": "300+",
+        "title": "Opérateurs actifs",
+        "desc": "Lecteurs Windows exécutant ESP, aimbot et utilitaires sur {siteDomain}."
+      }
+    ]
+  },
+  "setup": {
+    "eyebrow": "Guide de configuration",
+    "titleLead": "Du paiement à votre premier raid en seulement",
+    "titleHighlight": "trois étapes simples",
+    "intro": "Commencer est facile. Suivez le flux du portail de l'opérateur pour télécharger le chargeur, charger les préréglages et lancer Escape From Tarkov sur Windows, avec l'aide Discord en direct si quelque chose vous bloque.",
+    "ctaPrimary": "Voir les produits",
+    "ctaSecondary": "FAQ de configuration",
+    "ctaPrimaryHref": "/product/",
+    "ctaSecondaryHref": "/faq/",
+    "steps": [
+      {
+        "step": "Étape 1",
+        "title": "Déverrouiller le portail et le chargeur de téléchargement",
+        "desc": "Terminez le paiement, ouvrez le tableau de bord de votre opérateur et extrayez la dernière version du chargeur de correctifs pour Windows."
+      },
+      {
+        "step": "Étape 2",
+        "title": "Lancer et configurer les modules",
+        "desc": "Exécutez le chargeur externe, importez les préréglages de raid et réglez l'ESP, l'aimbot et les curseurs sans recul."
+      },
+      {
+        "step": "Étape 3",
+        "title": "Vérifier le statut et lancer Escape From Tarkov",
+        "desc": "Vérifiez la bannière d'état en direct, lancez le client du jeu et jouez avec les profils sauvegardés dans le cloud enregistrés dans le portail."
+      }
+    ]
+  },
+  "compatibility": {
+    "eyebrow": "Prise en charge de la plateforme",
+    "title": "Fonctionne sur votre plate-forme.",
+    "subtitle": "Vérifiez la bannière d'état en direct avant de lancer Escape From Tarkov après les mises à jour.",
+    "items": [
+      "Windows 10 et 11",
+      "Escape From Tarkov",
+      "Client BattleEye",
+      "Programme de mise à jour automatique",
+      "Configurer la synchronisation cloud",
+      "Prise en charge de Discorde",
+      "Réinitialisation du HWID",
+      "Chargeur externe"
+    ]
+  },
+  "cheats": {
+    "eyebrow": "Produit principal",
+    "title": "Cheats Escape From Tarkov",
+    "subtitle": "Joueur ESP, loot ESP, aimbot, utilitaires sans recul et raid avec livraison prioritaire des correctifs.",
+    "viewAll": "Voir les détails du produit",
+    "explore": "Explorer",
+    "items": [
+      {
+        "badge": "Places limitées",
+        "tier": "Privé",
+        "name": "Elite",
+        "title": "Cheats Tarkov avec ESP, aimbot et loot ESP",
+        "desc": "Joueur ESP, butin ESP, aimbot et pas de recul pour les principaux raids Tarkov. Licence distincte d’Arena. Livraison instantanée ;vérifier l'état après les correctifs.",
+        "heroDesc": "Licence raids uniquement, overlays stream-proof et livraison portail instantanée. Commencez avec des presets prudents, puis ajustez ESP et aim après le statut en direct.",
+        "features": [
+          "ESP joueurs",
+          "ESP butin",
+          "Aimbot",
+          "Sans recul",
+          "Marqueurs d'extraction",
+          "Streamproof"
+        ],
+        "more": 9,
+        "href": "/product/",
+        "variant": "limited"
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": "Magasin",
+    "title": "Nos produits",
+    "subtitle": "Des cheats Raid plus un utilitaire matériel : deux chemins de paiement pour le jeu PMC et la récupération de la machine.",
+    "viewAll": "Voir toutes les cheats",
+    "backToCheats": "Retour au produit",
+    "showcaseHeading": "Aperçu du produit",
+    "experience": {
+      "eyebrow": "Expérience",
+      "title": "Couches de chargement · Après le paiement",
+      "subtitle": "Utilisez les captures d'écran ci-dessus pour la disposition du module ;Vous trouverez ci-dessous ce que fait chaque couche et comment fonctionne l'accès au portail après l'achat.",
+      "previewLabel": "Couches dans le jeu",
+      "accessDividerTop": "Aperçu",
+      "accessDividerBottom": "Accès"
+    },
+    "hwidPage": {
+      "showcaseHeading": "Images du tableau de bord usurpées",
+      "overviewSubtitle": "Comment les outils d'identification de disque, MAC et GPU s'adaptent à la préparation, à la vérification et aux lancements post-usurpation du portail : confirmez d'abord l'état sur {siteDomain}.",
+      "highlights": {
+        "eyebrow": "Lecture rapide",
+        "title": "Ce que cible le service public",
+        "desc": "Récupération d'empreintes digitales matérielles avant de connecter un nouveau compte Escape From Tarkov : consultez la liste complète des outils ci-dessous."
+      },
+      "featuresSection": {
+        "eyebrow": "Outillage",
+        "title": "Modules de portail inclus",
+        "desc": "Dix utilitaires de récupération que vous activez et réglez depuis le portail de l'opérateur après le paiement."
+      },
+      "experience": {
+        "eyebrow": "Après l'achat",
+        "title": "Vues du tableau de bord · Étapes d'accès",
+        "subtitle": "La colonne de gauche explique chaque capture d'écran ;La colonne de droite répertorie le fonctionnement de l'accès au portail et des étapes d'usurpation d'identité après le paiement.",
+        "previewLabel": "Vues du panneau",
+        "accessDividerTop": "Interface utilisateur",
+        "accessDividerBottom": "Étapes"
+      },
+      "highlightsMore": "Plus {count} outils de récupération supplémentaires dans le portail : faites défiler jusqu'à la grille complète des modules."
+    },
+    "swipeHint": "Faites glisser pour plus de captures d'écran",
+    "checkoutEyebrow": "Commander",
+    "checkoutSelect": "Sélectionnez un abonnement",
+    "checkoutSingle": "Possibilité d'achat",
+    "checkoutTotal": "Total",
+    "bestValue": "Meilleur rapport qualité-prix",
+    "planMonthly": "Mensuel",
+    "planLifetime": "Durée de vie",
+    "planOneTime": "Accès unique",
+    "planPerMonth": "USD / mois",
+    "planOneTimeNote": "USD, une fois",
+    "get": "Obtenez",
+    "explore": "Explorer",
+    "buyNow": "Acheter maintenant",
+    "viewDetails": "Afficher les détails",
+    "items": [
+      {
+        "badge": "Disponible",
+        "category": "Utilitaire système",
+        "title": "HWID Spoofer pour Escape From Tarkov",
+        "subtitle": "Parcourez les contrôles de série, bascules UEFI et rotation de seed dans le portail, puis redémarrage à froid avant de vous connecter à un nouveau compte.",
+        "desc": "Faites pivoter les numéros de série des disques, les adresses MAC et les ID GPU via le portail de l'opérateur : terminez la liste de contrôle de configuration avant de lancer Escape From Tarkov.",
+        "features": [
+          "Kit de nettoyage de disque et d'usurpation d'identité",
+          "Rotation des profils série",
+          "Analyse de compatibilité pré-usurpation d'identité",
+          "Redémarrer les invites de vérification"
+        ],
+        "more": 9,
+        "href": "/hwid-spoofer/"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Blogue",
+    "title": "Guides et mises à jour",
+    "subtitle": "Configuration de l'ESP et de l'aimbot, filtres de butin et vérifications des jours de patch pour Escape From Tarkov.",
+    "latestTitle": "Guides de cheats Tarkov et notes de patch",
+    "latestSubtitle": "Filtrez par sujet pour trouver des guides de configuration, des informations détaillées sur les fonctionnalités et des notes sur les mises à jour.",
+    "filterAll": "Tous les articles",
+    "emptyFilter": "Aucun article ne correspond à ce filtre.",
+    "emptyArchive": "Aucun article pour l'instant. De nouveaux guides apparaîtront ici.",
+    "viewAll": "Voir tous les articles",
+    "read": "Lire",
+    "articleActionsAria": "Continuer la lecture",
+    "buyCta": "Acheter des cheats Escape From Tarkov",
+    "buyHwidCta": "Acheter le spoofer HWID",
+    "moreArticles": "Plus d'articles",
+    "sidebarAria": "Barre latérale de l'article",
+    "tocTitle": "Dans cet article",
+    "relatedTitle": "Guides associés",
+    "filterToolbarAria": "Filtrer les articles par sujet",
+    "items": []
+  },
+  "workflow": {
+    "eyebrow": "Comment ça marche",
+    "badge": "4 easy steps",
+    "titleBefore": "De la vérification de l'état à",
+    "titleHighlight": "profil enregistré.",
+    "subtitle": "Un chemin direct depuis la vérification de l'état vers un profil raid que vous pouvez réutiliser à chaque session.",
+    "ctaLabel": "Voir les produits",
+    "ctaHref": "/product/",
+    "ctaSecondary": "FAQ de configuration",
+    "ctaSecondaryHref": "/faq/",
+    "items": [
+      {
+        "num": "01",
+        "phase": "Avant l'achat",
+        "title": "Vérifier le statut en direct",
+        "desc": "Lisez la bannière en direct sur {siteDomain} avant d'acheter ou de lancer."
+      },
+      {
+        "num": "02",
+        "phase": "Vérifier",
+        "title": "Choisissez votre produit",
+        "desc": "Choisissez des cheats de raid ou l'utilitaire matériel, selon ce qui correspond aux bans, aux plates-formes ou aux réinitialisations de compte auxquelles vous êtes confronté."
+      },
+      {
+        "num": "03",
+        "phase": "Chargeur",
+        "title": "Lancer et configurer",
+        "desc": "Téléchargez à partir du portail, activez les modules et réglez d'abord l'ESP et les curseurs de visée hors ligne."
+      },
+      {
+        "num": "04",
+        "phase": "En jeu",
+        "title": "Enregistrez votre profil",
+        "desc": "Lorsque les paramètres vous conviennent, enregistrez le PMC et mappez les préréglages sur le cloud."
+      }
+    ]
+  },
+  "support": {
+    "eyebrow": "Assistance",
+    "title": "Support des cheats Tarkov",
+    "subtitle": "Faites-nous savoir comment nous pouvons vous aider.",
+    "channels": [
+      {
+        "icon": "users",
+        "title": "Discutez avant de payer",
+        "desc": "Parlez à notre équipe des niveaux et de l'accès.",
+        "linkLabel": "Commencer le paiement"
+      },
+      {
+        "icon": "headphones",
+        "title": "Discutez pour soutenir",
+        "desc": "Nous sommes là pour les problèmes de chargeur, de HWID et de compte.",
+        "linkLabel": "{supportEmail}",
+        "href": "mailto:{supportEmail}"
+      },
+      {
+        "icon": "navFaq",
+        "title": "Lire la FAQ",
+        "desc": "Compatibilité, bans et configuration, avant d'acheter.",
+        "linkLabel": "Voir toutes les FAQ",
+        "href": "/faq/"
+      },
+      {
+        "icon": "clock",
+        "title": "Opérateurs en direct",
+        "desc": "Ingénieurs Discord en poste 24h/24 et 7j/7.",
+        "linkLabel": "Ouvrir la page de contact",
+        "href": "/support/"
+      }
+    ],
+    "ticketTitle": "Inclure dans votre billet",
+    "ticketItems": [
+      {
+        "title": "E-mail de commande",
+        "desc": "L'adresse utilisée lors du paiement sur {siteDomain} ou via notre paiement partenaire."
+      },
+      {
+        "title": "Plateforme",
+        "desc": "Windows 10 ou 11 et votre version du client Escape From Tarkov."
+      },
+      {
+        "title": "Détail de l'erreur",
+        "desc": "Capture d'écran ou message exact du chargeur ou du client du jeu."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Des réponses claires avant le paiement.",
+    "subtitle": "Compatibilité, bans et accès, pas de vagues promesses.",
+    "items": [
+      {
+        "num": "01",
+        "q": "Où puis-je vérifier si les cheats d'Escape From Tarkov sont en ligne ?",
+        "a": "La bannière de statut en direct se trouve sur {siteDomain} et dans le canal Discord #status. Vérifiez toujours après une mise à jour d'Escape From Tarkov ou de BattlEye."
+      },
+      {
+        "num": "02",
+        "q": "Que se passe-t-il après mon achat ?",
+        "a": "Votre portail déverrouille le chargeur, le guide de configuration et la bibliothèque de configuration via notre caisse partenaire. Suivez le guide avant de lancer Escape From Tarkov."
+      },
+      {
+        "num": "03",
+        "q": "Puis-je être banni en utilisant des cheats tiers sur Escape From Tarkov ?",
+        "a": "Oui, toute modification comporte des risques. BattleEye et les systèmes de rapport évoluent. Lisez l'état actuel et acceptez le risque avant utilisation."
+      },
+      {
+        "num": "04",
+        "q": "Quelles plateformes sont prises en charge ?",
+        "a": "Escape From Tarkov sur Windows 10/11 64 bits uniquement. macOS et Linux ne sont pas pris en charge."
+      },
+      {
+        "num": "05",
+        "q": "Puis-je déplacer ma licence vers un nouveau PC ?",
+        "a": "Oui, utilisez la réinitialisation HWID dans votre portail ou ouvrez un ticket Discord. Les limites dépendent de votre niveau."
+      },
+      {
+        "num": "06",
+        "q": "Où les produits et utilitaires sont-ils répertoriés ?",
+        "a": "Product et HWID Spoofer sont disponibles sur {siteDomain}/product/ et {siteDomain}/hwid-spoofer/ avec des listes de fonctionnalités et un paiement via notre partenaire."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Escape From Tarkov triche avec ESP, aimbot et loot ESP pour PC. {siteDomain}",
+    "explore": "Explorer",
+    "exploreLinks": [
+      {
+        "id": "products",
+        "href": "/",
+        "label": "Présentation des fonctionnalités",
+        "ariaLabel": "Caractéristiques",
+        "scrollTarget": "fonctionnalités"
+      },
+      {
+        "id": "products",
+        "href": "/product/",
+        "label": "Produit",
+        "ariaLabel": "Produit"
+      },
+      {
+        "id": "hwidSpoofer",
+        "href": "/hwid-spoofer/",
+        "label": "Spoofer HWID",
+        "ariaLabel": "Spoofer HWID"
+      },
+      {
+        "id": "blog",
+        "href": "/blog/",
+        "label": "Blogue",
+        "ariaLabel": "Blogue"
+      },
+      {
+        "id": "forum",
+        "href": "/forum/",
+        "label": "Forum",
+        "ariaLabel": "Forum"
+      }
+    ],
+    "supportLinks": [
+      {
+        "href": "/faq/",
+        "label": "FAQ pré-achat",
+        "ariaLabel": "FAQ"
+      },
+      {
+        "href": "/support/",
+        "label": "Contacter l'assistance",
+        "ariaLabel": "Assistance"
+      }
+    ],
+    "support": "Assistance",
+    "legal": "Légal",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "about": "À propos"
+  },
+  "legalPages": {
+    "about": {
+      "title": "À propos d'EFT CHEATS",
+      "description": "EFT CHEATS fournit des ressources d'assistance Escape From Tarkov, HWID Spoofer et PC sur {siteDomain}.",
+      "sections": [
+        {
+          "heading": "Qui nous sommes",
+          "paragraphs": [
+            "EFT CHEATS est une ressource axée sur PC pour les joueurs d'Escape From Tarkov explorant l'ESP du joueur, l'ESP de butin, l'aimbot et les flux de travail sans recul. Nous publions des guides de configuration et des notes d'état en direct afin que vous puissiez évaluer les cheats Escape From Tarkov avant de passer à la caisse.",
+            "Tous les noms de produits sont utilisés uniquement à des fins d’identification."
+          ]
+        },
+        {
+          "heading": "Ce que nous publions",
+          "paragraphs": [
+            "Notre site couvre Escape From Tarkov Cheats et HWID Spoofer. Les articles du blog expliquent les configurations de raid, les vérifications des jours de mise à jour et le comportement de mise à jour de BattlEye.",
+            "Le contenu est mis à jour lorsque des correctifs arrivent ou lorsque les modules de chargement sont déplacés. Vérifiez la bannière d'état de la page d'accueil et le statut Discord avant chaque session."
+          ]
+        },
+        {
+          "heading": "Soutien",
+          "paragraphs": [
+            "Les questions concernant la compatibilité, les erreurs de chargement ou le paiement sont traitées via Discord et l'assistance par courrier électronique. Incluez votre e-mail de commande, votre compte de jeu et votre version de Windows lors de l'ouverture d'un ticket."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Comment EFT CHEATS gère les analyses, les cookies et les données de contact lorsque vous utilisez {siteDomain}.",
+      "sections": [
+        {
+          "heading": "Informations que nous collectons",
+          "paragraphs": [
+            "Nous pouvons collecter des analyses Web standard telles que les pages vues, le type d'appareil, le navigateur et la région approximative via Google Analytics lorsqu'il est activé. Le paiement et la délivrance de la licence s'effectuent sur des pages de paiement externes. Nous ne stockons pas les données de carte de paiement sur {siteDomain}."
+          ]
+        },
+        {
+          "heading": "Comment nous utilisons les données",
+          "paragraphs": [
+            "Les analyses nous aident à comprendre quels guides et pages de produits sont utiles afin que nous puissions améliorer le contenu et réparer les liens rompus. Les tickets d'assistance peuvent conserver l'adresse e-mail et le contenu du message que vous fournissez jusqu'à ce que le problème soit résolu."
+          ]
+        },
+        {
+          "heading": "Biscuits",
+          "paragraphs": [
+            "Nous utilisons le minimum de cookies requis pour l'analyse. Vous pouvez bloquer les cookies dans les paramètres de votre navigateur ;le contenu principal du site reste accessible sans eux."
+          ]
+        },
+        {
+          "heading": "Assistance",
+          "paragraphs": [
+            "Pour les questions de confidentialité, utilisez les options de la page Support. Les règles d'achat et de remboursement figurent dans nos conditions générales."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Conditions générales",
+      "description": "Conditions d'achat, de licence, de remboursement et d'utilisation des produits EFT CHEATS et de {siteDomain}.",
+      "sections": [
+        {
+          "heading": "Accord",
+          "paragraphs": [
+            "Dernière mise à jour : septembre 2026. En utilisant {siteDomain} ou en effectuant le paiement d'un produit répertorié ici, vous acceptez ces conditions générales et notre politique de confidentialité."
+          ]
+        },
+        {
+          "heading": "Ce que vous achetez",
+          "paragraphs": [
+            "Nous vendons des cheats Escape From Tarkov et HWID Spoofer livrés via un portail opérateur et un chargeur pour Escape From Tarkov sous Windows.",
+            "Les listes de fonctionnalités sur chaque page de produit décrivent ce qui est inclus au moment de l'achat. Les modules peuvent changer lors de la mise à jour d'Escape From Tarkov ou des systèmes anti-triche."
+          ]
+        },
+        {
+          "heading": "Paiement et livraison",
+          "paragraphs": [
+            "Le paiement et la livraison des licences s'effectuent sur des pages de paiement externes. {siteDomain} ne traite ni ne stocke les numéros de carte de paiement.",
+            "Après l'achat, utilisez le portail de l'opérateur lié à votre flux de commande pour télécharger le chargeur actuel et le guide de configuration avant de lancer Escape From Tarkov."
+          ]
+        },
+        {
+          "heading": "Utilisation de la licence",
+          "paragraphs": [
+            "Les licences sont réservées à votre usage personnel. Ne partagez pas de fichiers de chargeur, de connexions au portail ou de clés de licence. Les limites de HWID et d’appareils dépendent de votre niveau et sont appliquées dans le portail."
+          ]
+        },
+        {
+          "heading": "Remboursements et achats",
+          "paragraphs": [
+            "Toutes les ventes sont définitives une fois le paiement terminé. Nous ne remboursons pas les achats pour changement d'avis, les bans de compte, les pénalités BattlEye ou les problèmes causés par l'ignorance des guides de configuration ou de l'exécution de modules alors que la bannière d'état s'affiche hors ligne.",
+            "Si le produit ne fonctionne pas comme décrit sur une configuration prise en charge : Escape From Tarkov sur Windows 10/11, le chargeur actuel du portail et la bannière d'état en direct affichée en ligne lorsque vous avez démarré, contactez-nous via la page d'assistance. Incluez votre e-mail de commande, la version de Windows, la version du jeu et des captures d'écran ou le texte d'erreur exact du chargeur.",
+            "Nous pouvons, à notre discrétion, proposer une solution, un accès au remplacement ou un remboursement partiel/total lorsque nous confirmons un défaut de notre part. Nous ne sommes pas obligés d’approuver chaque demande."
+          ]
+        },
+        {
+          "heading": "Disponibilité et risque",
+          "paragraphs": [
+            "Les outils tiers pour Escape From Tarkov peuvent entrer en conflit avec les mises à jour du jeu et BattlEye. Vous utilisez ce logiciel à vos propres risques, y compris en cas d'action éventuelle sur votre compte.",
+            "Vérifiez la bannière d'état de la page d'accueil avant chaque raid. Ne chargez pas lorsque les modules sont hors ligne ou mal alignés après un correctif."
+          ]
+        },
+        {
+          "heading": "Changements",
+          "paragraphs": [
+            "Nous pouvons mettre à jour ces conditions. La date « Dernière mise à jour » en haut changera lorsque nous le ferons. L'utilisation continue du site après les modifications signifie que vous acceptez les conditions révisées."
+          ]
+        },
+        {
+          "heading": "Assistance",
+          "paragraphs": [
+            "Pour les questions sur les conditions, la facturation ou le chargeur, utilisez les boutons de la page Support. Consultez également notre politique de confidentialité pour savoir comment nous traitons les données du site."
+          ]
+        }
+      ]
+    },
+    "support": {
+      "title": "Assistance EFT CHEATS",
+      "description": "Obtenez de l'aide pour les questions relatives au chargeur, au HWID et au paiement sur {siteDomain}."
+    }
+  },
+  "common": {
+    "breadcrumbHome": "Accueil",
+    "breadcrumbProducts": "Produit",
+    "breadcrumbBlog": "Blogue",
+    "breadcrumbForum": "Forum",
+    "breadcrumbFaq": "FAQ",
+    "breadcrumbAbout": "À propos",
+    "breadcrumbPrivacy": "Confidentialité",
+    "breadcrumbTerms": "Conditions",
+    "breadcrumbSupport": "Assistance",
+    "contactSupport": "Contacter l'assistance"
+  },
+  "notFound": {
+    "metaDescription": "La page que vous avez demandée est introuvable sur {siteDomain}.",
+    "title": "Page introuvable",
+    "body": "Cette URL n'existe pas ou a peut-être été déplacée. Revenez à la page d’accueil ou ouvrez les pages produit et HWID.",
+    "backHome": "Retour à la maison",
+    "viewProducts": "Voir les produits",
+    "viewElite": "Voir la page produit"
+  },
+  "pages": {
+    "faq": {
+      "eyebrow": "Centre d'aide",
+      "title": "FAQ des cheats Escape From Tarkov : setup, offres et BattlEye",
+      "description": "Réponses sur les cheats Escape From Tarkov : installation, offres mensuelles et à vie, modules ESP et aim, statut BattlEye et aide au paiement sur {siteDomain}.",
+      "schemaName": "FAQ sur les cheats Escape From Tarkov",
+      "schemaDescription": "Réponses sur les cheats de raid, l'ESP, l'aimbot, les filtres de butin, la configuration du chargeur, les prix et le paiement sur {siteDomain}."
+    },
+    "forum": {
+      "eyebrow": "Forum communautaire Escape From Tarkov",
+      "title": "Forum communautaire Escape From Tarkov",
+      "description": "Discussions archivées en lecture seule sur l'installation du loader, l'ESP butin, le statut des patchs et les bans HWID. Les réponses sont fermées.",
+      "exploreGuides": "Découvrez les guides",
+      "postsAria": "Messages de la communauté",
+      "sortAria": "Tri des messages",
+      "sortPopular": "Populaire",
+      "sortLatest": "Dernier",
+      "sortTop": "Les plus discutés",
+      "filterAria": "Filtrer les discussions par sujet",
+      "filterAll": "Tous les sujets",
+      "resultsCount": "guider les discussions",
+      "voteAria": "Vote de discussion",
+      "upvoteAria": "Votez pour cette discussion",
+      "downvoteUnavailableAria": "Le vote négatif n'est pas disponible",
+      "guideTeam": "Équipe de guides EFT CHEATS",
+      "guideBasedQa": "Questions et réponses basées sur un guide",
+      "fromGuide": "Extrait du guide :",
+      "comments": "commentaires",
+      "closedThread": "Sujet fermé",
+      "closedBy": "Fermé par archives",
+      "repliesClosed": "Les réponses sont fermées",
+      "readDiscussion": "Lire la discussion",
+      "empty": "Aucune discussion ne correspond. Essayez une autre recherche ou un autre sujet.",
+      "emptyArchive": "Aucune discussion pour l'instant. De nouveaux sujets apparaîtront ici.",
+      "categoryGeneral": "Général",
+      "categoryGuides": "Guides et constructions",
+      "categoryPatch": "Discussion sur les patchs",
+      "categoryCommunity": "Communauté",
+      "paginationAria": "Pages de discussions",
+      "pagePrevious": "Précédent",
+      "pageNext": "Suivant",
+      "sidebarTitle": "Communauté EFT CHEATS",
+      "sidebarIntro": "Archives en lecture seule. Les discussions restent ouvertes à titre de référence, vous ne pouvez pas démarrer une discussion ni répondre.",
+      "statsDiscussions": "guider les discussions",
+      "statsTopics": "sujets",
+      "exploreAllGuides": "Explorez tous les guides",
+      "communitiesHeading": "Communautés",
+      "browseRelated": "Parcourir les questions et réponses connexes",
+      "browseAllCommunities": "Parcourez toutes les communautés",
+      "guidelinesHeading": "Lignes directrices de la communauté",
+      "guideline1": "Restez amical et constructif",
+      "guideline2": "Restez sur le sujet et ajoutez du contexte",
+      "guideline3": "Marquer les spoilers et le contenu sensible",
+      "readFullGuidelines": "Lire les directives complètes",
+      "sidebarFoot": "À propos · Lignes directrices · Confidentialité · Conditions"
+    },
+    "utilities": {
+      "title": "Spoofer HWID",
+      "description": "Récupération de la machine lorsque de nouveaux comptes fonctionnent ailleurs mais échouent instantanément sur ce PC.",
+      "viewDetails": "Voir",
+      "includes": "Comprend :",
+      "schemaName": "Spoofer HWID"
+    }
+  },
+  "ui": {
+    "skipLink": "Passer au contenu principal",
+    "browseCheatsNav": "Essayez maintenant",
+    "homeAria": "Accueil EFT CHEATS",
+    "menuOpen": "Ouvrir le menu",
+    "themeLight": "Passer en mode lumière",
+    "languageSwitcherLabel": "Langue",
+    "languageNames": {
+      "en": "English",
+      "es": "Español",
+      "de": "Deutsch",
+      "fr": "Français"
+    }
+  }
+}

@@ -1,0 +1,735 @@
+[
+  {
+    "tag": "Características",
+    "title": "Tarkov Loot ESP: Cómo filtrar el botín por precio, categoría y contenedor",
+    "slug": "tarkov-loot-esp-filters-price-category-containers",
+    "image": "/images/gameplay/eft-esp-daylight-player-highlights.webp",
+    "imageAlt": "Vista de incursión de Escape From Tarkov con etiquetas ESP de botín que muestran los nombres y precios de los artículos",
+    "desc": "Una mirada práctica al botín ESP de Tarkov: filtros de precios, categorías de botín, contenedores y ajustes preestablecidos, y cómo mantener la pantalla legible en lugar de abarrotada.",
+    "metaTitle": "Tarkov Loot ESP: filtros, precio y contenedores explicados",
+    "metaDescription": "Vea cómo funciona el ESP de botín de Tarkov, incluidos filtros de precio mínimo, categorías de botín, contenedores, elementos de misión y ajustes preestablecidos, y cómo configurarlo para incursiones más rápidas y limpias.",
+    "date": "2026-07-16",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "El botín es la única razón por la que la mayoría de la gente realiza incursiones en Tarkov. También es donde se pierde mucho tiempo. Limpias una habitación, abres tres contenedores y sales sin nada que valga la pena. Loot ESP existe para solucionar ese problema, y la diferencia entre una buena y una mala configuración se reduce a los filtros."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué hace realmente el botín ESP?"
+      },
+      {
+        "type": "p",
+        "text": "Loot ESP dibuja etiquetas en artículos y contenedores en el mundo, para que puedas ver lo que hay cerca sin revisar cada estante y cajón. En el menú de trucos de Escape From Tarkov, la sección de botín cubre elementos en el suelo, contenedores, escondites, cadáveres, computadoras y lugares similares, y la distancia y el precio se muestran junto a lo que encuentra."
+      },
+      {
+        "type": "p",
+        "text": "El error que comete la mayoría de la gente es encenderlo todo. Una pantalla llena de etiquetas de elementos comunes es solo ruido. Las herramientas que importan son los filtros."
+      },
+      {
+        "type": "h2",
+        "text": "Comience con un precio mínimo"
+      },
+      {
+        "type": "p",
+        "text": "La configuración única más útil es el precio mínimo. Establezca un piso y todo lo que esté debajo de él simplemente no se dibujará. Si corre con fines de lucro, un piso más alto mantiene su vista limpia y le indica los artículos que vale la pena llevar. Si está buscando artículos de trueque específicos o necesidades de misiones, suéltelo más abajo y utilice las opciones de búsqueda y categoría."
+      },
+      {
+        "type": "p",
+        "text": "También hay una opción para ignorar elementos que no has seleccionado, lo cual es útil una vez que tienes una breve lista de lo que te interesa."
+      },
+      {
+        "type": "h2",
+        "text": "Utilice categorías en lugar de una lista gigante"
+      },
+      {
+        "type": "p",
+        "text": "El botín se agrupa en categorías como militar, técnico, médico y valioso, con un grupo común separado para artículos cotidianos. Elegir categorías te permite decidir qué tipo de incursión estás haciendo. Una carrera médica rápida y una carrera de botín técnica necesitan etiquetas muy diferentes."
+      },
+      {
+        "type": "p",
+        "text": "Los tipos de contenedores se filtran por separado. Puedes elegir si se muestran cajas de madera, escondites, computadoras, cadáveres y cadáveres, lo cual es importante porque cada contenedor que revisas cuesta tiempo y expone tu posición."
+      },
+      {
+        "type": "h2",
+        "text": "Distancia de dibujo, visualización de precios y colores."
+      },
+      {
+        "type": "p",
+        "text": "La distancia de dibujo controla qué tan alejadas aparecen las etiquetas. La distancia corta mantiene el orden dentro de los edificios. Una distancia más larga ayuda en mapas abiertos. La visualización del precio agrega valor a cada etiqueta y el color del botín personalizado te permite hacer que los artículos de alto valor se destaquen para que tu vista los encuentre al instante. Elija colores que pueda leer de un vistazo."
+      },
+      {
+        "type": "h2",
+        "text": "Elementos y extractos de misiones."
+      },
+      {
+        "type": "p",
+        "text": "Quest ESP marca elementos y objetivos relacionados con la misión, lo que ahorra mucho retroceso si estás trabajando en tareas. Los marcadores de extracción y transición muestran dónde puedes salir, lo cual es útil cuando una incursión comienza a ir mal y necesitas comprometerte con una ruta."
+      },
+      {
+        "type": "h2",
+        "text": "Los ajustes preestablecidos ahorran tiempo"
+      },
+      {
+        "type": "p",
+        "text": "Los ajustes preestablecidos de botín te permiten almacenar una configuración de filtro y cambiar entre ellos. Un ajuste preestablecido para carreras de alto valor, uno para caza de misiones y otro para barrido general. El sistema de configuración también admite guardar, cargar, importar y exportar, por lo que no tendrás que reconstruir tu configuración cada vez."
+      },
+      {
+        "type": "h2",
+        "text": "Mantenlo legible"
+      },
+      {
+        "type": "p",
+        "text": "Una buena regla es mostrar menos de lo que crees que necesitas. Establezca un precio mínimo, elija dos o tres categorías y mantenga una distancia de sorteo razonable. Si entrecierras los ojos ante las etiquetas, es porque tienes demasiadas."
+      },
+      {
+        "type": "h2",
+        "text": "Empezando"
+      },
+      {
+        "type": "p",
+        "text": "Si quieres botín ESP con precio completo, categoría, contenedor y controles preestablecidos, los trucos [Escape From Tarkov](/product/) lo incluyen junto con el ESP del jugador, aimbot y opciones varias. Consulte la página de estado después de los parches antes de cargarlos, revise [requisitos de configuración](/blog/how-to-set-up-escape-from-tarkov-cheats-requirements/) y tenga en cuenta que se requiere el componente Cloud DMA para una funcionalidad completa. Los planes comienzan en un [plan mensual o de por vida](/blog/escape-from-tarkov-cheats-price-monthly-vs-lifetime/), con una opción de por vida si planeas quedarte a largo plazo."
+      }
+    ]
+  },
+  {
+    "tag": "Características",
+    "title": "Ajustes del aimbot de Tarkov: FOV, huesos, selección de objetivos y más",
+    "slug": "tarkov-aimbot-settings-explained",
+    "image": "/images/gameplay/eft-esp-night-vision-skeletons.webp",
+    "imageAlt": "Pestaña aimbot del menú de trucos de Escape From Tarkov que muestra FOV y opciones de objetivo",
+    "desc": "Cada menú de aimbot parece abrumador la primera vez. Esto es lo que hacen las principales opciones de aimbot de Tarkov y cómo configurarlas sin ensuciarlas.",
+    "metaTitle": "Ajustes del aimbot de Tarkov: FOV, huesos y objetivos",
+    "metaDescription": "Una guía sencilla de las opciones del aimbot de Tarkov, que incluye clave de puntería, campo de visión, comprobaciones de visibilidad, hueso inteligente, selección y predicción de objetivos, con consejos sobre cómo crear una configuración.",
+    "date": "2026-05-10",
+    "readTime": "7 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "La pestaña aimbot en el menú de trucos de Tarkov tiene muchas opciones, y la mayoría de ellas son útiles solo si comprendes qué cambian. Este es un tutorial de las opciones principales, basado en las opciones enumeradas para los trucos de Escape From Tarkov."
+      },
+      {
+        "type": "h2",
+        "text": "Lo básico: tecla de puntería y campo de visión"
+      },
+      {
+        "type": "p",
+        "text": "Habilitar puntería activa la función y la tecla de puntería decide cuándo se activa. La mayoría de la gente lo vincula a un botón del mouse que ya presionan cuando pelean, por lo que se siente natural."
+      },
+      {
+        "type": "p",
+        "text": "FOV es el círculo alrededor de la mira en el que se pueden seleccionar los objetivos. Puedes dibujarlo en la pantalla, establecer su tamaño, colorearlo y hacerlo dinámico. Un campo de visión más pequeño significa que el aimbot solo reacciona a objetivos cerca de donde ya estás mirando. Un campo de visión grande significa que puede atrapar a personas alejadas de su punto de mira, lo cual es más poderoso pero también parece mucho más obvio para cualquiera que lo mire."
+      },
+      {
+        "type": "h2",
+        "text": "Distancia y visibilidad"
+      },
+      {
+        "type": "p",
+        "text": "La distancia máxima del aimbot limita la distancia a la que apuntará. Los enfrentamientos de Tarkov varían enormemente entre mapas, por lo que un valor más bajo se adapta a mapas interiores pesados y uno más alto a los abiertos."
+      },
+      {
+        "type": "p",
+        "text": "Only Visible le dice al aimbot que ignore los objetivos que en realidad no puede ver. Actívalo si quieres un comportamiento que se acerque más a lo que podría ver un jugador normal. Déjelo apagado y le pedirá a la herramienta que rastree la cubierta."
+      },
+      {
+        "type": "h2",
+        "text": "Selección de objetivos y compañeros de equipo."
+      },
+      {
+        "type": "p",
+        "text": "La selección de objetivos decide quién es elegido cuando hay más de una persona dentro del alcance. Las opciones de compañeros de equipo te permiten marcar a tus compañeros de equipo para no señalarlos, con un vínculo para agregar un compañero de equipo rápidamente. Si juegas en grupos, configura esto antes de la incursión, no durante la misma."
+      },
+      {
+        "type": "h2",
+        "text": "Huesos: hueso inteligente, hueso de fuerza y prioridad"
+      },
+      {
+        "type": "p",
+        "text": "Smart Bone le permite al aimbot elegir de una lista de partes del cuerpo, y la opción de prioridad le permite clasificarlas. El hueso de fuerza lo bloquea a uno. En un juego donde la armadura y la munición deciden las peleas, elegir huesos deliberadamente es más importante que dejarlo por defecto."
+      },
+      {
+        "type": "h2",
+        "text": "Extras que vale la pena conocer"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "La predicción tiene en cuenta el movimiento del objetivo.",
+          "El bloqueo de objetivo te mantiene en un objetivo una vez elegido.",
+          "Muestra el objetivo y el color del objetivo resaltado quién está seleccionado actualmente.",
+          "Dibujar el punto de mira le brinda un punto de referencia claro.",
+          "Los rastreadores de balas muestran hacia dónde van tus disparos, lo que ayuda a la hora de ajustar una configuración.",
+          "El golpe instantáneo existe como opción, pero es la configuración más agresiva de la lista."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Una forma sensata de crear una configuración"
+      },
+      {
+        "type": "p",
+        "text": "Empiece poco a poco. Elija un campo de visión modesto, active Solo visible, establezca una distancia que se adapte a su mapa habitual y utilice hueso inteligente con una lista corta. Cambie una configuración a la vez y pruébela. Guarde el resultado en el sistema de configuración, que admite guardar, cargar, importar y exportar."
+      },
+      {
+        "type": "p",
+        "text": "Las configuraciones que parecen descaradas tienden a llamar la atención de otros jugadores y ninguna configuración elimina el riesgo por completo. Hacer trampa en un juego en línea puede dar lugar a baneos, así que crea tu configuración teniendo eso en cuenta."
+      },
+      {
+        "type": "h2",
+        "text": "donde conseguirlo"
+      },
+      {
+        "type": "p",
+        "text": "Si desea el menú completo de aimbot junto con ESP y herramientas varias, consulte [Tarkov aimbot options](/product/). Se vende solo para incursiones principales y utiliza una clave separada de Arena, y se requiere el componente Cloud DMA para una funcionalidad completa. Combínalo con [loot ESP filters](/blog/tarkov-loot-esp-filters-price-category-containers/) y lee [BattlEye consideraciones](/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/) antes de atacar."
+      }
+    ]
+  },
+  {
+    "tag": "Guías del comprador",
+    "title": "Precio de trucos de Escape From Tarkov: mensual o de por vida",
+    "slug": "escape-from-tarkov-cheats-price-monthly-vs-lifetime",
+    "image": "/images/gameplay/eft-esp-enemies-through-concrete-wall.webp",
+    "imageAlt": "Escape From Tarkov engaña a las opciones de planes mensuales y de por vida",
+    "desc": "¿Mensual o vitalicio? Aquí están los precios, el punto de equilibrio y las cosas adicionales que debe verificar antes de pagar.",
+    "metaTitle": "Precio de trucos de Escape From Tarkov: mensual o de por vida",
+    "metaDescription": "Mensual es de $35 y de por vida es de $150 con las mismas características. Vea cuándo cada uno tiene sentido, qué se vende por separado y qué verificar antes de comprar.",
+    "date": "2026-10-15",
+    "readTime": "5 min read",
+    "featured": true,
+    "body": [
+      {
+        "type": "p",
+        "text": "Si está buscando trucos de Escape From Tarkov, el precio es probablemente una de las primeras cosas que desea responder. Aquí están los números reales y cómo decidir entre los dos planes."
+      },
+      {
+        "type": "h2",
+        "text": "los dos planes"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Planificar",
+          "Acceso",
+          "Precio"
+        ],
+        "rows": [
+          [
+            "Mensual",
+            "31 days",
+            "$35"
+          ],
+          [
+            "Toda la vida",
+            "Acceso ilimitado",
+            "$150 once"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ambos planes incluyen las mismas características. No estás pagando más por herramientas adicionales. La única diferencia es cuánto tiempo tienes acceso."
+      },
+      {
+        "type": "h2",
+        "text": "Cuando mensualmente tiene sentido"
+      },
+      {
+        "type": "p",
+        "text": "Mensualmente es la forma de comenzar con menor riesgo. Si está probando el truco en su propia configuración, solo juega en ráfagas cortas o no está seguro de permanecer con Tarkov hasta la próxima eliminación, $ 35 por 31 días mantiene su compromiso pequeño."
+      },
+      {
+        "type": "h2",
+        "text": "Cuando la vida tiene sentido"
+      },
+      {
+        "type": "p",
+        "text": "La matemática es simple. Cuatro meses de acceso mensual cuestan $140. El quinto mes te lleva más de $150. Si esperas utilizar el truco durante cinco meses o más, la opción de por vida es más barata y dejas de pensar en renovaciones."
+      },
+      {
+        "type": "p",
+        "text": "Lifetime también se adapta a las personas que juegan constantemente entre toallitas y no quieren volver a comprar."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué más necesitas saber antes de pagar?"
+      },
+      {
+        "type": "p",
+        "text": "DMA en la nube.[Cloud DMA](/blog/tarkov-cloud-dma-explained-do-you-need-it/) se requiere para una funcionalidad completa y es una compra separada de los planes mensuales y de por vida. Haga un presupuesto por adelantado para que no haya sorpresas."
+      },
+      {
+        "type": "p",
+        "text": "Sólo incursiones. Este producto es para las principales incursiones de Tarkov. Utiliza una clave separada de Arena, por lo que una compra aquí no cubre Arena."
+      },
+      {
+        "type": "p",
+        "text": "Tu PC. Necesita Windows 10 u 11 con HVCI, Core Isolation, TPM y Secure Boot activados. Nuestro [requisitos del sistema](/blog/how-to-set-up-escape-from-tarkov-cheats-requirements/) cubre esto con más detalle."
+      },
+      {
+        "type": "p",
+        "text": "Entrega y soporte. La entrega es instantánea después de la compra y obtienes un cargador para usar. Si algo sale mal, puede abrir un ticket en el sitio o comunicarse con Discord con su ID de pedido."
+      },
+      {
+        "type": "p",
+        "text": "Después de parches. Consulta la página de estado después de los parches principales antes de iniciar una incursión."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué está incluido en el precio?"
+      },
+      {
+        "type": "p",
+        "text": "El conjunto de características cubre ESP del jugador con caja, esqueleto, salud, distancia y más, ESP de botín con filtros de precio y categoría, un aimbot con FOV, opciones de huesos y visibilidad, sin retroceso y otras opciones misceláneas, y un sistema de configuración para guardar y compartir configuraciones. También se describe como resistente a la transmisión para la mayoría de las herramientas de captura."
+      },
+      {
+        "type": "h2",
+        "text": "Listo para comprar"
+      },
+      {
+        "type": "p",
+        "text": "Si ha hecho su elección, diríjase a la página [comprar trucos de Escape From Tarkov](/go/escape-from-tarkov/) para elegir mensual o de por vida. Si está indeciso, comience mensualmente. Siempre puedes decidir comprometerte más tarde."
+      }
+    ]
+  },
+  {
+    "tag": "Guías del comprador",
+    "title": "Tarkov Cloud DMA explicado: qué es y si lo necesitas",
+    "slug": "tarkov-cloud-dma-explained-do-you-need-it",
+    "image": "/images/gameplay/eft-esp-daylight-player-highlights.webp",
+    "imageAlt": "Diagrama de configuración de trucos de Escape From Tarkov con conexión Cloud DMA",
+    "desc": "Cloud DMA aparece en casi todas las conversaciones sobre trampas de Tarkov. Esto es lo que es y dónde encaja en su compra.",
+    "metaTitle": "Tarkov Cloud DMA explicado: ¿lo necesitas?",
+    "metaDescription": "Se requiere Cloud DMA para una funcionalidad completa con nuestros trucos de Escape From Tarkov. Esto es lo que significa, cómo se relaciona con los planes y qué debe saber antes de comprar.",
+    "date": "2026-06-04",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Si has mirado los trucos de Tarkov durante más de cinco minutos, habrás visto el término DMA. Cloud DMA es la versión que aparece en todos nuestros productos y vale la pena comprenderla antes de comprar."
+      },
+      {
+        "type": "h2",
+        "text": "DMA en términos sencillos"
+      },
+      {
+        "type": "p",
+        "text": "DMA significa acceso directo a la memoria. En el mundo de las trampas, una configuración DMA tradicionalmente significa usar hardware separado para leer los datos del juego en lugar de ejecutar todo dentro de la misma máquina que el juego. Ese enfoque es popular porque Tarkov usa BattlEye, que opera a nivel de kernel."
+      },
+      {
+        "type": "h2",
+        "text": "Dónde encaja Cloud DMA"
+      },
+      {
+        "type": "p",
+        "text": "Cloud DMA es la opción alojada que figura en [Trucos de Escape From Tarkov con Cloud DMA](/product/). El producto incluye Cloud DMA en su conjunto de funciones y se describe como necesario para una funcionalidad completa. Si busca pasos exactos sobre cómo se realiza la conexión, estos se proporcionan después de la compra a través de la guía y los canales de soporte, así que siga las instrucciones actuales en lugar de confiar en los consejos generales de Internet."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo se relaciona con el plan que compras"
+      },
+      {
+        "type": "p",
+        "text": "Esta parte hace tropezar a la gente. Los [plans](/blog/escape-from-tarkov-cheats-price-monthly-vs-lifetime/) mensuales y de por vida cubren el truco en sí. Cloud DMA es una compra por separado. Por lo tanto, el costo total de ejecutar el producto con todas las funciones es el plan que elija más Cloud DMA."
+      },
+      {
+        "type": "h2",
+        "text": "¿Lo necesitas?"
+      },
+      {
+        "type": "p",
+        "text": "Si quieres funcionalidad completa, sí. La página del producto indica que se requiere Cloud DMA para una funcionalidad completa. Si sólo desea echar un vistazo al menú, es posible que no necesite apresurarse, pero no obtendrá la experiencia completa sin él."
+      },
+      {
+        "type": "h2",
+        "text": "Lo que tu PC aún necesita"
+      },
+      {
+        "type": "p",
+        "text": "Cloud DMA no elimina los requisitos de su propio sistema. El producto solicita Windows 10 u 11 con HVCI, Core Isolation, TPM y Secure Boot activados. Lea nuestra [lista de verificación de configuración](/blog/how-to-set-up-escape-from-tarkov-cheats-requirements/) para obtener una lista de verificación completa."
+      },
+      {
+        "type": "h2",
+        "text": "Preguntas para hacer al soporte antes de comprar"
+      },
+      {
+        "type": "p",
+        "text": "Si no está seguro, pregunte antes de pagar, no después. Buenas preguntas son cuál es el orden de configuración actual, qué hacer después de un parche y qué información incluir en un ticket. El soporte está disponible a través de un ticket en el sitio o en Discord. Incluya su ID de pedido cuando se comunique con ellos."
+      },
+      {
+        "type": "h2",
+        "text": "Siguiente paso"
+      },
+      {
+        "type": "p",
+        "text": "Una vez que sepa lo que está comprando, la página [Escape From Tarkov trucos con Cloud DMA](/product/) muestra ambos planes y el requisito de Cloud DMA. Recuerde que el producto es solo para incursiones principales y utiliza una clave separada de Arena."
+      }
+    ]
+  },
+  {
+    "tag": "Anti-trampas",
+    "title": "BattlEye y trucos de Escape From Tarkov: lo que debes saber",
+    "slug": "battleye-and-escape-from-tarkov-cheats-what-to-know",
+    "image": "/images/gameplay/eft-esp-night-vision-skeletons.webp",
+    "imageAlt": "Pantalla de carga anti-trampas de BattlEye para Escape From Tarkov",
+    "desc": "BattlEye es el anti-trampas detrás de Tarkov. A continuación se ofrece una explicación directa de qué es, cuáles son los riesgos y cómo abordarlo con sensatez.",
+    "metaTitle": "BattlEye y trucos de Tarkov: lo que debes saber",
+    "metaDescription": "Una mirada honesta a BattlEye en Escape From Tarkov, lo que significa para los usuarios de trampas, por qué son importantes las comprobaciones de estado después de los parches y qué hacer si se produce un baneo.",
+    "date": "2026-09-07",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Escape From Tarkov usa BattlEye como anti-trampas. Si estás pensando en utilizar trampas en el juego, debes entender lo que eso significa."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué es BattleEye?"
+      },
+      {
+        "type": "p",
+        "text": "BattlEye es un anti-trampas a nivel de kernel. Eso significa que se ejecuta con acceso profundo a su sistema y se usa en varios juegos. En Tarkov, es la capa principal que intenta detectar el software tramposo."
+      },
+      {
+        "type": "h2",
+        "text": "Qué significa esto para los usuarios de trampas"
+      },
+      {
+        "type": "p",
+        "text": "Seamos directos. No existe ningún truco que elimine el riesgo de baneo, y cualquier vendedor que le diga lo contrario está sobrevendiendo. Los proveedores antitrampas actualizan sus parches de detección y juegos. Lo que puede hacer es utilizar un producto que se mantenga activamente y abordarlo con cuidado."
+      },
+      {
+        "type": "p",
+        "text": "Es por eso que la página del producto le indica que verifique la página de estado después de los parches antes de cargarlos. Si acaba de llegar un parche, espere a que se actualice el estado."
+      },
+      {
+        "type": "h2",
+        "text": "Por qué difieren las baneos de cuentas y las baneos de hardware"
+      },
+      {
+        "type": "p",
+        "text": "Algunas baneos se aplican a su cuenta. Otros vinculan la penalización a sus identificadores de hardware. Un baneo de hardware sigue a tu PC, no sólo a tu inicio de sesión, lo que lo hace mucho más perjudicial. Cubrimos esto en detalle en nuestro artículo [HWID ban](/blog/tarkov-hwid-ban-how-hwid-spoofer-works/)."
+      },
+      {
+        "type": "h2",
+        "text": "Hábitos que reducen tu exposición"
+      },
+      {
+        "type": "p",
+        "text": "Estos son puntos prácticos, no garantías."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Mantenga su configuración modesta. El comportamiento obvio genera informes de otros jugadores.",
+          "Siga exactamente la guía de configuración actual y no se salte los pasos.",
+          "Cumpla con los requisitos del sistema enumerados para el producto, incluidos HVCI, Core Isolation, TPM y Secure Boot.",
+          "Verifique el estado después de cada parche grande.",
+          "No comparta su cargador ni los detalles del pedido."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Si ocurre un baneo"
+      },
+      {
+        "type": "p",
+        "text": "Si su cuenta está prohibida, esa cuenta desaparecerá y necesitará una nueva. Si su hardware está marcado, una falsificación de hardware es una forma en que las personas intentan regresar con una huella digital de hardware nueva. Nuestro [HWID spoofer](/hwid-spoofer/) enumera Escape From Tarkov bajo los títulos de BattlEye e incluye un limpiador."
+      },
+      {
+        "type": "h2",
+        "text": "tomando la decisión"
+      },
+      {
+        "type": "p",
+        "text": "Hacer trampa conlleva riesgos y debes decidir teniendo eso en cuenta. Si decides seguir adelante, los [trucos de Escape From Tarkov](/product/) se venden para incursiones principales con ESP, aimbot y funciones varias, y [Cloud DMA](/blog/tarkov-cloud-dma-explained-do-you-need-it/) es necesario para una funcionalidad completa. El soporte está disponible por ticket o Discord si necesita ayuda con el proceso actual."
+      }
+    ]
+  },
+  {
+    "tag": "Ayuda con baneos",
+    "title": "Baneo de HWID en Tarkov: qué es y cómo funciona un HWID spoofer",
+    "slug": "tarkov-hwid-ban-how-hwid-spoofer-works",
+    "image": "/images/gameplay/eft-esp-enemies-through-concrete-wall.webp",
+    "imageAlt": "Interfaz de falsificación HWID para juegos BattlEye, incluido Escape From Tarkov",
+    "desc": "Un baneo de HWID sigue a su hardware, no solo a su cuenta. Así es como funciona y para qué está diseñado un spoofer con limpiador.",
+    "metaTitle": "Baneo de HWID en Tarkov: cómo funciona un HWID spoofer",
+    "metaDescription": "¿Afectado por un baneo de Tarkov HWID? Conozca qué es, qué cambia un spoofer, qué hace el limpiador y los requisitos y precios de nuestro HWID Spoofer.",
+    "date": "2026-05-17",
+    "readTime": "7 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Un baneo de HWID es una de las cosas más frustrantes que pueden suceder en Tarkov, porque no se limita a su cuenta. Esto es lo que es y cómo encaja un suplantador de identidad."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué es un baneo de HWID?"
+      },
+      {
+        "type": "p",
+        "text": "HWID significa ID de hardware. Un baneo de HWID vincula el castigo a los identificadores de su PC, como los números de serie del disco, las direcciones MAC y los ID de GPU, en lugar de solo a su cuenta. Es por eso que crear una cuenta nueva a menudo no soluciona el problema. El juego todavía reconoce la máquina."
+      },
+      {
+        "type": "h2",
+        "text": "Que cambia un spoofer"
+      },
+      {
+        "type": "p",
+        "text": "Un spoofer cambia esos identificadores de hardware para que su PC presente una huella digital diferente. El [HWID spoofer](/hwid-spoofer/) está diseñado para esto y cambia los números de serie del disco, las direcciones MAC, los ID de GPU y los identificadores relacionados."
+      },
+      {
+        "type": "h2",
+        "text": "Para que sirve el limpiador"
+      },
+      {
+        "type": "p",
+        "text": "La suplantación de hardware por sí sola no siempre es suficiente, ya que pueden quedar rastros sobrantes en su sistema. El spoofer incluye un limpiador que elimina esos rastros antes de que vuelvas a iniciar el juego. Ejecutar la limpieza es parte del proceso, no un extra opcional."
+      },
+      {
+        "type": "h2",
+        "text": "¿Se apoya a Tarkov?"
+      },
+      {
+        "type": "p",
+        "text": "Sí. Escape From Tarkov aparece en [BattlEye](/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/) títulos, y el producto indica que la suplantación de identidad está bien en todos los juegos de BattlEye. También enumera soporte para títulos EAC, juegos Ricochet, Valorant a través de Vanguard y otros."
+      },
+      {
+        "type": "h2",
+        "text": "Un límite honesto"
+      },
+      {
+        "type": "p",
+        "text": "Un spoofer se ocupa de identificadores de hardware. No deshace el baneo de una cuenta. Si tu cuenta ha sido baneada, necesitarás una cuenta nueva para jugar. Y ninguna herramienta garantiza un resultado, así que siga de cerca la guía actual."
+      },
+      {
+        "type": "h2",
+        "text": "Requisitos antes de empezar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Windows 10 u 11, 64 bits",
+          "HVCI, Core Isolation, TPM y Secure Boot activados",
+          "Derechos de administrador para los pasos de suplantación y limpieza",
+          "Una conexión a Internet estable para activación y actualizaciones."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "El orden importa"
+      },
+      {
+        "type": "p",
+        "text": "Ejecute el spoofing y la limpieza antes de iniciar el juego y siga las instrucciones actuales en su cuenta o canal de tickets para la secuencia exacta. Si no estás seguro de algún paso, solicita asistencia antes de iniciar el juego."
+      },
+      {
+        "type": "h2",
+        "text": "Precios"
+      },
+      {
+        "type": "p",
+        "text": "El HWID Spoofer cuesta $50 mensuales durante 31 días, o $150 por acceso de por vida. La entrega es instantánea y el soporte está disponible las 24 horas."
+      },
+      {
+        "type": "h2",
+        "text": "Siguiente paso"
+      },
+      {
+        "type": "p",
+        "text": "Si ha sido afectado por un baneo de hardware o quiere estar preparado, consulte [HWID spoofer](/hwid-spoofer/). Si también estás mirando el truco en sí, los [Trucos de Escape From Tarkov](/product/) están disponibles por separado."
+      }
+    ]
+  },
+  {
+    "tag": "Guías de configuración",
+    "title": "Cómo configurar trucos de Escape From Tarkov: requisitos y solución de problemas",
+    "slug": "how-to-set-up-escape-from-tarkov-cheats-requirements",
+    "image": "/images/gameplay/eft-esp-daylight-player-highlights.webp",
+    "imageAlt": "Lista de verificación de configuración de seguridad de Windows para la configuración de trucos de Escape From Tarkov",
+    "desc": "La mayoría de los problemas de configuración provienen de una breve lista de causas. Aquí está la lista de verificación y qué hacer cuando las cosas no funcionan.",
+    "metaTitle": "Requisitos y checklist de configuración de trucos de Tarkov",
+    "metaDescription": "Una práctica lista de verificación de configuración para los trucos de Escape From Tarkov: Windows, HVCI, Core Isolation, TPM, Secure Boot, acceso al cargador, Cloud DMA y qué hacer si algo falla.",
+    "date": "2026-06-12",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "La mayoría de los problemas que tiene la gente para hacer funcionar los trucos de Tarkov provienen de una breve lista de causas. Primero revise esta lista de verificación."
+      },
+      {
+        "type": "h2",
+        "text": "Requisitos del sistema"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "ventanas 10 u 11",
+          "Procesador Intel o AMD",
+          "HVCI encendido",
+          "Aislamiento de núcleo activado",
+          "TPM activado",
+          "Arranque seguro activado",
+          "Una conexión a Internet estable"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Estas configuraciones se enumeran en la página del producto, así que no asuma que puede omitirlas."
+      },
+      {
+        "type": "h2",
+        "text": "lo que recibes"
+      },
+      {
+        "type": "p",
+        "text": "Después de la compra, recibirá la entrega inmediatamente junto con el acceso al cargador. El producto es para las incursiones principales de Tarkov y utiliza una clave separada de Arena, así que asegúrese de comprar la correcta."
+      },
+      {
+        "type": "h2",
+        "text": "Cloud DMA"
+      },
+      {
+        "type": "p",
+        "text": "[Cloud DMA](/blog/tarkov-cloud-dma-explained-do-you-need-it/) es necesario para una funcionalidad completa y se compra por separado de los planes mensuales y de por vida. Si parece que faltan funciones, primero confirme esta parte de su configuración."
+      },
+      {
+        "type": "h2",
+        "text": "Antes de cada sesión"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Consulte la página de estado, especialmente después de un parche de Tarkov.",
+          "Asegúrese de que la configuración de seguridad de Windows anterior todavía esté activada, ya que las actualizaciones pueden cambiarla.",
+          "Siga la guía actual en su cuenta para el orden de lanzamiento.",
+          "Cargue en una incursión solo después de haber hecho lo anterior."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Si algo no funciona"
+      },
+      {
+        "type": "p",
+        "text": "Primero verifique el estado. Si se acaba de lanzar un parche, es posible que el producto esté esperando una actualización."
+      },
+      {
+        "type": "p",
+        "text": "Vuelva a verificar la configuración de Windows. Verifique HVCI, Core Isolation, TPM y Secure Boot."
+      },
+      {
+        "type": "p",
+        "text": "Confirmar el producto. Las incursiones de Tarkov y Arena usan claves diferentes."
+      },
+      {
+        "type": "p",
+        "text": "Póngase en contacto con el soporte. Puede abrir un ticket en el sitio o usar Discord. Incluya su ID de pedido para que puedan encontrar su compra rápidamente. Describe lo que hiciste y lo que pasó en términos sencillos."
+      },
+      {
+        "type": "h2",
+        "text": "Consejos de configuración para nuevos usuarios"
+      },
+      {
+        "type": "p",
+        "text": "El menú tiene un sistema de configuración que le permite guardar, cargar, importar y exportar configuraciones. Una vez que encuentre un diseño que funcione, guárdelo. Ahorra mucho tiempo después de un parche o una reinstalación."
+      },
+      {
+        "type": "h2",
+        "text": "Listo para empezar"
+      },
+      {
+        "type": "p",
+        "text": "Puedes ver [opciones de plan](/blog/escape-from-tarkov-cheats-price-monthly-vs-lifetime/) y la lista completa de funciones en la página [Escape From Tarkov Cheats](/product/). El acceso mensual cuesta $35 y el de por vida cuesta $150, con las mismas funciones en ambos."
+      }
+    ]
+  },
+  {
+    "tag": "Características",
+    "title": "Trucos streamproof de Tarkov: qué significa para streamers y grabaciones",
+    "slug": "streamproof-tarkov-cheats-for-streamers",
+    "image": "/images/gameplay/eft-esp-night-vision-skeletons.webp",
+    "imageAlt": "Jugabilidad de Escape From Tarkov capturada en OBS sin superposición de trucos visible",
+    "desc": "Streamproof significa que el ESP y el menú no aparecen en su captura. Esto es lo que cubre y lo que no cubre.",
+    "metaTitle": "Trucos streamproof de Tarkov: OBS y grabación explicados",
+    "metaDescription": "Qué significa Streamproof para los trucos de Tarkov, cómo el ESP y el menú se mantienen fuera de OBS y la mayoría de las herramientas de captura, y qué streamers y grabadores deben tener en cuenta.",
+    "date": "2026-10-05",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Si transmites o grabas tus incursiones en Tarkov, probablemente tengas una pregunta sobre los trucos: ¿alguien verá la superposición en mis imágenes? De eso se trata Streamproof."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué significa a prueba de corriente?"
+      },
+      {
+        "type": "p",
+        "text": "Streamproof significa que el ESP y el menú no se incluyen en su captura. Los trucos de Escape From Tarkov se describen como resistentes a la transmisión, con ESP y menús fuera de OBS y la mayoría de las herramientas de captura. Lo que ves en tu monitor no es lo que ven tus espectadores."
+      },
+      {
+        "type": "h2",
+        "text": "Por qué es importante"
+      },
+      {
+        "type": "p",
+        "text": "Más allá de los espectadores, las grabaciones se comparten, recortan y revisan. Si aparece una superposición en un clip, cualquiera puede verla. Mantener limpia la captura elimina ese problema en particular."
+      },
+      {
+        "type": "h2",
+        "text": "Lo que no cubre"
+      },
+      {
+        "type": "p",
+        "text": "Sea realista acerca de los límites."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "La redacción es \"la mayoría de las herramientas de captura\", no todas las herramientas. Pruebe su propia configuración antes de publicarla.",
+          "Streamproof no cambia la forma en que el juego o [BattlEye](/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/) ve tu sistema. Sólo afecta lo que se captura en pantalla.",
+          "Tu comportamiento todavía se nota. La puntería imposible, o saber dónde están los jugadores a través de las paredes, es perceptible para los espectadores y otros jugadores."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Pruebe antes de publicar"
+      },
+      {
+        "type": "p",
+        "text": "Realice una breve grabación de prueba antes de transmitir. Abra el menú, active ESP, grabe unos segundos y reprodúzcalo. Si aparece algo, deténgase y comuníquese con el soporte."
+      },
+      {
+        "type": "h2",
+        "text": "Configuraciones que se adaptan a los streamers"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Mantenga la ESP al mínimo. Menos etiquetas se ven más naturales en la pantalla.",
+          "Utilice un campo de visión de aimbot modesto y solo visible, como se describe en nuestra guía [aimbot settings](/blog/tarkov-aimbot-settings-explained/).",
+          "Guarde una configuración compatible con la transmisión para poder cargarla rápidamente.",
+          "Mantenga sus teclas de acceso rápido memorizadas para que nunca tenga que buscar a tientas en el menú."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Plan y requisitos"
+      },
+      {
+        "type": "p",
+        "text": "El producto es para raids principales, usa una clave separada de Arena y requiere Windows 10 u 11 con HVCI, Core Isolation, TPM y Secure Boot activados. Se requiere Cloud DMA para una funcionalidad completa. El acceso mensual cuesta $35 y el de por vida cuesta $150."
+      },
+      {
+        "type": "h2",
+        "text": "empezar"
+      },
+      {
+        "type": "p",
+        "text": "Puede revisar las características y los planes en la página [streamproof Tarkov trucos](/product/). Consulte la página de estado después de los parches antes de iniciar una sesión y comuníquese con el soporte mediante ticket o Discord si su prueba de captura muestra algo inesperado."
+      }
+    ]
+  }
+]

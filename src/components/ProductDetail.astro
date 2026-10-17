@@ -13,7 +13,10 @@ import ProductFeaturesSection from './product/ProductFeaturesSection.astro';
 import ProductDescriptionSection from './product/ProductDescriptionSection.astro';
 import ProductExperienceSection from './product/ProductExperienceSection.astro';
 import { useLocale } from '../i18n';
-// Re-add ProductRelatedGuidesSection when blog posts and relatedBlogSlugs are populated again.
+import { getBlogPostsBySlugs } from '../data/blog';
+import { getForumPostsBySlugs } from '../data/forum/locale';
+import ProductRelatedGuidesSection from './product/ProductRelatedGuidesSection.astro';
+import ProductRelatedDiscussionsSection from './product/ProductRelatedDiscussionsSection.astro';
 
 interface Props {
   product: ProductPage;
@@ -21,8 +24,14 @@ interface Props {
 }
 
 const { product, breadcrumbs } = Astro.props;
-const { t } = useLocale(Astro.currentLocale);
-const productFaqs = getProductFaqs(product.slug, product.kind);
+const { t, locale } = useLocale(Astro.currentLocale);
+const relatedGuides = getBlogPostsBySlugs(product.relatedBlogSlugs, locale).slice(0, 6);
+const relatedDiscussions = getForumPostsBySlugs(product.relatedForumSlugs, locale).slice(0, 4);
+const isHwidUtility = product.kind === 'utility';
+const hwidCopy = t.products.hwidPage;
+/** `product.name` is the internal tier key (icon lookup); visible copy uses the localized product name. */
+const productName = isHwidUtility ? product.name : t.cheats.title;
+const productFaqs = getProductFaqs(locale, product.slug, product.kind);
 const descriptionBlocks = [
   ...product.overview.paragraphs.map((text) => ({ type: 'p' as const, text })),
   ...(product.about ?? []),
@@ -44,7 +53,7 @@ const showDescToggle = descriptionBlocks.length > 2;
     <div class="product-detail-hero__grid mt-10 grid items-start gap-8">
       <div class="product-detail-hero__preview min-w-0">
         <h2 class="product-showcase-heading mb-4 font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-          {t.products.showcaseHeading}
+          {isHwidUtility && hwidCopy ? hwidCopy.showcaseHeading : t.products.showcaseHeading}
         </h2>
         <ProductScreenshotGallery images={product.images} id={`gallery-${product.slug}`} />
       </div>
@@ -53,20 +62,26 @@ const showDescToggle = descriptionBlocks.length > 2;
   </div>
 </section>
 
-<ProductHighlightsSection product={product} />
+<ProductHighlightsSection product={product} productName={productName} header={isHwidUtility ? hwidCopy?.highlights : undefined} moreNote={isHwidUtility ? hwidCopy?.highlightsMore : undefined} />
 
 <ProductDescriptionSection
   overviewTitle={product.overview.title}
+  overviewSubtitle={isHwidUtility ? hwidCopy?.overviewSubtitle : undefined}
   blocks={descriptionBlocks}
   showToggle={showDescToggle}
 />
 
-<ProductFeaturesSection features={product.fullFeatures} productName={product.name} />
+<ProductFeaturesSection
+  features={product.fullFeatures}
+  productName={productName}
+  section={isHwidUtility ? hwidCopy?.featuresSection : undefined}
+/>
 
 <ProductExperienceSection
   images={product.images}
   acquisition={product.acquisition}
-  productName={product.name}
+  productName={productName}
+  experience={isHwidUtility ? hwidCopy?.experience : undefined}
 />
 
 <SiteFaqSection
@@ -75,6 +90,9 @@ const showDescToggle = descriptionBlocks.length > 2;
   titleId={`catalog-faq-${product.slug}`}
   class="border-t border-border bg-background"
 />
+
+<ProductRelatedGuidesSection posts={relatedGuides} productName={productName} />
+<ProductRelatedDiscussionsSection threads={relatedDiscussions} />
 </div>
 
 <script>

@@ -6,12 +6,13 @@ import { useLocale } from '../../i18n';
 interface Props {
   features: string[];
   productName: string;
+  section?: { eyebrow: string; title: string; desc: string };
 }
 
-const { features, productName } = Astro.props;
+const { features, productName, section } = Astro.props;
 const { locale } = useLocale(Astro.currentLocale);
 
-const copy = {
+const localeCopy = {
   en: {
     eyebrow: 'Modules',
     title: "What's included",
@@ -32,7 +33,11 @@ const copy = {
     title: 'Ce qui est inclus',
     desc: `Chaque module et overlay de ${productName}. Tu les règles dans le portail.`,
   },
-}[locale];
+};
+
+const copy = section
+  ? { eyebrow: section.eyebrow, title: section.title, desc: section.desc }
+  : localeCopy[locale];
 ---
 
 <section id="product-features" class="py-12 md:py-16" aria-labelledby="product-features-title">

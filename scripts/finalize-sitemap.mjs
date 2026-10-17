@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { SITE_URL } from '../src/config/site-url.mjs';
 
 const root = process.cwd();
 const dist = path.join(root, 'dist');
@@ -10,8 +11,6 @@ if (!fs.existsSync(source)) {
   process.exit(1);
 }
 
-const { SITE_URL } = await import('../src/config/site.ts');
-
 const raw = fs.readFileSync(source, 'utf8');
 const urlCount = (raw.match(/<url>/g) ?? []).length;
 
@@ -20,29 +19,37 @@ if (urlCount === 0) {
   process.exit(1);
 }
 
+function field(block, name) {
+  return block.match(new RegExp(`<${name}>([^<]*)</${name}>`))?.[1] ?? '';
+}
+
 function formatUrlset(xml) {
-  return xml
-    .replace(/^<\?xml[^?]*\?>/, '<?xml version="1.0" encoding="UTF-8"?>\n')
-    .replace(/<urlset([^>]*)>/, '<urlset$1>\n')
-    .replace(/<\/urlset>/, '\n</urlset>\n')
-    .replace(/<url>/g, '  <url>\n')
-    .replace(/<\/url>/g, '\n  </url>\n')
-    .replace(/<loc>/g, '    <loc>')
-    .replace(/<\/loc>/g, '</loc>\n')
-    .replace(/<lastmod>/g, '    <lastmod>')
-    .replace(/<\/lastmod>/g, '</lastmod>\n')
-    .replace(/<changefreq>/g, '    <changefreq>')
-    .replace(/<\/changefreq>/g, '</changefreq>\n')
-    .replace(/<priority>/g, '    <priority>')
-    .replace(/<\/priority>/g, '</priority>\n')
-    .replace(/<xhtml:link/g, '    <xhtml:link');
+  const urls = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((match) => {
+    const block = match[1];
+    const lines = ['  <url>', `    <loc>${field(block, 'loc')}</loc>`];
+    const lastmod = field(block, 'lastmod');
+    const changefreq = field(block, 'changefreq');
+    const priority = field(block, 'priority');
+    if (lastmod) lines.push(`    <lastmod>${lastmod.slice(0, 10)}</lastmod>`);
+    if (changefreq) lines.push(`    <changefreq>${changefreq}</changefreq>`);
+    if (priority) lines.push(`    <priority>${priority}</priority>`);
+    lines.push('  </url>');
+    return lines.join('\n');
+  });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.join('\n')}
+</urlset>
+`;
 }
 
 const formatted = formatUrlset(raw);
-const sitemapUrl = `${SITE_URL}/sitemap-0.xml`;
+const sitemapUrl = `${SITE_URL}/sitemap.xml`;
 const lastmod = new Date().toISOString().slice(0, 10);
 
 fs.writeFileSync(path.join(dist, 'sitemap-0.xml'), formatted, 'utf8');
+fs.writeFileSync(path.join(dist, 'sitemap.xml'), formatted, 'utf8');
 
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -53,6 +60,5 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 </sitemapindex>
 `;
 fs.writeFileSync(path.join(dist, 'sitemap-index.xml'), indexXml, 'utf8');
-fs.writeFileSync(path.join(dist, 'sitemap.xml'), indexXml, 'utf8');
 
-console.log(`Sitemap finalized: ${urlCount} URLs → dist/sitemap-0.xml, index → dist/sitemap-index.xml and dist/sitemap.xml`);
+console.log(`Sitemap finalized: ${urlCount} URLs → dist/sitemap.xml (and dist/sitemap-0.xml)`);

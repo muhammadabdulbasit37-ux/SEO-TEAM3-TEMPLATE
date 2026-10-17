@@ -22,12 +22,7 @@ const standardPlans: ProductPlan[] = [
   },
 ];
 
-const ugcPlans: ProductPlan[] = [
-  { id: 'onetime', label: 'One-time access', priceUsd: 50, priceNote: 'USD · one-time' },
-];
-
-export function getProductPlans(productSlug: string): ProductPlan[] {
-  if (productSlug === 'ugc') return ugcPlans;
+export function getProductPlans(_productSlug: string): ProductPlan[] {
   return standardPlans;
 }
 

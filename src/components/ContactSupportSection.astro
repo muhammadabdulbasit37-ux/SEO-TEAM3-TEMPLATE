@@ -5,6 +5,7 @@ import { useLocale } from '../i18n';
 const { t, lp } = useLocale(Astro.currentLocale);
 import Icon from './icons/Icon.astro';
 import type { IconName } from './icons/types';
+import { HWID_CHECKOUT_PATH, PRIMARY_CHECKOUT_PATH } from '../config/checkout';
 import { Button } from '@/components/starwind/button';
 import {
   Card,
@@ -51,16 +52,24 @@ const c = t.support;
                 <p class="text-sm leading-relaxed text-muted-foreground">{channel.desc}</p>
               </CardContent>
               <CardFooter>
-                <Button
-                  as="a"
-                  href={channel.href.startsWith('/') ? lp(channel.href) : channel.href}
-                  variant="outline"
-                  size="sm"
-                  class="w-full"
-                >
-                  {channel.linkLabel}
-                  <Icon name="arrowRight" size={17} />
-                </Button>
+                <div class="flex w-full flex-col gap-2">
+                  <Button
+                    as="a"
+                    href={channel.href.startsWith('/') ? lp(channel.href) : channel.href}
+                    variant="outline"
+                    size="sm"
+                    class="w-full"
+                  >
+                    {channel.linkLabel}
+                    <Icon name="arrowRight" size={17} />
+                  </Button>
+                  {channel.href === PRIMARY_CHECKOUT_PATH && (
+                    <Button as="a" href={HWID_CHECKOUT_PATH} variant="outline" size="sm" class="w-full">
+                      {t.blog.buyHwidCta}
+                      <Icon name="arrowRight" size={17} />
+                    </Button>
+                  )}
+                </div>
               </CardFooter>
             </Card>
           </li>

@@ -1,38 +1,18 @@
 import type { IconName } from '../components/icons/types';
 
-export const featureIcons: Record<string, IconName> = {
-  Scripts: 'stepCrosshair',
-  'Map Hack / ESP': 'featureEsp',
-  'Minimap & Runes': 'featureRadar',
-  'Auto Combo': 'featureAimbot',
-  'Utility Suite': 'featureUtilitySuite',
-  'Auto Farm Bot': 'compareAutoFarm',
-  'Stream Proof': 'streamProof',
-  'Zoom Hack': 'compareZoomHack',
-  'Cloud Config & Updates': 'compareCloudBackup',
-};
-
-export const whyUsIcons: IconName[] = ['whyShield', 'whyUsers', 'whyMonitor', 'whyHeadphones'];
-
-export const setupStepIcons: IconName[] = ['acqPackage', 'acqSettings', 'acqCheck'];
-
-export const toolkitIcons: Record<string, IconName> = {
-  Combat: 'toolkitCombat',
-  Vision: 'toolkitVision',
-  Radar: 'toolkitRadar',
-  Weapons: 'toolkitWeapons',
-  Movement: 'toolkitMovement',
-  Profiles: 'toolkitProfiles',
-};
-
-export const workflowIcons: IconName[] = [
-  'workflowAlert',
-  'workflowPackage',
-  'workflowSettings',
-  'workflowCheck',
+export const featureIcons: IconName[] = [
+  'featureEsp',
+  'lootEsp',
+  'featureAimbot',
+  'featureNoRecoil',
+  'featureRadar',
+  'triggerBot',
+  'streamProof',
+  'featureUtilitySuite',
+  'compareCloudBackup',
 ];
 
-export const fieldNoteIcons: IconName[] = ['fieldCalendar', 'fieldShield', 'fieldHeadphones'];
+export const setupStepIcons: IconName[] = ['acqPackage', 'acqSettings', 'acqCheck'];
 
 export const blogTagIcons: Record<string, IconName> = {
   Guides: 'navBlog',
@@ -40,6 +20,10 @@ export const blogTagIcons: Record<string, IconName> = {
   Features: 'layers',
   Updates: 'refresh',
   Troubleshooting: 'alert',
+  'Buyer Guides': 'tag',
+  'Anti-Cheat': 'shieldCheck',
+  'Ban Help': 'alert',
+  'Setup Guides': 'settings',
 };
 
 /** Icon order matches `hero.statusPills` in each locale dictionary. */
@@ -86,8 +70,6 @@ export const productCategoryIcons: Record<string, IconName> = {
   Cosmetic: 'cosmetic',
 };
 
-export const acquisitionStepIcons: IconName[] = ['acqPackage', 'acqSettings', 'acqZap', 'acqCheck'];
-
 /** After-purchase timeline on product detail, one distinct icon per step */
 export const productAcquisitionStepIcons: IconName[] = [
   'liveStatus',
@@ -95,24 +77,6 @@ export const productAcquisitionStepIcons: IconName[] = [
   'headphones',
   'acqCheck',
 ];
-
-/** Product detail requirement tiles, prefer compat-style icons where mapped */
-export const productRequirementIcons: Partial<Record<IconName, IconName>> = {
-  reqWindows: 'compatWindows',
-  reqSteam: 'compatSteam',
-  reqSettings: 'compatPackage',
-  reqWifi: 'compatWifi',
-  reqCpu: 'compatMonitor',
-  reqRestorePoint: 'compatRefresh',
-  reqShieldGuide: 'compatShield',
-  reqMailOrder: 'mail',
-  reqShieldAccount: 'compatShield',
-  reqWifiPortal: 'compatWifi',
-};
-
-export function requirementDisplayIcon(icon: IconName): IconName {
-  return productRequirementIcons[icon] ?? icon;
-}
 
 export const compatibilityIcons: IconName[] = [
   'compatWindows',

@@ -1,37 +1,17 @@
-export interface ForumComment {
-  author: string;
-  age: string;
-  score: number;
-  body: string;
-  replies?: ForumComment[];
-}
-
-export interface ForumPost {
-  slug: string;
-  category: string;
-  categoryTone: 'purple' | 'blue' | 'green' | 'orange';
-  title: string;
-  excerpt: string;
-  author: string;
-  age: string;
-  commentsCount: number;
-  upvotes: number;
-  flair?: string;
-  body: string[];
-  comments: ForumComment[];
-  sourceTitle?: string;
-  sourcePath?: string;
-}
+export type { ForumComment, ForumPost } from './forum/types';
+import type { ForumPost } from './forum/types';
+import { forumPostsEn } from './forum/posts/en-threads';
 
 export const forumCategories = [
-  { name: 'General', tone: 'purple', icon: 'users' },
-  { name: 'Guides & Builds', tone: 'blue', icon: 'navBlog' },
-  { name: 'Patch Talk', tone: 'orange', icon: 'refresh' },
-  { name: 'Community', tone: 'green', icon: 'messageCircle' },
+  { name: 'Buying Questions', tone: 'blue', icon: 'tag' },
+  { name: 'Features', tone: 'purple', icon: 'layers' },
+  { name: 'Setup Help', tone: 'green', icon: 'settings' },
+  { name: 'Status and Updates', tone: 'orange', icon: 'refresh' },
+  { name: 'Anti-Cheat', tone: 'orange', icon: 'shieldCheck' },
+  { name: 'Ban Help', tone: 'green', icon: 'alert' },
 ] as const;
 
-/** Threads are added here. The forum stays empty until new discussions are published. */
-export const forumPosts: ForumPost[] = [];
+export const forumPosts: ForumPost[] = forumPostsEn;
 
 export function getForumPost(slug: string): ForumPost | undefined {
   return forumPosts.find((post) => post.slug === slug);

@@ -27,7 +27,7 @@ const sheet = variant === 'sheet';
 const triggerLabel = compact ? current.code.toUpperCase() : current.label;
 const currentCode = current.code.toUpperCase();
 const triggerAria = compact
-  ? `${currentCode} – ${t.ui.languageSwitcherLabel}: ${current.label}`
+  ? `${t.ui.languageSwitcherLabel}: ${current.label} (${currentCode})`
   : `${t.ui.languageSwitcherLabel}: ${current.label}`;
 const sheetAria = `${t.ui.languageSwitcherLabel}: ${current.label} ${currentCode}`;
 ---
@@ -39,7 +39,9 @@ const sheetAria = `${t.ui.languageSwitcherLabel}: ${current.label} ${currentCode
         <Icon name="globe" size={16} class="lang-dropdown__icon" aria-hidden="true" />
         <span class="lang-drawer__label">{current.label}</span>
         <span class="lang-drawer__code">{current.code.toUpperCase()}</span>
-        <Icon name="chevronDown" size={16} class="lang-drawer__chevron" aria-hidden="true" />
+        <span class="lang-drawer__chevron">
+          <Icon name="chevronDown" size={16} aria-hidden="true" />
+        </span>
       </summary>
       <div class="lang-drawer__panel" role="menu">
         <ul class="lang-dropdown__list">
@@ -297,12 +299,9 @@ const sheetAria = `${t.ui.languageSwitcherLabel}: ${current.label} ${currentCode
   }
 
   .lang-drawer__chevron {
+    display: inline-flex;
     margin-left: auto;
     opacity: 0.7;
-    transition: transform 0.15s ease;
-  }
-
-  .lang-drawer[open] .lang-drawer__chevron {
     transform: rotate(180deg);
   }
 

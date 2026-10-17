@@ -1,42 +1,42 @@
 {
   "/": {
-    "title": "Astuces et hacks Dota 2 | Scripts, maphack et ESP",
-    "description": "Astuces Dota 2 pour PC classées: scripts, maphack, zoom hack et niveaux de skin changer mis à jour à chaque patch sur {siteDomain}."
+    "title": "Cheats Escape From Tarkov | ESP, aimbot et loot ESP",
+    "description": "ESP joueurs, loot ESP, aimbot et sans recul pour les raids PMC sous Windows, avec mises à jour du loader après les patchs. Comparez les offres sur {siteDomain}."
   },
   "/product/": {
-    "title": "Dota 2 Astuces Élite | Bots et maphack complète",
-    "description": "Niveau Elite: farm bot automatique, kill steal, skin changer, suite de maphack complet et livraison prioritaire de correctifs sur {siteDomain}."
+    "title": "Cheats Tarkov | Acheter ESP, loot ESP et aimbot",
+    "description": "Pack raid complet avec ESP joueurs, filtres de loot, aimbot et sans recul sur les cartes Tarkov principales, pas Arena. Formules mensuelles et à vie sur {siteDomain}."
   },
-  "/products/dota-2-cheats/utilities/": {
-    "title": "Utilitaires Dota 2 | HWID, UGC et changeur de peau",
-    "description": "Choisissez HWID Spoofer, UGC ou Skin Changer, lorsque chaque utilitaire s'adapte et renvoie à des pages de produits complètes."
+  "/hwid-spoofer/": {
+    "title": "HWID Spoofer | Réinitialisation matérielle Escape From Tarkov",
+    "description": "Réinitialisez disque, MAC et GPU quand de nouveaux comptes échouent sur un même PC. La checklist portail couvre points de restauration, étapes de spoof et vérification avant de rejouer sur {siteDomain}."
   },
   "/blog/": {
-    "title": "Guides de triche et notes de mise à jour Dota 2",
-    "description": "Guides d'installation, comparaisons Lite vs Pro, listes de contrôle des correctifs VAC et conseils de configuration classés pour les tricheurs Dota."
+    "title": "Guides de cheats Tarkov | Réglages ESP, aimbot et BattlEye",
+    "description": "Guides de presets pour les raids, réglages ESP et aim, filtres de loot et checklists de statut BattlEye publiés sur {siteDomain}."
   },
   "/forum/": {
-    "title": "Forum communautaire Dota 2 | Astuces Dota",
-    "description": "Rejoignez les joueurs de Dota pour discuter des héros, des builds, des modifications de correctifs, des guides et des moments communautaires."
+    "title": "Forum des cheats Tarkov | Setup, statut et sujets HWID",
+    "description": "Discussions Escape From Tarkov en lecture seule sur l'équipement, les patchs et les guides. Les nouveaux sujets et réponses sont fermés."
   },
   "/faq/": {
-    "title": "FAQ | Dota 2 Astuces, produits et configuration",
-    "description": "Réponses sur les niveaux de triche, le maphack, les scripts, les outils HWID, la caisse et les guides de blog sur {siteDomain}."
+    "title": "FAQ des cheats Escape From Tarkov | Setup, offres et BattlEye",
+    "description": "Réponses sur les cheats Escape From Tarkov : installation, offres mensuelles et à vie, modules ESP et aim, statut BattlEye et aide au paiement sur {siteDomain}."
   },
   "/terms/": {
-    "title": "Conditions générales | Astuces Dota",
-    "description": "Conditions d'achat, utilisation de la licence et politique de remboursement pour les produits DotaCheats vendus via {siteDomain}."
+    "title": "Conditions de vente et d'utilisation de la licence",
+    "description": "Règles de remboursement, limites de licence, livraison à la caisse et divulgation des risques pour les produits vendus via {siteDomain}."
   },
   "/privacy/": {
-    "title": "Politique de confidentialité | Astuces Dota",
-    "description": "Comment {siteDomain} utilise des analyses, des cookies et des données de contact lorsque vous naviguez ou demandez de l'aide."
+    "title": "Politique de confidentialité | Données d'analyse et d'assistance",
+    "description": "Comment {siteDomain} utilise les cookies, les analyses et les informations que vous envoyez lors de l'ouverture d'un ticket d'assistance."
   },
   "/about/": {
-    "title": "À propos de DotaCheats",
-    "description": "Ce que DotaCheats publie: niveaux de triche Dota 2, utilitaires, guides et notes d'état sur {siteDomain}."
+    "title": "À propos de eftcheat.net et EFT CHEATS",
+    "description": "Qui publie les ressources Escape From Tarkov Cheats, les notes d'état et les canaux d'assistance sur {siteDomain}."
   },
   "/support/": {
-    "title": "Assistance | Astuces Dota",
-    "description": "Obtenez de l'aide sur la configuration du chargeur, le HWID et le paiement des niveaux de triche et des utilitaires Dota 2."
+    "title": "Support des cheats Tarkov | Loader, HWID et paiement",
+    "description": "Contactez les opérateurs Discord pour l'accès au portail, les erreurs de module et les questions de facturation avant ou après le paiement sur {siteDomain}."
   }
 }

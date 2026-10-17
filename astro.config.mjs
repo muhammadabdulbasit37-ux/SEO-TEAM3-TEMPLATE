@@ -84,7 +84,7 @@ function deferredBootPlugin() {
 }
 
 export default defineConfig({
-  site: 'https://dotacheats.com',
+  site: 'https://eftcheat.net',
   trailingSlash: 'always',
   i18n: {
     locales: ['en', 'es', 'de', 'fr'],

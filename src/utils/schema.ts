@@ -2,6 +2,7 @@ import type { FaqItem } from '../i18n/types';
 import type { SiteLocale } from '../i18n/locales';
 import { schemaLanguage } from '../i18n/localeTags';
 import { SUPPORT_EMAIL } from '../config/site';
+import { BRAND_LOGO_SCHEMA } from '../config/brand';
 import { SITE_ORIGIN, absoluteAssetUrl, canonicalUrl, getOrganizationSameAs } from '../config/seo';
 
 export interface BreadcrumbItem {
@@ -28,12 +29,12 @@ export function websiteSchema(locale?: SchemaLocale, description?: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'DotaCheats',
+    name: 'EFT CHEATS',
     url: `${SITE_ORIGIN}/`,
     inLanguage: schemaLanguage(locale),
     description:
       description ??
-      'Dota 2 cheats with scripts, map hack, zoom hack, Skin Changer and ranked-safe tiers for PC.',
+      'Escape From Tarkov cheats with player ESP, loot ESP, aimbot and no recoil for PMC raids on Windows.',
   };
 }
 
@@ -51,9 +52,9 @@ export function organizationSchema(locale?: SchemaLocale) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'DotaCheats',
+    name: 'EFT CHEATS',
     url: `${SITE_ORIGIN}/`,
-    logo: `${SITE_ORIGIN}/logo.svg`,
+    logo: absoluteAssetUrl(BRAND_LOGO_SCHEMA),
     email: SUPPORT_EMAIL,
     ...(sameAs.length > 0 ? { sameAs } : {}),
     contactPoint: [
@@ -84,7 +85,7 @@ export function collectionPageSchema(input: {
     inLanguage: schemaLanguage(input.locale),
     isPartOf: {
       '@type': 'WebSite',
-      name: 'DotaCheats',
+      name: 'EFT CHEATS',
       url: `${SITE_ORIGIN}/`,
     },
   };
@@ -105,7 +106,7 @@ export function webPageSchema(input: {
     inLanguage: schemaLanguage(input.locale),
     isPartOf: {
       '@type': 'WebSite',
-      name: 'DotaCheats',
+      name: 'EFT CHEATS',
       url: `${SITE_ORIGIN}/`,
     },
   };
@@ -127,19 +128,6 @@ export function faqPageSchema(items: FaqItem[], locale?: SchemaLocale) {
   };
 }
 
-export function itemListSchema(items: { name: string; url: string }[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: item.name,
-      url: canonicalUrl(item.url),
-    })),
-  };
-}
-
 export function discussionForumPostingSchema(input: {
   name: string;
   text: string;
@@ -153,11 +141,11 @@ export function discussionForumPostingSchema(input: {
     '@type': 'DiscussionForumPosting',
     headline: input.name,
     articleBody: input.text,
-    url: canonicalUrl(input.url),
+    url: schemaPageUrl(input.url),
     inLanguage: schemaLanguage(input.locale),
     author: { '@type': 'Person', name: input.author },
     commentCount: input.comments,
-    isPartOf: { '@type': 'CollectionPage', name: 'DotaCheats Community Forum', url: canonicalUrl('/forum/') },
+    isPartOf: { '@type': 'CollectionPage', name: 'EFT CHEATS Community Forum', url: canonicalUrl('/forum/') },
   };
 }
 
@@ -185,7 +173,7 @@ export function productSchema(input: {
     sku: input.sku ?? input.url.replace(/\//g, '-'),
     brand: {
       '@type': 'Brand',
-      name: 'DotaCheats',
+      name: 'EFT CHEATS',
     },
     ...(input.image ? { image: absoluteAssetUrl(input.image) } : {}),
     offers: {
@@ -196,29 +184,15 @@ export function productSchema(input: {
       availability: 'https://schema.org/InStock',
       seller: {
         '@type': 'Organization',
-        name: 'DotaCheats',
+        name: 'EFT CHEATS',
       },
     },
   };
 }
 
-/** @deprecated Prefer productSchema for product/cheat detail pages. */
-export function softwareApplicationSchema(input: {
-  name: string;
-  description: string;
-  url: string;
-  image?: string;
-  offerUrl?: string;
-  locale?: SchemaLocale;
-}) {
-  return productSchema({
-    name: input.name,
-    description: input.description,
-    url: input.url,
-    offerUrl: input.offerUrl ?? input.url,
-    image: input.image,
-    locale: input.locale,
-  });
+function schemaPageUrl(url: string): string {
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  return canonicalUrl(url);
 }
 
 export function articleSchema(input: {
@@ -230,31 +204,32 @@ export function articleSchema(input: {
   dateModified?: string;
   locale?: SchemaLocale;
 }) {
+  const pageUrl = schemaPageUrl(input.url);
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: input.name,
     description: input.description,
-    url: canonicalUrl(input.url),
+    url: pageUrl,
     image: absoluteAssetUrl(input.image),
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
     inLanguage: schemaLanguage(input.locale),
     author: {
       '@type': 'Organization',
-      name: 'DotaCheats',
+      name: 'EFT CHEATS',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'DotaCheats',
+      name: 'EFT CHEATS',
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_ORIGIN}/logo.svg`,
+        url: absoluteAssetUrl(BRAND_LOGO_SCHEMA),
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': canonicalUrl(input.url),
+      '@id': pageUrl,
     },
   };
 }

@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
-
 Disallow: /go/
 
-Sitemap: https://dotacheats.com/sitemap-index.xml
-Sitemap: https://dotacheats.com/sitemap.xml
+Sitemap: https://eftcheat.net/sitemap.xml
 
-# RSS: https://dotacheats.com/rss.xml
+# RSS: https://eftcheat.net/rss.xml

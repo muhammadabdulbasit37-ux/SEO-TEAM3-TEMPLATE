@@ -1,9 +1,12 @@
 import { CHEAT_PRODUCT_SLUGS, CHEATS_PRIMARY_SLUG, HWID_SPOOFER_SLUG } from '../config/catalog';
 import { PRODUCT_BASE } from '../config/site';
 import { getTranslations } from '../i18n';
+import { deepApplySiteTokens } from '../i18n/brandTokens';
 import type { SiteLocale } from '../i18n/locales';
 import type { Translations } from '../i18n/types';
-import { checkoutForSlug, checkoutPath } from '../config/checkout';
+import { checkoutForSlug } from '../config/checkout';
+import { EFT_SHOWCASE_GALLERY_KEYS } from '../config/gameplayMedia';
+import { HWID_GALLERY_KEYS } from '../config/hwidMedia';
 import type { IconName } from '../components/icons/types';
 import { getProductCopyBundle, registerProductCopyBundle, type ProductCopyBundle } from './products/exportCopy';
 import esProductCopy from './products/locales/es.json';
@@ -67,64 +70,82 @@ export interface ProductPage {
   about?: { type: 'h2' | 'p'; text: string }[];
   body: { type: 'h2' | 'p'; text: string }[];
   relatedBlogSlugs: string[];
+  relatedForumSlugs: string[];
 }
 
 /** Guides paired with each product detail page */
 export const productRelatedBlogSlugs: Record<string, string[]> = {
-  lite: ['dota-2-map-hack-setup', 'dota-2-lite-vs-pro', 'dota-2-zoom-hack-guide', 'vac-patch-day-checklist'],
-  pro: [
-    'dota-2-scripts-ranked-mmr',
-    'dota-2-auto-combo-hero-scripts',
-    'dota-2-lite-vs-pro',
-    'dota-2-stream-proof-setup',
-  ],
   elite: [
-    'dota-2-elite-tier-guide',
-    'dota-2-cheats-features-guide',
-    'dota-2-map-hack-setup',
-    'vac-patch-day-checklist',
-    'how-to-buy-dota-2-cheats-2026',
+    'escape-from-tarkov-cheats-price-monthly-vs-lifetime',
+    'how-to-set-up-escape-from-tarkov-cheats-requirements',
+    'tarkov-cloud-dma-explained-do-you-need-it',
+    'tarkov-loot-esp-filters-price-category-containers',
+    'tarkov-aimbot-settings-explained',
+    'streamproof-tarkov-cheats-for-streamers',
+    'battleye-and-escape-from-tarkov-cheats-what-to-know',
   ],
   'hwid-spoofer': [
-    'dota-2-hwid-spoofer-after-ban',
-    'valve-anti-cheat-unable-to-verify',
-    'vac-patch-day-checklist',
-    'dota-2-external-cheat-guide',
-  ],
-  ugc: [
-    'valve-anti-cheat-unable-to-verify',
-    'dota-2-hwid-spoofer-after-ban',
-    'how-to-buy-dota-2-cheats-2026',
-  ],
-  'unlock-all': [
-    'dota-2-skin-changer-guide',
-    'dota-2-cheats-features-guide',
-    'dota-2-stream-proof-setup',
+    'tarkov-hwid-ban-how-hwid-spoofer-works',
+    'battleye-and-escape-from-tarkov-cheats-what-to-know',
   ],
 };
 
+/** Community threads paired with each product detail page */
+export const productRelatedForumSlugs: Record<string, string[]> = {
+  elite: [
+    'tarkov-cheats-monthly-or-lifetime-worth-it',
+    'do-i-need-cloud-dma-for-tarkov-cheats',
+    'tarkov-cheat-loader-not-working-what-to-check',
+    'how-to-check-tarkov-cheat-status-after-patch',
+  ],
+  'hwid-spoofer': ['tarkov-hwid-ban-does-a-spoofer-help', 'tarkov-battleye-ban-honest-talk-risk'],
+};
+
 const productBase = PRODUCT_BASE;
+
+const hwidAcquisitionSteps: AcquisitionStep[] = [
+  {
+    num: '01',
+    title: 'Confirm spoofer status',
+    desc: 'Read the live banner on {siteDomain} and Discord #status after BattlEye changes before you buy. Compatibility notes live on the status page.',
+  },
+  {
+    num: '02',
+    title: 'Select monthly or lifetime',
+    desc: 'Monthly and lifetime plans include the same portal tools; pick the duration that matches how long you need hardware recovery access.',
+  },
+  {
+    num: '03',
+    title: 'Verify setup with ops',
+    desc: 'Open Discord with your order email and Windows version so staff can flag obvious driver or shared-PC conflicts early.',
+  },
+  {
+    num: '04',
+    title: 'Run the portal checklist',
+    desc: 'Restore point, driver cleanup, spoof pass, cold reboot, and identifier verification, and only then sign into a fresh Escape From Tarkov account.',
+  },
+];
 
 const defaultAcquisitionSteps: AcquisitionStep[] = [
   {
     num: '01',
     title: 'Review current status',
-    desc: 'Check the live banner on dotacheats.com and Discord #status before purchase, especially after a Dota 2 or VAC update.',
+    desc: 'Check the live banner on {siteDomain} and Discord #status before purchase, especially after an Escape From Tarkov or BattlEye update.',
   },
   {
     num: '02',
     title: 'Choose your access tier',
-    desc: 'Select Elite dota cheats or the utility that matches your goal. Review the feature list before checkout via our secure checkout.',
+    desc: 'Select Escape From Tarkov Cheats or the utility that matches your goal. Review the feature list before checkout via our partner checkout.',
   },
   {
     num: '03',
     title: 'Contact the team',
-    desc: 'Open Discord and confirm availability, Steam platform, and payment details with your order email ready.',
+    desc: 'Open Discord and confirm availability, Windows setup, and payment details with your order email ready.',
   },
   {
     num: '04',
     title: 'Follow guided setup',
-    desc: 'Use only the operator portal, patch loader, and setup guide. Test in a lobby, load presets, then queue ranked or Turbo.',
+    desc: 'Use only the operator portal, patch loader, and setup guide. Test offline, load presets, then run PMC raids when status is online.',
   },
 ];
 
@@ -136,95 +157,101 @@ function acquisitionFor(productName: string): ProductAcquisition {
 }
 
 const sharedGoodToKnow =
-  'Dota 2 and VAC receive frequent updates. Confirm module availability on the live status panel at dotacheats.com before you purchase or launch. Overlay behavior may differ in lobbies, replays and spectator mode after patches.';
+  'Escape From Tarkov and BattlEye receive frequent updates. Confirm module availability on the live status panel at {siteDomain} before you purchase or launch. Cloud DMA is a separate purchase when required for full functionality.';
 
 const sharedLimitations =
-  'Third-party software in Dota 2 can violate Valve Terms of Use and lead to VAC bans or account action. You use this software at your own risk. Compatibility and availability can change after game, VAC, or Windows updates without notice.';
+  'Third-party software in Escape From Tarkov can violate Battlestate Games terms and lead to BattlEye bans or account action. You use this software at your own risk. Compatibility and availability can change after game, BattlEye, or Windows updates without notice.';
 
-const dotaSystemRequirements: SystemRequirement[] = [
-  { icon: 'reqWindows', text: 'Supported 64-bit edition of Windows 10 or Windows 11.' },
-  { icon: 'reqSteam', text: 'Current Dota 2 client via Steam with latest patches applied.' },
-  { icon: 'reqSettings', text: 'Administrator access for loader installation and patch updates.' },
-  { icon: 'reqWifi', text: 'Stable internet connection for portal access and patch delivery.' },
-  { icon: 'reqCpu', text: 'A system that meets Dota 2 published hardware requirements.' },
+const eftSystemRequirements: SystemRequirement[] = [
+  { icon: 'reqWindows', text: 'Windows 10 or 11 64-bit (Intel or AMD).' },
+  { icon: 'reqWifi', text: 'Stable internet and loader access after purchase.' },
+  { icon: 'reqSettings', text: 'Current Escape From Tarkov client; check status after major patches.' },
+  { icon: 'reqShieldGuide', text: 'Cloud DMA is a separate purchase when required for full functionality.' },
 ];
 
-type GalleryKey = keyof typeof galleryRaw;
-
-const gameplay = '/images/gameplay';
-
-/**
- * Showcase media for product pages.
- * Stills only today. To add a clip later, set `videoSrc` on an entry
- * (for example `videoSrc: '/videos/map-hack.mp4'`). `src` remains the poster.
- */
 const galleryRaw = {
-  gpMapHack: {
-    src: `${gameplay}/dota-2-map-hack.png`,
-    alt: 'Dota 2 map hack showing enemy hero positions and ward locations',
-    caption: 'Map hack awareness',
-    captionDesc: 'Enemy position tracking, ward ESP and rune timers during a ranked mid push.',
+  gpDaylightEsp: {
+    src: '/images/gameplay/eft-esp-daylight-player-highlights.webp',
+    alt: 'Escape From Tarkov first-person view with player ESP showing red-highlighted figures, skeleton outlines, and distance labels in a sunlit industrial yard.',
+    caption: 'Player ESP in daylight raids',
+    captionDesc:
+      'Red and green player highlights, skeleton wireframes, and distance readouts over an outdoor industrial map.',
   },
-  gpScripts: {
-    src: `${gameplay}/dota-2-scripts-combo.png`,
-    alt: 'Dota 2 Auto Combo script landing Invoker combo sequence',
-    caption: 'Auto Combo scripts',
-    captionDesc: 'Invoker Tornado → EMP → Meteor chain with Smart Cast prediction active.',
+  gpNightEsp: {
+    src: '/images/gameplay/eft-esp-night-vision-skeletons.webp',
+    alt: 'Escape From Tarkov night-vision scene with skeleton ESP, PMC and Scav labels, and meter readouts visible through interior walls.',
+    caption: 'Skeleton ESP at night',
+    captionDesc:
+      'Stick-figure skeletons, name tags, and distance markers through walls in a green-tinted indoor raid.',
   },
-  gpZoomHack: {
-    src: `${gameplay}/dota-2-zoom-hack.png`,
-    alt: 'Dota 2 zoom hack extended camera view of entire lane',
-    caption: 'Extended camera zoom',
-    captionDesc: 'Zoom hack showing full lane vision for safer positioning and gank avoidance.',
-  },
-  gpSkinChanger: {
-    src: `${gameplay}/dota-2-skin-changer.png`,
-    alt: 'Dota 2 Skin Changer previewing arcana cosmetic on hero',
-    caption: 'Skin Changer preview',
-    captionDesc: 'Local arcana and immortal preview via Unlock All, client-side only.',
-  },
-  gpAutoKill: {
-    src: `${gameplay}/dota-2-auto-kill-steal.png`,
-    alt: 'Dota 2 Auto Kill Steal finishing low HP enemy with Zeus ultimate',
-    caption: 'Auto Kill Steal',
-    captionDesc: 'Lethal threshold detection activating Finger of Death at perfect timing.',
-  },
-  gpFarmBot: {
-    src: `${gameplay}/dota-2-farm-bot.png`,
-    alt: 'Dota 2 Auto Farm Bot clearing jungle camps efficiently',
-    caption: 'Auto Farm Bot',
-    captionDesc: 'Jungle pathing with stack timer and courier manager for max GPM.',
-  },
-  gpHeroEsp: {
-    src: `${gameplay}/dota-2-hero-esp.png`,
-    alt: 'Dota 2 hero ESP with name tags and distance readouts',
-    caption: 'Hero ESP overlay',
-    captionDesc: 'Hero name tags, team colors and distance markers through fog of war.',
+  gpWallEsp: {
+    src: '/images/gameplay/eft-esp-enemies-through-concrete-wall.webp',
+    alt: 'Escape From Tarkov first-person aim with red wallhack silhouettes and weapon labels visible through a concrete wall outdoors.',
+    caption: 'ESP through hard cover',
+    captionDesc:
+      'Red enemy silhouettes and weapon callouts rendered through a concrete barrier while aiming down sights.',
   },
 } satisfies Record<
   string,
-  {
-    src: string;
-    alt: string;
-    caption: string;
-    captionDesc: string;
-    videoSrc?: string;
-  }
+  { src: string; alt: string; caption: string; captionDesc: string; videoSrc?: string }
 >;
 
+type GalleryKey = keyof typeof galleryRaw;
+
 function slide(...keys: GalleryKey[]): ProductSlide[] {
-  return keys.map((k) => {
-    const item = galleryRaw[k];
+  return keys.map((key) => {
+    const item = galleryRaw[key];
+    if (!item) throw new Error(`Missing gallery key: ${String(key)}`);
+    const { src, alt, caption, captionDesc, videoSrc } = item;
     return {
-      src: item.src,
-      alt: item.alt,
-      caption: item.caption,
-      captionDesc: item.captionDesc,
-      kind: item.videoSrc ? 'video' : 'image',
-      ...(item.videoSrc ? { videoSrc: item.videoSrc } : {}),
+      src,
+      alt,
+      caption,
+      captionDesc,
+      ...(videoSrc ? { videoSrc, kind: 'video' as const } : {}),
     };
   });
 }
+
+const eftShowcaseSlides = slide(...EFT_SHOWCASE_GALLERY_KEYS);
+
+const hwidGalleryRaw = {
+  hwidSerialCheck: {
+    src: '/images/hwid-spoofer/hwid-spoofer-serial-check-panel.webp',
+    alt: 'Operator portal serial screen with disk, board, display, UUID, GPU, and network rows marked changed or unchanged beside a check-serials action.',
+    caption: 'Identifier diff view',
+    captionDesc:
+      'Scan each hardware row for changed versus unchanged values, then reboot only after the diff matches the portal checklist.',
+  },
+  hwidUefiSpoof: {
+    src: '/images/hwid-spoofer/hwid-spoofer-uefi-spoof-panel.webp',
+    alt: 'UEFI spoof tab showing permanent spoof switch, GPU and ethernet toggles, and a seed field on a dark mountain-themed dashboard.',
+    caption: 'UEFI toggle board',
+    captionDesc:
+      'Enable GPU or ethernet spoofing, set a seed, and trigger permanent spoof without leaving the UEFI tab.',
+  },
+} satisfies Record<
+  string,
+  { src: string; alt: string; caption: string; captionDesc: string; videoSrc?: string }
+>;
+
+type HwidGalleryKey = keyof typeof hwidGalleryRaw;
+
+function hwidSlide(...keys: HwidGalleryKey[]): ProductSlide[] {
+  return keys.map((key) => {
+    const item = hwidGalleryRaw[key];
+    const { src, alt, caption, captionDesc, videoSrc } = item;
+    return {
+      src,
+      alt,
+      caption,
+      captionDesc,
+      ...(videoSrc ? { videoSrc, kind: 'video' as const } : {}),
+    };
+  });
+}
+
+const hwidShowcaseSlides = hwidSlide(...HWID_GALLERY_KEYS);
 
 function slugFromHref(href: string): string {
   const normalized = href.replace(/^\//, '').replace(/\/$/, '');
@@ -239,115 +266,50 @@ function slugFromHref(href: string): string {
 }
 
 const tierAbout: Record<string, ProductPage['about']> = {
-  lite: [
-    {
-      type: 'p',
-      text: 'Dota 2 Lite is built for players who want map awareness first. In ranked, knowing enemy positions, ward placements and rune timings wins more fights than raw mechanics: Lite gives you that edge without script automation.',
-    },
-    { type: 'h2', text: 'Ranked-safe by design' },
-    {
-      type: 'p',
-      text: 'Lite skips Auto Combo and bot modules entirely. Your gameplay looks natural while map hack, zoom hack and rune timers keep you informed. Stream-proof mode hides overlays from OBS capture for content creators.',
-    },
-  ],
-  pro: [
-    {
-      type: 'p',
-      text: 'Dota 2 Pro is the sweet spot for ranked grinders. Auto Combo, Orbwalker and Smart Cast help you win teamfights without obvious bot patterns, when you tune Delay Setting using our portal presets.',
-    },
-    { type: 'h2', text: 'Scripts + awareness combined' },
-    {
-      type: 'p',
-      text: 'Pro inherits every Lite module and adds Auto Combo, Target Selector, Activator and ability radius drawing. You see the fight before it starts and win it with scripts that stay human at default settings.',
-    },
-  ],
   elite: [
     {
       type: 'p',
-      text: 'Dota 2 Elite is the private build for players who want everything: Auto Farm Bot, Auto Kill Steal, Auto Dagon, Skin Changer, full map hack and direct developer support. Limited slots keep the build maintainable and patch cycles fast.',
+      text: 'This license covers main Escape From Tarkov raids with player ESP, loot ESP, aimbot, no recoil, radar and extract helpers. Arena is a separate product key. Cloud DMA is optional when you need full hardware pass-through.',
     },
-    { type: 'h2', text: 'Use Elite responsibly' },
+    { type: 'h2', text: 'Tune before you queue' },
     {
       type: 'p',
-      text: 'Elite power demands disciplined profiles. Test in lobbies, start with portal conservative presets, and scale up over days, not minutes. Staff in Discord help Elite users tune before their first ranked queue.',
+      text: 'Load portal presets offline first, then raise ESP distance and aim smoothing over several sessions. Discord staff help with loader tabs if a module conflicts after a BattlEye patch.',
     },
   ],
 };
 
 const tierBodies: Record<string, ProductPage['body']> = {
-  lite: [
-    { type: 'h2', text: 'Included modules' },
-    {
-      type: 'p',
-      text: 'Hero ESP with distance and name tags, ward and sentry locator, rune spawn timers, zoom hack, and stream-safe overlay hiding. Config presets for ranked and Turbo ship in the portal, load before your first queue.',
-    },
-    { type: 'h2', text: 'Upgrade path' },
-    {
-      type: 'p',
-      text: 'Lite license holders can upgrade to Pro or Elite through the portal without losing config backups. Compare tiers on the main product page before checkout via our secure checkout.',
-    },
-  ],
-  pro: [
-    { type: 'h2', text: 'Scripts and automation' },
-    {
-      type: 'p',
-      text: 'Auto Combo, Orbwalker, Smart Cast with Prediction, Target Selector and Activator for BKB, Hex and Orchid. Delay Setting tunes cast timing so scripts stay natural in ranked. Start with portal presets, not max sliders.',
-    },
-    { type: 'h2', text: 'Recommended pairing' },
-    {
-      type: 'p',
-      text: 'Pro is the most popular tier at dotacheats.com, enough firepower for high-MMR lobbies without Elite slot limits. Pair with our scripts guide in the blog before your first ranked session.',
-    },
-  ],
   elite: [
-    { type: 'h2', text: 'Full bot and finish suite' },
+    { type: 'h2', text: 'Plans and delivery' },
     {
       type: 'p',
-      text: 'Auto Farm Bot, Lane Control AI, Auto Kill Steal, Auto Dagon, Skin Changer and full map hack with smoke alerts. Use lobby testing before ranked: Elite power requires disciplined profiles, not rage settings.',
+      text: 'Choose monthly ($35) or lifetime ($150) at checkout. The operator portal unlocks instantly with loader download, preset library and patch notes. Check the live status banner before every session.',
     },
-    { type: 'h2', text: 'Availability' },
+    { type: 'h2', text: 'Module layout' },
     {
       type: 'p',
-      text: 'Elite shows as limited slots on the status banner. Open a Discord ticket if checkout is gated, staff confirm slot availability before purchase.',
+      text: 'ESP, loot, aim, weapons, radar and utilities each have their own loader tab so you can disable combat assists while keeping loot filters during stash runs.',
     },
   ],
 };
 
 const utilityBodies: Record<string, ProductPage['body']> = {
   'hwid-spoofer': [
-    { type: 'h2', text: 'When you need it' },
+    { type: 'h2', text: 'Signals this utility fits' },
     {
       type: 'p',
-      text: 'Use when fresh Steam accounts fail instantly on one PC but work elsewhere, classic HWID enforcement. Not for account-only VAC cases; start with a clean Steam account and conservative cheat profiles from [Dota 2 Cheats](/product/).',
+      text: 'Reach for it when new Escape From Tarkov logins fail immediately on one machine yet succeed on another, which points to hardware enforcement. Skip it for account-only BattlEye outcomes; pair a clean account with conservative presets from [Escape From Tarkov Cheats](/product/) once identifiers look fresh. First run the portal compatibility scan, snapshot a Windows restore point, and after a cold reboot confirm identifiers actually changed before opening the game.',
     },
-    { type: 'h2', text: 'Full workflow' },
+    { type: 'h2', text: 'Checklist order' },
     {
       type: 'p',
-      text: 'Restore point, driver cleanup, spoof application, cold reboot, identifier verification, then conservative cheat profile before ranked. Full checklist ships in the portal and in our HWID blog guide.',
+      text: 'Restore point, driver cleanup, spoof pass, cold reboot, identifier verification, then a low-profile cheat profile before raiding. The portal and HWID blog guide mirror the same step order. Do not stack two spoof tools; shared or work PCs may be poor fits; driver-level edits stay your risk. Read the status page on {siteDomain} before checkout and again before launch.',
     },
-  ],
-  'ugc': [
-    { type: 'h2', text: 'What UGC covers' },
+    { type: 'h2', text: 'System requirements' },
     {
       type: 'p',
-      text: 'UGC (Unban & Governance Control) is an appeal workspace for Steam restrictions, VAC bans, trade holds and security flags. Build custom workflows, automate dispute steps and track case status from one dashboard, not a guaranteed unban service.',
-    },
-    { type: 'h2', text: 'Realistic expectations' },
-    {
-      type: 'p',
-      text: 'Some VAC bans cannot be reversed. Pair [HWID Spoofer](/hwid-spoofer/) when hardware is flagged, or a new account when reputation is burned, then use [Dota 2 Cheats](/product/) with conservative presets.',
-    },
-  ],
-  'unlock-all': [
-    { type: 'h2', text: 'Local preview only' },
-    {
-      type: 'p',
-      text: 'Cosmetics display on your client for testing and content creation. Other players in your lobby see your actual inventory, not preview skins.',
-    },
-    { type: 'h2', text: 'Included with Elite' },
-    {
-      type: 'p',
-      text: 'Skin Changer ships inside the Elite tier. Buy standalone here if you want cosmetic preview without full combat modules.',
+      text: 'Run it on 64-bit Windows 10 or 11 from an administrator account. Make a Windows restore point first, keep a steady connection while the portal verification tools run, and finish every step of the portal guide before you open Escape From Tarkov again.',
     },
   ],
 };
@@ -356,182 +318,65 @@ const productContent: Record<
   string,
   Pick<ProductPage, 'overview' | 'images' | 'fullFeatures' | 'goodToKnow' | 'limitations' | 'systemRequirements'>
 > = {
-  lite: {
-    images: slide('gpHeroEsp', 'gpMapHack', 'gpZoomHack'),
-    goodToKnow: sharedGoodToKnow,
-    limitations: sharedLimitations,
-    systemRequirements: dotaSystemRequirements,
-    fullFeatures: [
-      'Player ESP & hero boxes',
-      'Ward & sentry locator',
-      'Jungle camp awareness',
-      'Ability cooldown tracking',
-      'Minimap hack overlay',
-      'Streamproof overlay mode',
-      'Distance readouts',
-      'Team color filter',
-      'Rune spawn timers',
-      'Zoom hack',
-      'Turbo preset config',
-      'Ranked preset config',
-      'Cloud config backup',
-      'Patch auto-updater',
-    ],
-    overview: {
-      title: 'Built around a clear Dota 2 awareness workflow',
-      paragraphs: [
-        'Dota 2 Lite focuses on hero ESP, ward locator, rune timers and zoom hack, everything you need to track ganks and map control without script automation. Modules are grouped in the portal so you can tune distance, colors, and stream-proof mode before your first queue.',
-        'Lite is the entry path for ranked and Turbo players who want map awareness with minimal report risk. No Auto Combo, no bots, just readable overlays maintained every patch at dotacheats.com.',
-      ],
-    },
-  },
-  pro: {
-    images: slide('gpScripts', 'gpMapHack', 'gpHeroEsp'),
-    goodToKnow: sharedGoodToKnow,
-    limitations: sharedLimitations,
-    systemRequirements: dotaSystemRequirements,
-    fullFeatures: [
-      'All Lite ESP & map hack modules',
-      'Auto Combo scripts',
-      'Orbwalker',
-      'Smart Cast & Prediction',
-      'Target Selector',
-      'Activator (BKB/Hex/Orchid)',
-      'Auto Heal',
-      'Ability radius drawing',
-      'Delay Setting tuning',
-      'Hero-specific script profiles',
-      'Smoke alert integration',
-      'Ranked-safe default presets',
-      'Lobby test profile',
-      'Cloud config backup',
-      'Patch auto-updater',
-      'Discord operator support',
-    ],
-    overview: {
-      title: 'Built around a clear Dota 2 scripts workflow',
-      paragraphs: [
-        'Dota 2 Pro adds Auto Combo, Orbwalker, Smart Cast and Activator on top of every Lite module. Hero profiles, delay tuning and activation keys live in one scripts tab, tuned for ranked lobbies when you start with portal presets, not max sliders.',
-        'Pro is the most popular tier: enough firepower for ranked and Turbo without Elite slot limits. Target Selector and Activator keep you efficient mid-fight while scripts stay human at default settings.',
-      ],
-    },
-  },
   elite: {
-    images: slide('gpAutoKill', 'gpFarmBot', 'gpSkinChanger'),
+    images: eftShowcaseSlides,
     goodToKnow: sharedGoodToKnow,
     limitations: sharedLimitations,
-    systemRequirements: dotaSystemRequirements,
+    systemRequirements: eftSystemRequirements,
     fullFeatures: [
-      'All Lite + Pro modules',
-      'Auto Farm Bot',
-      'Lane Control AI',
-      'Stack timer',
-      'Auto Courier Manager',
-      'Auto Kill Steal',
-      'Auto Dagon',
-      'Full map hack suite',
-      'Smoke alert system',
-      'Vision detector',
-      'Skin Changer (Unlock All)',
-      'Priority patch queue',
-      'Direct dev Discord support',
-      'Elite conservative presets',
-      'Cloud config backup',
-      'Patch auto-updater',
-      'Private slot access',
+      'Player ESP (box, skeleton, health, distance)',
+      'PMC, Scav and boss ESP filters',
+      'Loot ESP with category and price filters',
+      'Container, corpse and quest item highlights',
+      'Extract and transition markers',
+      'Aimbot with FOV, smoothing and bone select',
+      'No recoil and no sway toggles',
+      'Stream-proof overlays',
+      'Hotkeys and config save/load',
+      '2D radar and OOF arrows',
+      'Raids only (separate key from Arena)',
+      'Instant delivery via operator portal',
+      'Windows 10/11; Intel/AMD',
+      'Check live status after BattlEye patches',
+      'Cloud DMA optional for full functionality',
     ],
     overview: {
-      title: 'Built around a full Dota 2 operator workflow',
+      title: 'One license for PMC raids on Windows',
       paragraphs: [
-        'Dota 2 Elite is the private build with Auto Farm Bot, Auto Kill Steal, Auto Dagon, Skin Changer, full map hack and priority patch delivery. Every Lite and Pro module is included, no caps, no upsells inside the loader.',
-        'Elite slots are limited so patch cycles stay fast and builds stay maintainable. Direct dev support in Discord helps you tune conservative profiles before ranked. Check the status banner on dotacheats.com before purchase.',
+        'Escape From Tarkov Cheats bundles awareness and combat modules for main raids: player and loot ESP, aimbot, no recoil, radar, extract markers and stream-proof overlays. The loader groups settings by tab so you can run loot-only profiles or full combat loadouts.',
+        'Licenses cover Windows 10 and 11 on Intel or AMD. Raids-only access excludes Arena; add Cloud DMA separately when your setup requires it. Monthly and lifetime plans are listed at checkout. Confirm online status on {siteDomain} before you buy or launch.',
       ],
     },
   },
   'hwid-spoofer': {
-    images: slide('gpMapHack', 'gpHeroEsp', 'gpZoomHack'),
+    images: hwidShowcaseSlides,
     goodToKnow:
-      'Run the compatibility scan in the portal before spoofing. Create a Windows restore point first. Verify identifiers changed after a cold reboot before launching Dota 2.',
+      'Run the portal compatibility scan before any spoof pass. Snapshot a Windows restore point first. After a cold reboot, confirm identifier changes before you launch Escape From Tarkov.',
     limitations:
-      'Spoofing does not help account-only VAC cases. Never stack two spoof tools. Shared or work PCs may not be suitable. You accept all risk from driver-level changes.',
+      'Designed for hardware-level flags, not account-only BattlEye restrictions. Never run two spoof tools together. Shared or work PCs may be unsuitable. Driver-level edits remain your risk; read the status page on {siteDomain} before checkout.',
     systemRequirements: [
-      { icon: 'reqWindows', text: 'Windows 10 or 11 64-bit with administrator access.' },
-      { icon: 'reqRestorePoint', text: 'Ability to create a system restore point before running.' },
-      { icon: 'reqShieldGuide', text: 'Follow the portal setup guide before launching Dota 2 after spoofing.' },
-      { icon: 'reqWifi', text: 'Stable connection for portal verification tools.' },
+      { icon: 'reqWindows', text: 'Admin rights on 64-bit Windows 10 or 11 for the portal steps.' },
+      { icon: 'reqRestorePoint', text: 'Ability to create a Windows restore point before the first spoof pass.' },
+      { icon: 'reqShieldGuide', text: 'Finish the full portal guide before you open Escape From Tarkov after a spoof.' },
+      { icon: 'reqWifi', text: 'Stable internet for portal verification and identifier diff tools.' },
     ],
     fullFeatures: [
-      'Disk serial profile tools',
-      'MAC address rotation',
-      'Restore point checklist',
-      'Compatibility scan',
-      'Driver conflict detection',
-      'Post-spoof verification',
-      'Identifier diff report',
-      'Cold reboot guide',
-      'Portal step-by-step workflow',
-      'Discord recovery support',
+      'Disk serial profiling kit',
+      'MAC rotation controls',
+      'Restore-point walkthrough',
+      'Pre-flight compatibility scan',
+      'Driver overlap detection',
+      'Post-spoof validation steps',
+      'Identifier change report',
+      'Cold-reboot instructions',
+      'Portal milestone checklist',
+      'Discord hardware recovery desk',
     ],
     overview: {
-      title: 'Built around a clear hardware recovery workflow',
+      title: 'Hardware-first recovery for flagged rigs',
       paragraphs: [
-        'The HWID Spoofer helps Dota 2 players recover when VAC flags PC hardware but the Steam account is still clean. Disk and MAC profile tools ship with a restore-point checklist, compatibility scan, and post-spoof verification steps.',
-        'Use this path when fresh accounts fail instantly on one machine but work elsewhere, not for account-only VAC cases. After spoof, load a conservative cheat profile from dotacheats.com before queuing ranked.',
-      ],
-    },
-  },
-  ugc: {
-    images: slide('gpMapHack', 'gpHeroEsp', 'gpZoomHack'),
-    goodToKnow:
-      'Gather order email, platform account details and restriction screenshots before opening a ticket. UGC structures appeals, it does not bypass platform review.',
-    limitations:
-      'UGC does not guarantee account restoration. Results vary by case type. Permanent VAC bans may require a new account path instead of appeal.',
-    systemRequirements: [
-      { icon: 'reqMailOrder', text: 'Order email used at checkout on dotacheats.com or at checkout on dotacheats.com.' },
-      { icon: 'reqShieldAccount', text: 'Account details and ban or restriction notification if available.' },
-      { icon: 'reqWifiPortal', text: 'Internet access for Discord support and case dashboard.' },
-    ],
-    fullFeatures: [
-      'Custom appeal workflows',
-      'Restriction dispute automation',
-      'Case documentation templates',
-      'Status tracking dashboard',
-      'Identity verification guide',
-      'Evidence upload structure',
-      'Timeline tracker',
-      'Follow-up response templates',
-      'Multi-platform support',
-    ],
-    overview: {
-      title: 'Built around account recovery and appeal workflows',
-      paragraphs: [
-        'UGC (Unban & Governance Control) helps you recover restricted gaming, social and marketplace accounts with structured appeal workflows and automation, not instant unban guarantees.',
-        'Build custom dispute paths, track case status and rebuild your presence with smart restriction-management tools. Support walks you through each step via Discord when you need hands-on help.',
-      ],
-    },
-  },
-  'unlock-all': {
-    images: slide('gpSkinChanger', 'gpHeroEsp', 'gpMapHack'),
-    goodToKnow:
-      'Unlock All previews cosmetics locally on your client. Other players in your lobby see your real inventory, not preview skins. Included with Elite tier.',
-    limitations:
-      'Local preview only, does not modify Steam inventory or store state. Other players cannot see previewed arcanas or sets.',
-    systemRequirements: dotaSystemRequirements,
-    fullFeatures: [
-      'Hero skin swap',
-      'Arcana & immortal preview',
-      'Weapon & effect customizer',
-      'Loading screen editor',
-      'Cursor & HUD theme',
-      'Ward & courier replacer',
-      'Favorites list',
-      'Loadout export',
-    ],
-    overview: {
-      title: 'Built around a local cosmetic preview workflow',
-      paragraphs: [
-        'Unlock All lets you browse hero arcanas, immortals and exclusive sets locally in Dota 2, searchable catalog, favorites, and loadout export without modifying live Steam purchases.',
-        'Cosmetics display on your client for testing and content creation. Other players see your actual inventory, not preview skins. Included free with Elite; available standalone for cosmetic preview without combat modules.',
+        'BattlEye can tie bans to PC fingerprints while the Escape From Tarkov account still looks clean. This utility bundles disk, MAC, and GPU ID tooling with a restore-point checklist, portal compatibility scan, and post-reboot verification prompts designed to confirm changes before you raid again.',
+        'Pick it when brand-new accounts collapse on one rig but work elsewhere, not when the penalty is account-only. After spoofing, load conservative presets from {siteDomain} and confirm the live status banner before your first PMC session.',
       ],
     },
   },
@@ -541,7 +386,7 @@ function buildTierPages(t: Translations): ProductPage[] {
   return t.cheats.items.map((cheat) => {
     const slug = slugFromHref(cheat.href);
     const content = productContent[slug];
-    const displayName = cheat.name === 'Lite' ? 'Dota 2 Lite' : cheat.name === 'Pro' ? 'Dota 2 Pro' : 'Dota 2 Elite';
+    const displayName = 'Escape From Tarkov Cheats';
     return {
       slug,
       kind: 'tier',
@@ -549,7 +394,7 @@ function buildTierPages(t: Translations): ProductPage[] {
       tier: cheat.tier,
       name: cheat.name,
       title: cheat.title,
-      subtitle: cheat.desc,
+      subtitle: cheat.heroDesc ?? cheat.desc,
       desc: cheat.desc,
       features: cheat.features,
       more: cheat.more,
@@ -565,6 +410,7 @@ function buildTierPages(t: Translations): ProductPage[] {
       about: tierAbout[slug],
       body: tierBodies[slug] ?? [],
       relatedBlogSlugs: productRelatedBlogSlugs[slug] ?? [],
+      relatedForumSlugs: productRelatedForumSlugs[slug] ?? [],
     };
   });
 }
@@ -590,20 +436,26 @@ function buildUtilityPages(t: Translations): ProductPage[] {
       buyUrl: checkoutForSlug(slug),
       images: content.images,
       overview: content.overview,
-      acquisition: acquisitionFor(product.title),
+      acquisition: {
+        title: acquisitionFor(product.title).title,
+        steps: hwidAcquisitionSteps,
+      },
       goodToKnow: content.goodToKnow,
       limitations: content.limitations,
       fullFeatures: content.fullFeatures,
       systemRequirements: content.systemRequirements,
       body: utilityBodies[slug] ?? [],
       relatedBlogSlugs: productRelatedBlogSlugs[slug] ?? [],
+      relatedForumSlugs: productRelatedForumSlugs[slug] ?? [],
     },
   ];
 }
 
 export function getProductPages(locale: SiteLocale): ProductPage[] {
   const t = getTranslations(locale);
-  return [...buildTierPages(t), ...buildUtilityPages(t)].map((page) => applyProductCopy(page, locale));
+  return [...buildTierPages(t), ...buildUtilityPages(t)].map((page) =>
+    deepApplySiteTokens(applyProductCopy(page, locale)),
+  );
 }
 
 export function getCheatPages(locale: SiteLocale) {
@@ -612,10 +464,6 @@ export function getCheatPages(locale: SiteLocale) {
 
 export function getProductPage(slug: string, locale: SiteLocale) {
   return getProductPages(locale).find((p) => p.slug === slug);
-}
-
-export function getCheatPage(slug: string, locale: SiteLocale) {
-  return getCheatPages(locale).find((p) => p.slug === slug);
 }
 
 /** Tier slugs for sitemap extras, store lives at `PRODUCT_BASE` only. */
@@ -638,47 +486,8 @@ export function getAllCheatSlugs() {
   return getCheatPages('en').map((p) => p.slug);
 }
 
-const cheatsHubSlides = slide('gpScripts', 'gpAutoKill', 'gpFarmBot');
-
-const GALLERY_KEY_ORDER = Object.keys(galleryRaw) as GalleryKey[];
-
-const HERO_SLIDE_KEYS: GalleryKey[] = [
-  'gpMapHack',
-  'gpScripts',
-  'gpZoomHack',
-  'gpSkinChanger',
-  'gpAutoKill',
-  'gpFarmBot',
-  'gpHeroEsp',
-];
-
-/** Shared gameplay assets; alt/captions follow the active locale copy bundle. */
-export function getHeroSlides(locale: SiteLocale): ProductSlide[] {
-  const copy = productCopyFor(locale);
-  return HERO_SLIDE_KEYS.map((key) => {
-    const item = galleryRaw[key];
-    const idx = GALLERY_KEY_ORDER.indexOf(key);
-    const localized = copy.gallery[idx];
-    return {
-      src: item.src,
-      alt: localized?.alt ?? item.alt,
-      caption: localized?.caption ?? item.caption,
-      captionDesc: localized?.captionDesc ?? item.captionDesc,
-      kind: item.videoSrc ? 'video' : 'image',
-      ...(item.videoSrc ? { videoSrc: item.videoSrc } : {}),
-    };
-  });
-}
-
-export function getProductHub(locale: SiteLocale) {
-  const t = getTranslations(locale);
-  return {
-    path: productBase,
-    title: t.products.title,
-    subtitle: t.products.subtitle,
-    description: t.products.subtitle,
-    buyUrl: checkoutPath('dota2'),
-  };
+export function getHeroSlides(_locale: SiteLocale): ProductSlide[] {
+  return eftShowcaseSlides;
 }
 
 const productCopyByLocale: Record<Exclude<SiteLocale, 'en'>, ProductCopyBundle> = {
@@ -698,7 +507,7 @@ function buildEnglishProductCopyBundle(): ProductCopyBundle {
   const tiers = Object.fromEntries(
     tierSlugs.map((slug) => {
       const content = productContent[slug];
-      const displayName = slug === 'lite' ? 'Dota 2 Lite' : slug === 'pro' ? 'Dota 2 Pro' : 'Dota 2 Elite';
+      const displayName = 'Escape From Tarkov Cheats';
       return [
         slug,
         {
@@ -734,7 +543,7 @@ function buildEnglishProductCopyBundle(): ProductCopyBundle {
     sharedGoodToKnow,
     sharedLimitations,
     acquisitionSteps: defaultAcquisitionSteps.map(({ num, title, desc }) => ({ num, title, desc })),
-    systemRequirements: dotaSystemRequirements.map((r) => r.text),
+    systemRequirements: eftSystemRequirements.map((r) => r.text),
     gallery: Object.values(galleryRaw).map(({ alt, caption, captionDesc }) => ({
       alt,
       caption,
@@ -766,11 +575,14 @@ function applyProductCopy(page: ProductPage, locale: SiteLocale): ProductPage {
     steps,
   };
 
-  const images = page.images.map((slide, index) => {
-    const g = copy.gallery[index];
-    if (!g) return slide;
-    return { ...slide, alt: g.alt, caption: g.caption, captionDesc: g.captionDesc };
-  });
+  const images =
+    page.kind === 'tier'
+      ? page.images.map((slide, index) => {
+          const g = copy.gallery[index];
+          if (!g) return slide;
+          return { ...slide, alt: g.alt, caption: g.caption, captionDesc: g.captionDesc };
+        })
+      : page.images;
 
   const systemRequirements = page.systemRequirements.map((req, index) => ({
     ...req,

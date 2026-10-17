@@ -9,6 +9,7 @@ import {
   TWITTER_SITE,
   canonicalUrl,
   DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
   DEFAULT_OG_IMAGE_HEIGHT,
   DEFAULT_OG_IMAGE_WIDTH,
   GA_MEASUREMENT_ID,
@@ -27,6 +28,7 @@ interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  /** Defaults to the site default OG image alt when `ogImage` is unset. */
   ogImageAlt?: string;
   ogType?: 'website' | 'article';
   articlePublishedTime?: string;
@@ -51,7 +53,7 @@ const {
   title = t.site.title,
   description = t.site.description,
   ogImage = DEFAULT_OG_IMAGE,
-  ogImageAlt = title,
+  ogImageAlt: ogImageAltProp,
   ogType = 'website',
   articlePublishedTime,
   articleModifiedTime,
@@ -59,6 +61,8 @@ const {
   canonicalPath,
   jsonLd,
 } = Astro.props;
+
+const ogImageAlt = ogImageAltProp ?? (ogImage === DEFAULT_OG_IMAGE ? DEFAULT_OG_IMAGE_ALT : title);
 
 const canonical = canonicalUrl(canonicalPath ?? localizePath(Astro.url.pathname, locale));
 const hreflangAlternates = noindex ? [] : hreflangAlternatesForPath(Astro.url.pathname);
@@ -100,9 +104,8 @@ const robotsContent = noindex
       title={`${t.site.name} Blog RSS`}
       href={RSS_FEED_PATH}
     />
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="shortcut icon" href="/favicon.ico" />

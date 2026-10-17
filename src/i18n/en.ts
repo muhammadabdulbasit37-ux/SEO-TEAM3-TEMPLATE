@@ -8,9 +8,9 @@ export const en: Translations = {
   site: {
     name: SITE_NAME,
     domain: SITE_DOMAIN,
-    title: 'Dota Cheats & Hacks | Dota 2 Scripts, Map Hack & ESP',
+    title: 'Escape From Tarkov Cheats | ESP, Aimbot & Loot ESP',
     description:
-      'Undetected dota 2 cheats with scripts, map hack, zoom hack and skin changer for PC ranked, updated every patch at {siteDomain}.',
+      'Player ESP, loot ESP, aimbot and no recoil for PMC raids on Windows, with loader updates after patches. Compare plans at {siteDomain}.',
   },
   nav: [
     { id: 'products', href: `${productBase}`, label: 'Product', shortLabel: 'Product' },
@@ -21,17 +21,15 @@ export const en: Translations = {
     { id: 'support', href: '/support/', label: 'Support' },
   ],
   hero: {
-    status: 'Dota 2, patch build online',
-    eyebrow: '#1 Cheats Provider',
-    titleLine1: 'Dota 2',
-    titleLine2: 'Cheats & Hacks',
+    status: 'Escape From Tarkov, patch build online',
+    eyebrow: '#1 CHEATS PROVIDER',
+    titleLine1: 'Escape From Tarkov',
+    titleLine2: 'Cheats',
     subtitle:
-      'Dota cheats with scripts, map hack, zoom hack and skin changer for PC ranked on Steam, updated every patch with preset configs and support at {siteDomain}.',
+      'Track PMCs, loot and extracts clearly, then finish fights with tuned aim and recoil control. Preset configs and patch-day loader updates ship through {siteDomain}.',
     ctaPrimary: 'View products',
-    modesLabel: 'Dota 2 modes',
-    modes: ['Ranked', 'Turbo', 'All Pick', 'Captains Mode'],
     metrics: [
-      { label: 'Stream-safe', strong: 'Yes' },
+      { label: 'Stream-proof', strong: 'Yes' },
       { label: 'Patch speed', strong: '<24h' },
       { label: 'Users', strong: '300+' },
       { label: 'Live support', strong: '24/7' },
@@ -40,17 +38,17 @@ export const en: Translations = {
       'ESP Active',
       'Radar Online',
       'Season Build',
-      'Undetected',
+      'Aimbot Ready',
       'Soft Aim Ready',
       'No Recoil',
       'Stream Proof',
       'Loot ESP',
       'Skeleton ESP',
       'UAV Radar',
-      'Map Hack',
+      'Extract ESP',
       '24/7 Support',
       'Instant Delivery',
-      'Ranked Safe',
+      'Raid Ready',
       'Trigger Bot',
       'Bone Select',
       'Live Status',
@@ -60,98 +58,99 @@ export const en: Translations = {
   features: {
     eyebrow: 'Features',
     title: 'Everything you need in one package',
-    subtitle: 'Scripts, map control and utility tools for Dota 2, maintained every patch.',
+    subtitle: 'Player ESP, loot ESP, aimbot and raid tools for Escape From Tarkov, maintained after patches.',
     items: [
       {
-        title: 'Scripts',
-        subtitle: 'Combo. Cast. Win.',
-        desc: 'Full script engine for ranked and Turbo, tuned for Invoker, Lion, PA and dozens of burst heroes.',
+        title: 'Player ESP',
+        subtitle: 'Track PMCs and Scavs.',
+        desc: 'Player boxes, skeletons, names and distance readouts stay readable in dense raids.',
         bullets: [
-          'Auto Combo chains for Invoker, Lion, PA and burst cores',
-          'Orbwalker and last-hit assist for carries',
-          'Smart Cast with humanized delay sliders',
-          'Prediction modules for skillshots and blinks',
-          'Portal presets per hero, role and game mode',
+          'PMC, Scav and boss filters',
+          'Skeleton and bone markers',
+          'Name tags and distance readouts',
+          'Health and gear hints where enabled',
+          'Color rules per faction',
         ],
-        tags: ['dota 2 scripts', 'auto combo', 'smart cast'],
+        tags: ['escape from tarkov esp', 'player esp', 'skeleton esp'],
         bento: 'sm:col-span-2 lg:col-span-12 lg:col-start-1 lg:row-start-1',
       },
       {
-        title: 'Map Hack / ESP',
-        subtitle: 'See Ganks Before They Hit.',
-        desc: 'Vision advantage without guessing: ESP stays readable in teamfights and when multiple heroes dive your lane.',
+        title: 'Loot ESP',
+        subtitle: 'Find value fast.',
+        desc: 'Highlight containers, keys, meds and high-tier loot without tabbing through every drawer.',
         bullets: [
-          'Hero boxes, HP bars and cooldown readouts',
-          'Ward and sentry locator with range hints',
-          'Smoke, TP and missing-enemy alerts',
+          'Item category filters and price tiers',
+          'Container and corpse loot highlights',
+          'Quest and key item markers',
+          'Distance and name labels',
         ],
-        tags: ['dota 2 map hack', 'dota 2 esp', 'ward esp'],
+        tags: ['loot esp', 'container esp', 'tarkov loot'],
         bento: 'sm:col-span-2 lg:col-span-8 lg:col-start-1 lg:row-start-2',
       },
       {
-        title: 'Minimap & Runes',
-        subtitle: 'Map Control Without Wards.',
-        desc: 'Timers and minimap overlays so you rotate on bounty, power runes and wave timing, not guesswork.',
-        bullets: ['Bounty and power rune countdowns', 'Enemy last-seen on minimap hack', 'Jungle camp stack reminders'],
-        tags: ['minimap hack', 'rune timer', 'map awareness'],
+        title: 'Aimbot',
+        subtitle: 'Controlled aim assist.',
+        desc: 'Soft aim and bone selection with FOV and smoothing sliders tuned for raids, not rage defaults.',
+        bullets: ['FOV and smoothing controls', 'Bone select and target priority', 'Visibility checks', 'Hotkey toggle per weapon class'],
+        tags: ['aimbot', 'soft aim', 'bone select'],
         bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-3',
       },
       {
-        title: 'Auto Combo',
-        subtitle: 'Land Combos Like a Pro.',
-        desc: 'One-key bursts with sane defaults for ranked, tighten timings as you get comfortable.',
-        bullets: ['Target Selector for focus fire', 'Activator for BKB, Hex and Orchid', 'Per-hero combo chains in portal'],
-        tags: ['auto combo', 'activator', 'target selector'],
+        title: 'No Recoil',
+        subtitle: 'Steadier full-auto.',
+        desc: 'Recoil compensation profiles per weapon family with portal presets for common builds.',
+        bullets: ['Per-weapon recoil profiles', 'Strength sliders with caps', 'Pairs with aimbot FOV limits', 'Save profiles to cloud'],
+        tags: ['no recoil', 'recoil control', 'weapon profiles'],
         bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-3',
       },
       {
-        title: 'Utility Suite',
-        subtitle: 'Extra Tools for Clutch Moments.',
-        desc: 'Skin Changer, kill steal, Auto Dagon and more, beyond raw scripts and map hack.',
+        title: 'Radar & Extracts',
+        subtitle: 'Map awareness in raid.',
+        desc: '2D radar, extract markers and optional UAV-style hints for orientation between fights.',
         bullets: [
-          'Skin Changer: Preview arcanas and immortals locally',
-          'Auto Kill Steal: Finish low-HP enemies with perfect timing',
-          'Auto Dagon: Lethal item activation at combo end',
-          'Stream Proof: Hide overlays from OBS capture',
+          'Extract and transition markers',
+          '2D radar with player blips',
+          'Optional UAV-style overview',
+          'Custom zoom and opacity',
         ],
-        tags: ['skin changer', 'kill steal', 'stream proof'],
+        tags: ['radar hack', 'extract esp', 'map awareness'],
         bento:
           'sm:col-span-2 lg:col-span-8 lg:row-span-2 lg:col-start-1 lg:row-start-4',
       },
       {
-        title: 'Auto Farm Bot',
-        subtitle: 'Efficient Farm. Zero Tilt.',
-        desc: 'Recover net worth when lanes go wrong, automation stays humanized to avoid obvious bot paths.',
+        title: 'Trigger Bot',
+        subtitle: 'Fire when aligned.',
+        desc: 'Optional trigger assist when crosshair meets valid targets, with delay and key gates.',
         bullets: [
-          'Lane last-hit and deny assist under tower',
-          'Jungle pathing with camp stack timing',
-          'Safe retreat when enemy heroes show on ESP',
-          'Turbo-friendly farm presets',
+          'Delay and hold-time tuning',
+          'Team and bot ignore rules',
+          'Toggle separate from aimbot',
+          'Conservative defaults in portal',
         ],
-        tags: ['auto farm', 'last hit bot', 'jungle stack'],
+        tags: ['trigger bot', 'fire assist', 'tarkov cheats'],
         bento:
           'sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:col-start-9 lg:row-start-4',
       },
       {
         title: 'Stream Proof',
-        subtitle: 'Creators Stay Safe.',
+        subtitle: 'Built for creators.',
         desc: 'Keep overlays on your monitor while capture software records a clean game feed.',
-        bullets: ['OBS and Game Bar safe modes', 'Toggle stream proof per module', 'Test checklist in portal docs'],
-        tags: ['obs safe', 'stream proof', 'capture hide'],
+        bullets: ['OBS and Game Bar capture modes', 'Toggle stream proof per module', 'Test checklist in portal docs'],
+        tags: ['obs capture', 'stream proof', 'capture hide'],
         bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-6',
       },
       {
-        title: 'Zoom Hack',
-        subtitle: 'See More of the Fight.',
-        desc: 'Pull camera back for map awareness without losing last-hit precision in lane.',
-        bullets: ['Distance caps per game mode', 'Quick reset to default FOV', 'Pairs with minimap ESP'],
-        tags: ['zoom hack', 'camera', 'vision'],
+        title: 'Misc utilities',
+        subtitle: 'Raid QoL tools.',
+        desc: 'Night vision, thermal-style highlights, no sway and other toggles grouped in one utilities tab.',
+        bullets: ['No sway and stamina helpers where enabled', 'Night vision and thermal-style modes', 'Crosshair and FOV helpers', 'Hotkey manager'],
+        tags: ['no sway', 'night vision', 'tarkov utilities'],
         bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-6',
       },
       {
         title: 'Cloud Config & Updates',
-        subtitle: 'Patch Day Ready.',
-        desc: 'Same presets on every PC, portal updates track Dota 2 and VAC patch days.',
+        subtitle: 'Patch day ready.',
+        desc: 'Same presets on every PC; portal updates track Escape From Tarkov and BattlEye patch days.',
         bullets: ['Cloud backup for slider profiles', 'Loader push within hours of patches', 'Discord #status for build notes'],
         tags: ['cloud sync', 'auto update', 'presets'],
         bento: 'sm:col-span-2 lg:col-span-4 lg:col-start-9 lg:row-start-2',
@@ -160,31 +159,31 @@ export const en: Translations = {
   },
   whyUs: {
     eyebrow: 'Why us',
-    title: 'Ranked tooling backed by patches, not promises',
+    title: 'Raid tooling backed by patches, not promises',
     subtitle:
-      'Most dota 2 cheat shops ship stale loaders, obvious automation, and ticket bots. We built {siteDomain} around patch-day delivery, humanized scripts, and live operators.',
-    usLabel: 'DotaCheats',
+      'Many cheat shops ship stale loaders, obvious rage presets, and ticket bots. {siteDomain} focuses on patch-day loader builds, conservative ESP and aim defaults, and live Discord operators.',
+    usLabel: 'EFT CHEATS',
     otherLabel: 'Typical provider',
     rows: [
       {
         title: 'Patch-day loader updates',
-        desc: 'VAC-aware builds pushed within hours of Dota 2 updates, check Discord #status before you queue ranked.',
+        desc: 'BattlEye-aware builds pushed within hours of Escape From Tarkov updates; check Discord #status before you load into a raid.',
       },
       {
-        title: 'Humanized scripts & delays',
-        desc: 'Delay Setting, Target Selector and conservative defaults mimic high-MMR timing, not instant bot bursts that flood reports.',
+        title: 'Humanized aim & ESP defaults',
+        desc: 'FOV caps, smoothing and distance filters ship conservative in the portal so overlays stay readable, not wall-of-box rage modes.',
       },
       {
         title: 'Live Discord operators',
-        desc: 'Real engineers for loader setup, hero configs and HWID resets: 24/7 shift coverage, not copy-paste FAQ tickets.',
+        desc: 'Real engineers for loader setup, raid configs and HWID resets: 24/7 shift coverage, not copy-paste FAQ tickets.',
       },
       {
         title: 'External loader + stream proof',
-        desc: 'Overlay suite with OBS-safe modes, no risky DLL injection into the Dota 2 process like legacy providers still sell.',
+        desc: 'Overlay suite with OBS capture modes, no risky DLL injection into the Escape From Tarkov process like legacy providers still sell.',
       },
       {
         title: 'Cloud preset sync',
-        desc: 'Ranked, Turbo and per-hero profiles backup to the portal, same sliders on any PC without rebuilding from scratch.',
+        desc: 'PMC, Scav and per-map profiles backup to the portal, same sliders on any PC without rebuilding from scratch.',
       },
       {
         title: 'HWID reset & license moves',
@@ -195,7 +194,7 @@ export const en: Translations = {
       {
         value: '<24h',
         title: 'Patch turnaround',
-        desc: 'Average time to ship a loader build after major Dota 2 or VAC changes.',
+        desc: 'Average time to ship a loader build after major Escape From Tarkov or BattlEye changes.',
       },
       {
         value: '24/7',
@@ -205,16 +204,16 @@ export const en: Translations = {
       {
         value: '300+',
         title: 'Active operators',
-        desc: 'Steam PC players running scripts, map hack and utilities on {siteDomain}.',
+        desc: 'Windows players running ESP, aimbot and utilities on {siteDomain}.',
       },
     ],
   },
   setup: {
     eyebrow: 'Setup guide',
-    titleLead: 'From checkout to ranked queue in just',
+    titleLead: 'From checkout to your first raid in just',
     titleHighlight: 'three simple steps',
     intro:
-      'Getting started is easy. Follow the operator portal flow to download the loader, load presets, and queue Dota 2 on Steam PC, with live Discord help if anything blocks you.',
+      'Getting started is easy. Follow the operator portal flow to download the loader, load presets, and launch Escape From Tarkov on Windows, with live Discord help if anything blocks you.',
     ctaPrimary: 'View products',
     ctaSecondary: 'Setup FAQ',
     ctaPrimaryHref: productBase,
@@ -228,36 +227,38 @@ export const en: Translations = {
       {
         step: 'Step 2',
         title: 'Launch & configure modules',
-        desc: 'Run the external loader, import ranked or Turbo presets, and tune scripts plus map hack sliders.',
+        desc: 'Run the external loader, import raid presets, and tune ESP, aimbot and no recoil sliders.',
       },
       {
         step: 'Step 3',
-        title: 'Verify status & queue Dota 2',
-        desc: 'Check the live status banner, launch Steam Dota 2, and play with cloud-backed profiles saved in the portal.',
+        title: 'Verify status & launch Escape From Tarkov',
+        desc: 'Check the live status banner, launch the game client, and play with cloud-backed profiles saved in the portal.',
       },
     ],
   },
   compatibility: {
     eyebrow: 'Platform support',
     title: 'Runs on your rig.',
-    subtitle: 'Check the live status banner before launching Dota 2 after updates.',
-    items: ['Windows 10 & 11', 'Steam', 'Dota 2 client', 'Auto updater', 'Config cloud sync', 'Discord support', 'HWID reset', 'External loader'],
+    subtitle: 'Check the live status banner before launching Escape From Tarkov after updates.',
+    items: ['Windows 10 & 11', 'Escape From Tarkov', 'BattlEye client', 'Auto updater', 'Config cloud sync', 'Discord support', 'HWID reset', 'External loader'],
   },
   cheats: {
-    eyebrow: 'Elite cheat',
-    title: 'Dota 2 Elite cheats',
-    subtitle: 'Full ranked suite, map hack, scripts, bots, Skin Changer, and priority patch delivery.',
-    viewAll: 'View Elite details',
+    eyebrow: 'Main product',
+    title: 'Escape From Tarkov Cheats',
+    subtitle: 'Player ESP, loot ESP, aimbot, no recoil and raid utilities with priority patch delivery.',
+    viewAll: 'View product details',
     explore: 'Explore',
     items: [
       {
         badge: 'Limited slots',
         tier: 'Private',
         name: 'Elite',
-        title: 'Dota 2 Elite',
-        desc: 'Private dota 2 cheats build with Auto Farm Bot, Auto Kill Steal, Auto Dagon, Skin Changer and direct dev support.',
-        features: ['Auto Farm Bot', 'Auto Kill Steal', 'Auto Dagon', 'Full map hack suite', 'Skin Changer', 'Priority patch queue'],
-        more: 42,
+        title: 'Tarkov Cheats with ESP, Aimbot & Loot ESP',
+        desc: 'Player ESP, loot ESP, aimbot and no recoil for main Tarkov raids. Separate license from Arena. Instant delivery; check status after patches.',
+        heroDesc:
+          'Raids-only license with stream-proof overlays and instant portal delivery. Start from conservative presets, then tune ESP and aim after you check live status.',
+        features: ['Player ESP', 'Loot ESP', 'Aimbot', 'No recoil', 'Extract markers', 'Stream-proof'],
+        more: 9,
         href: productBase,
         variant: 'limited',
       },
@@ -266,12 +267,44 @@ export const en: Translations = {
   products: {
     eyebrow: 'Store',
     title: 'Our products',
-    subtitle: 'Dota 2 Cheats and HWID Spoofer, two tools for ranked play and hardware resets.',
+    subtitle: 'Raid cheats plus a hardware utility: two checkout paths for PMC play and machine recovery.',
     viewAll: 'View all cheats',
-    spooferHubNote: 'Need a hardware reset before a new account? See ',
-    spooferHubLink: 'HWID Spoofer',
     backToCheats: 'Back to product',
-    showcaseHeading: 'Product Showcase',
+    showcaseHeading: 'Product Overview',
+    experience: {
+      eyebrow: 'Experience',
+      title: 'Loader layers · After checkout',
+      subtitle:
+        'Use the screenshots above for module layout; below is what each layer does and how portal access works after purchase.',
+      previewLabel: 'In-game layers',
+      accessDividerTop: 'Preview',
+      accessDividerBottom: 'Access',
+    },
+    hwidPage: {
+      showcaseHeading: 'Spoofer dashboard shots',
+      overviewSubtitle:
+        'How disk, MAC, and GPU ID tooling fits portal prep, verification, and post-spoof launches. Confirm status on {siteDomain} first.',
+      highlights: {
+        eyebrow: 'Quick read',
+        title: 'What the utility targets',
+        desc: 'Hardware fingerprint recovery before you attach a fresh Escape From Tarkov account. See the full tool list below.',
+      },
+      featuresSection: {
+        eyebrow: 'Tooling',
+        title: 'Portal modules included',
+        desc: 'Ten recovery utilities you enable and tune from the operator portal after checkout.',
+      },
+      experience: {
+        eyebrow: 'Post-purchase',
+        title: 'Dashboard views · Access steps',
+        subtitle:
+          'Left column explains each screenshot; right column lists how portal access and spoof milestones work after payment.',
+        previewLabel: 'Panel views',
+        accessDividerTop: 'UI',
+        accessDividerBottom: 'Steps',
+      },
+      highlightsMore: 'Plus {count} more recovery tools in the portal. Scroll to the full module grid.',
+    },
     swipeHint: 'Swipe for more screenshots',
     checkoutEyebrow: 'Checkout',
     checkoutSelect: 'Select subscription',
@@ -291,10 +324,11 @@ export const en: Translations = {
       {
         badge: 'Available',
         category: 'System utility',
-        title: 'HWID Spoofer',
-        subtitle: 'Clean slate for your PC',
-        desc: 'Hardware ID spoofing for disk serials, MAC addresses and GPU IDs, follow the portal setup guide before launching Dota 2.',
-        features: ['Spoofer & cleanup tools', 'Serial profile rotation', 'Compatibility scan', 'Post-spoof verification'],
+        title: 'HWID Spoofer for Escape From Tarkov',
+        subtitle:
+          'Walk through serial checks, UEFI spoof toggles and seed rotation in the portal, then cold reboot before you sign into a fresh account.',
+        desc: 'Rotate disk serials, MAC addresses, and GPU IDs through the operator portal, then finish the setup checklist before launching Escape From Tarkov.',
+        features: ['Drive cleanup & spoof kit', 'Rotating serial profiles', 'Pre-spoof compatibility scan', 'Reboot verification prompts'],
         more: 9,
         href: '/hwid-spoofer/',
       },
@@ -303,21 +337,17 @@ export const en: Translations = {
   blog: {
     eyebrow: 'Blog',
     title: 'Guides and updates',
-    subtitle: 'Cheat codes, script setup, map hack config and patch-day checks for Dota 2.',
-    latestTitle: 'Latest articles',
+    subtitle: 'ESP and aimbot setup, loot filters and patch-day checks for Escape From Tarkov.',
+    latestTitle: 'Tarkov Cheat Guides & Patch-Day Notes',
     latestSubtitle: 'Filter by topic to find setup guides, feature deep-dives, and patch-day notes.',
     filterAll: 'All articles',
-    sortLabel: 'Sort by',
-    sortNewest: 'Newest first',
-    sortOldest: 'Oldest first',
-    sortShortRead: 'Shortest read',
-    sortLongRead: 'Longest read',
     emptyFilter: 'No articles match this filter.',
     emptyArchive: 'No articles yet. New guides will show up here.',
     viewAll: 'View all articles',
     read: 'Read',
     articleActionsAria: 'Continue reading',
-    buyCta: 'Buy Dota 2 Cheats',
+    buyCta: 'Buy Escape From Tarkov Cheats',
+    buyHwidCta: 'Buy HWID Spoofer',
     moreArticles: 'More articles',
     sidebarAria: 'Article sidebar',
     tocTitle: 'In this article',
@@ -325,25 +355,12 @@ export const en: Translations = {
     filterToolbarAria: 'Filter articles by topic',
     items: [],
   },
-  toolkit: {
-    eyebrow: 'Software',
-    title: 'Organized, easy to configure',
-    subtitle: 'Every module is grouped for quick tuning mid-match without tabbing through chaos.',
-    items: [
-      { num: '01', label: 'Scripts', title: 'Combos that adapt to your hero', desc: 'Auto Combo, Orbwalker, Smart Cast and Delay Setting in one scripts tab.' },
-      { num: '02', label: 'Vision', title: 'Map hack that stays readable', desc: 'Filter by distance, team color, ward type and smoke alert sensitivity.' },
-      { num: '03', label: 'Minimap', title: 'Runes and rotates on lock', desc: 'Rune timers, enemy hints and minimap hack on a compact overlay.' },
-      { num: '04', label: 'Heroes', title: 'Per-hero script profiles', desc: 'Save Invoker, Lion, PA and support scripts and swap with hotkeys.' },
-      { num: '05', label: 'Bots', title: 'Farm & lane automation', desc: 'Auto Farm Bot, stack timer and courier manager for efficient farming.' },
-      { num: '06', label: 'Profiles', title: 'Configs for every mode', desc: 'Separate ranked, Turbo and casual presets with cloud backup.' },
-    ],
-  },
   workflow: {
     eyebrow: 'How it works',
     badge: '4 easy steps',
     titleBefore: 'From status check to',
     titleHighlight: 'saved profile.',
-    subtitle: 'A straight path from purchase to a Dota 2 profile you can reuse every session.',
+    subtitle: 'A straight path from status check to a raid profile you can reuse every session.',
     ctaLabel: 'View products',
     ctaHref: productBase,
     ctaSecondary: 'Setup FAQ',
@@ -352,41 +369,32 @@ export const en: Translations = {
       {
         num: '01',
         phase: 'Before purchase',
-        title: 'Check VAC status',
+        title: 'Check live status',
         desc: 'Read the live banner on {siteDomain} before you buy or launch.',
       },
       {
         num: '02',
         phase: 'Checkout',
         title: 'Choose your product',
-        desc: 'Buy Dota 2 Cheats or HWID Spoofer, the workflow that matches your situation.',
+        desc: 'Pick raid cheats or the hardware utility, whichever matches bans, rigs, or account resets you face.',
       },
       {
         num: '03',
         phase: 'Loader',
         title: 'Launch & configure',
-        desc: 'Download from the portal, enable modules, and tune delays in a practice lobby.',
+        desc: 'Download from the portal, enable modules, and tune ESP and aim sliders offline first.',
       },
       {
         num: '04',
         phase: 'In-game',
         title: 'Save your profile',
-        desc: 'When settings feel right, save ranked and Turbo presets to the cloud.',
+        desc: 'When settings feel right, save PMC and map presets to the cloud.',
       },
-    ],
-  },
-  fieldNotes: {
-    eyebrow: 'Field notes',
-    title: 'Built for how Dota 2 plays.',
-    items: [
-      { num: '01', title: 'Patch-day ready', desc: 'Patch notes hit Discord and the portal before the official blog, check before you queue ranked.' },
-      { num: '02', title: 'Conservative defaults', desc: 'Start with safe script delays and map hack ranges, then tune up, not the other way around.' },
-      { num: '03', title: 'Real operator support', desc: 'Stuck on loader or hero configs? Discord staff walk you through live, not copy-paste FAQs.' },
     ],
   },
   support: {
     eyebrow: 'Support',
-    title: 'DotaCheats support',
+    title: 'Tarkov Cheats Support',
     subtitle: 'Let us know how we can help.',
     channels: [
       {
@@ -420,9 +428,9 @@ export const en: Translations = {
     ],
     ticketTitle: 'Include in your ticket',
     ticketItems: [
-      { title: 'Order email', desc: 'The address used at checkout on {siteDomain} or via our secure checkout.' },
-      { title: 'Platform', desc: 'Steam on Windows 10 or 11, and your Dota 2 client version.' },
-      { title: 'Error detail', desc: 'Screenshot or exact message from the loader or Steam.' },
+      { title: 'Order email', desc: 'The address used at checkout on {siteDomain} or via our partner checkout.' },
+      { title: 'Platform', desc: 'Windows 10 or 11, and your Escape From Tarkov client version.' },
+      { title: 'Error detail', desc: 'Screenshot or exact message from the loader or game client.' },
     ],
   },
   faq: {
@@ -432,23 +440,23 @@ export const en: Translations = {
     items: [
       {
         num: '01',
-        q: 'Where do I check if Dota 2 cheats are online?',
-        a: 'The live status banner is on {siteDomain} and in the Discord #status channel. Always check after a Dota 2 or VAC update.',
+        q: 'Where do I check if Escape From Tarkov cheats are online?',
+        a: 'The live status banner is on {siteDomain} and in the Discord #status channel. Always check after an Escape From Tarkov or BattlEye update.',
       },
       {
         num: '02',
         q: 'What happens after I buy?',
-        a: 'Your portal unlocks the loader, setup guide and config library via our secure checkout. Follow the guide before launching Dota 2.',
+        a: 'Your portal unlocks the loader, setup guide and config library via our partner checkout. Follow the guide before launching Escape From Tarkov.',
       },
       {
         num: '03',
-        q: 'Can I get banned using third-party dota cheats?',
-        a: 'Yes, any modification carries risk. VAC and report systems evolve. Read current status and accept the risk before use.',
+        q: 'Can I get banned using third-party escape from tarkov cheats?',
+        a: 'Yes, any modification carries risk. BattlEye and report systems evolve. Read current status and accept the risk before use.',
       },
       {
         num: '04',
         q: 'Which platforms are supported?',
-        a: 'Dota 2 via Steam on Windows 10/11 64-bit only. macOS and Linux are not supported.',
+        a: 'Escape From Tarkov on Windows 10/11 64-bit only. macOS and Linux are not supported.',
       },
       {
         num: '05',
@@ -463,7 +471,7 @@ export const en: Translations = {
     ],
   },
   footer: {
-    tagline: 'Dota 2 cheats, scripts, map hack and tools for PC. {siteDomain}',
+    tagline: 'Escape From Tarkov cheats with ESP, aimbot and loot ESP for PC. {siteDomain}',
     explore: 'Explore',
     exploreLinks: [
       { id: 'products', href: '/', label: 'Feature overview', ariaLabel: 'Features', scrollTarget: 'features' },
@@ -484,28 +492,28 @@ export const en: Translations = {
   },
   legalPages: {
     about: {
-      title: 'About DotaCheats',
+      title: 'About EFT CHEATS',
       description:
-        'DotaCheats provides Dota 2 Cheats, HWID Spoofer and PC support resources at {siteDomain}.',
+        'EFT CHEATS provides Escape From Tarkov Cheats, HWID Spoofer and PC support resources at {siteDomain}.',
       sections: [
         {
           heading: 'Who we are',
           paragraphs: [
-            'DotaCheats is a PC-focused resource for Dota 2 players exploring scripts, map hack, zoom hack and Skin Changer workflows. We publish tier comparisons, setup guides, and live status notes so you can evaluate dota cheats before checkout.',
+            'EFT CHEATS is a PC-focused resource for Escape From Tarkov players exploring player ESP, loot ESP, aimbot and no recoil workflows. We publish setup guides and live status notes so you can evaluate escape from tarkov cheats before checkout.',
             'All product names are used for identification only.',
           ],
         },
         {
           heading: 'What we publish',
           paragraphs: [
-            'Our site covers Dota 2 Cheats and HWID Spoofer. Blog articles explain ranked-safe configs, patch-day checks, and VAC update behavior.',
+            'Our site covers Escape From Tarkov Cheats and HWID Spoofer. Blog articles explain raid configs, patch-day checks, and BattlEye update behavior.',
             'Content is updated when patches land or when loader modules shift. Check the homepage status banner and Discord #status before every session.',
           ],
         },
         {
           heading: 'Support',
           paragraphs: [
-            'Questions about compatibility, loader errors, or checkout are handled through Discord and email support. Include your order email, Steam account, and Windows version when opening a ticket.',
+            'Questions about compatibility, loader errors, or checkout are handled through Discord and email support. Include your order email, game account, and Windows version when opening a ticket.',
           ],
         },
       ],
@@ -513,7 +521,7 @@ export const en: Translations = {
     privacy: {
       title: 'Privacy Policy',
       description:
-        'How DotaCheats handles analytics, cookies, and contact data when you use {siteDomain}.',
+        'How EFT CHEATS handles analytics, cookies, and contact data when you use {siteDomain}.',
       sections: [
         {
           heading: 'Information we collect',
@@ -544,7 +552,7 @@ export const en: Translations = {
     terms: {
       title: 'Terms & Conditions',
       description:
-        'Purchase, license, refund, and use terms for DotaCheats products and {siteDomain}.',
+        'Purchase, license, refund, and use terms for EFT CHEATS products and {siteDomain}.',
       sections: [
         {
           heading: 'Agreement',
@@ -555,15 +563,15 @@ export const en: Translations = {
         {
           heading: 'What you purchase',
           paragraphs: [
-            'We sell Dota 2 Cheats and HWID Spoofer delivered through an operator portal and loader for Steam on Windows.',
-            'Feature lists on each product page describe what is included at the time of purchase. Modules can change when Dota 2 or anti-cheat systems update.',
+            'We sell Escape From Tarkov Cheats and HWID Spoofer delivered through an operator portal and loader for Escape From Tarkov on Windows.',
+            'Feature lists on each product page describe what is included at the time of purchase. Modules can change when Escape From Tarkov or anti-cheat systems update.',
           ],
         },
         {
           heading: 'Checkout and delivery',
           paragraphs: [
             'Payment and license delivery run on external checkout pages. {siteDomain} does not process or store payment card numbers.',
-            'After purchase, use the operator portal linked from your order flow to download the current loader and setup guide before launching Dota 2.',
+            'After purchase, use the operator portal linked from your order flow to download the current loader and setup guide before launching Escape From Tarkov.',
           ],
         },
         {
@@ -575,16 +583,16 @@ export const en: Translations = {
         {
           heading: 'Refunds and purchases',
           paragraphs: [
-            'All sales are final once checkout completes. We do not refund change-of-mind purchases, account bans, VAC penalties, or issues caused by ignoring setup guides or running modules while the status banner shows offline.',
-            'If the product does not work as described on a supported setup: Steam Dota 2 on Windows 10/11, current loader from the portal, and the live status banner showing online when you started, contact us through the Support page. Include your order email, Windows version, Dota 2 build, and screenshots or exact error text from the loader.',
+            'All sales are final once checkout completes. We do not refund change-of-mind purchases, account bans, BattlEye penalties, or issues caused by ignoring setup guides or running modules while the status banner shows offline.',
+            'If the product does not work as described on a supported setup: Escape From Tarkov on Windows 10/11, current loader from the portal, and the live status banner showing online when you started, contact us through the Support page. Include your order email, Windows version, game build, and screenshots or exact error text from the loader.',
             'We may, at our discretion, offer a fix, replacement access, or partial/full refund when we confirm a fault on our side. We are not obligated to approve every request.',
           ],
         },
         {
           heading: 'Availability and risk',
           paragraphs: [
-            'Third-party tools for Dota 2 can conflict with game updates and anti-cheat systems. You use this software at your own risk, including possible account action.',
-            'Check the homepage status banner before every session. Do not queue ranked while modules are offline or misaligned after a patch.',
+            'Third-party tools for Escape From Tarkov can conflict with game updates and BattlEye. You use this software at your own risk, including possible account action.',
+            'Check the homepage status banner before every raid. Do not load in while modules are offline or misaligned after a patch.',
           ],
         },
         {
@@ -602,7 +610,7 @@ export const en: Translations = {
       ],
     },
     support: {
-      title: 'DotaCheats Support',
+      title: 'EFT CHEATS Support',
       description:
         'Get support for loader, HWID, and checkout questions at {siteDomain}.',
     },
@@ -614,51 +622,47 @@ export const en: Translations = {
     breadcrumbForum: 'Forum',
     breadcrumbFaq: 'FAQ',
     breadcrumbAbout: 'About',
-    breadcrumbCompareUtilities: 'Compare utilities',
     breadcrumbPrivacy: 'Privacy',
     breadcrumbTerms: 'Terms',
     breadcrumbSupport: 'Support',
     contactSupport: 'Contact support',
-    backToProducts: 'Back to product',
   },
   notFound: {
     metaDescription: 'The page you requested could not be found on {siteDomain}.',
     title: 'Page not found',
-    body: 'That URL does not exist or may have moved. Head back to the homepage or browse cheat tiers and products.',
+    body: 'That URL does not exist or may have moved. Head back to the homepage or open the product and HWID pages.',
     backHome: 'Back to home',
     viewProducts: 'View products',
-    viewElite: 'View Elite cheats',
+    viewElite: 'View product page',
   },
   pages: {
     faq: {
       eyebrow: 'Help center',
-      title: 'FAQ for cheats, products & guides',
+      title: 'Escape From Tarkov Cheats FAQ: Setup, Plans & BattlEye',
       description:
-        'Everything about Dota 2 Cheats, HWID Spoofer, safety and blog topics in one place.',
-      schemaName: 'FAQ: Dota 2 Cheats & Products',
+        'Answers on Escape From Tarkov cheats: setup steps, monthly and lifetime plans, ESP and aim modules, BattlEye status, and checkout help at {siteDomain}.',
+      schemaName: 'Escape From Tarkov Cheats FAQ',
       schemaDescription:
-        'Answers about Dota 2 cheat tiers, map hack, scripts, HWID tools, blog guides and checkout at {siteDomain}.',
+        'Answers on raid cheats, ESP, aimbot, loot filters, loader setup, pricing, and checkout at {siteDomain}.',
     },
     forum: {
-      eyebrow: 'Dota 2 community forum',
-      title: 'Dota 2 Community Forum',
+      eyebrow: 'Escape From Tarkov community forum',
+      title: 'Escape From Tarkov Community Forum',
       description:
-        'Archived, read-only threads on console setup, map awareness, patch updates, and hero builds. Replies are closed.',
+        'Archived, read-only threads on loader setup, loot ESP, patch status, and HWID bans. Replies are closed.',
       exploreGuides: 'Explore the guides',
       postsAria: 'Community posts',
       sortAria: 'Post sorting',
       sortPopular: 'Popular',
       sortLatest: 'Latest',
       sortTop: 'Most discussed',
-      searchPlaceholder: 'Search discussions',
-      searchAria: 'Search discussions',
       filterAria: 'Filter discussions by topic',
       filterAll: 'All topics',
       resultsCount: 'guide discussions',
       voteAria: 'Discussion voting',
       upvoteAria: 'Upvote this discussion',
       downvoteUnavailableAria: 'Downvoting is unavailable',
-      guideTeam: 'DotaCheats guide team',
+      guideTeam: 'EFT CHEATS guide team',
       guideBasedQa: 'Guide-based Q&A',
       fromGuide: 'From the guide:',
       comments: 'comments',
@@ -675,7 +679,7 @@ export const en: Translations = {
       paginationAria: 'Discussion pages',
       pagePrevious: 'Previous',
       pageNext: 'Next',
-      sidebarTitle: 'DotaCheats Community',
+      sidebarTitle: 'EFT CHEATS Community',
       sidebarIntro: 'Read-only archive. Threads stay up for reference, you cannot start a thread or reply.',
       statsDiscussions: 'guide discussions',
       statsTopics: 'topics',
@@ -692,85 +696,70 @@ export const en: Translations = {
     },
     utilities: {
       title: 'HWID Spoofer',
-      description: 'Hardware ID reset when new Steam accounts fail on one PC but work elsewhere.',
-      tableAria: 'HWID Spoofer overview',
-      tableUtility: 'Product',
-      tableBestFor: 'Best for',
-      tableProductPage: 'Product page',
+      description: 'Machine recovery when new accounts work elsewhere but fail instantly on this PC.',
       viewDetails: 'View',
       includes: 'Includes:',
-      moreFeatures: 'more',
-      backToProducts: 'Back to product',
       schemaName: 'HWID Spoofer',
-      useCases: {
-        'hwid-spoofer':
-          'New PC or hardware flag after a ban. Reset how your machine appears before a new account.',
-      },
     },
   },
   pageSeo: {
     '/': {
-      title: 'Dota 2 Cheats & Hacks | Scripts, Map Hack & ESP',
+      title: 'Escape From Tarkov Cheats | ESP, Aimbot & Loot ESP',
       description:
-        'Dota 2 cheats for PC ranked: scripts, map hack, zoom hack, and skin changer tiers updated every patch at {siteDomain}.',
+        'Player ESP, loot ESP, aimbot and no recoil for PMC raids on Windows, with loader updates after patches. Compare plans at {siteDomain}.',
     },
     '/product/': {
-      title: 'Dota 2 Elite Cheats | Bots & Full Map Hack',
+      title: 'Tarkov Cheats | Buy ESP, Loot ESP & Aimbot',
       description:
-        'Dota 2 cheats for Steam ranked: auto farm bot, kill steal, skin changer, full map hack suite, and priority patch delivery on {siteDomain}.',
+        'Full raid package with player ESP, loot filters, aimbot and no recoil for main Tarkov maps, not Arena. Monthly and lifetime plans on {siteDomain}.',
     },
     '/hwid-spoofer/': {
-      title: 'Dota 2 HWID Spoofer | Hardware ID Reset Tool',
+      title: 'HWID Spoofer | Escape From Tarkov Hardware Reset',
       description:
-        'HWID Spoofer for Dota 2 and Steam: disk serials, MAC, and GPU ID workflow with setup guide on {siteDomain}.',
+        'Reset disk, MAC and GPU identifiers when new accounts fail on one PC. Portal checklist covers restore points, spoof steps and verification before you raid again on {siteDomain}.',
     },
     '/blog/': {
-      title: 'Dota 2 Cheats Guides & Patch Notes',
+      title: 'Tarkov Cheat Guides | ESP Setup, Aimbot & BattlEye Notes',
       description:
-        'Setup guides, Lite vs Pro comparisons, VAC patch checklists, and ranked config tips for dota cheats.',
+        'Raid preset walkthroughs, ESP and aim tuning, loot filters, and BattlEye status checklists published on {siteDomain}.',
     },
     '/forum/': {
-      title: 'Dota 2 Community Forum | DotaCheats',
+      title: 'Tarkov Cheats Forum | Setup, Status & HWID Threads',
       description:
-        'Join Dota players to discuss heroes, builds, patch changes, guides, and community moments.',
+        'Read-only Escape From Tarkov discussions on loadouts, patches, and guides. New threads and replies are closed.',
     },
     '/faq/': {
-      title: 'FAQ | Dota 2 Cheats, Products & Setup',
+      title: 'Escape From Tarkov Cheats FAQ | Setup, Plans & BattlEye',
       description:
-        'Answers on cheat tiers, map hack, scripts, HWID tools, checkout, and blog guides at {siteDomain}.',
+        'Answers on Escape From Tarkov cheats: setup steps, monthly and lifetime plans, ESP and aim modules, BattlEye status, and checkout help at {siteDomain}.',
     },
     '/terms/': {
-      title: 'Terms & Conditions | DotaCheats',
+      title: 'Terms of Sale & License Use',
       description:
-        'Purchase terms, license use, and refund policy for DotaCheats products sold through {siteDomain}.',
+        'Refund rules, license limits, checkout delivery, and risk disclosure for products sold via {siteDomain}.',
     },
     '/privacy/': {
-      title: 'Privacy Policy | DotaCheats',
+      title: 'Privacy Policy | Analytics & Support Data',
       description:
-        'How {siteDomain} uses analytics, cookies, and contact data when you browse or request support.',
+        'How {siteDomain} uses cookies, analytics, and the information you send when opening a support ticket.',
     },
     '/about/': {
-      title: 'About DotaCheats',
+      title: 'About eftcheat.net & EFT CHEATS',
       description:
-        'What DotaCheats publishes: Dota 2 cheat tiers, utilities, guides, and status notes at {siteDomain}.',
+        'Who publishes Escape From Tarkov Cheats resources, status notes, and support channels on {siteDomain}.',
     },
     '/support/': {
-      title: 'Support | DotaCheats',
+      title: 'Tarkov Cheats Support | Loader, HWID & Checkout Help',
       description:
-        'Get help with loader setup, HWID, and checkout for Dota 2 Cheats and HWID Spoofer.',
+        'Contact Discord operators for portal access, module errors, and billing questions before or after checkout on {siteDomain}.',
     },
   },
   ui: {
     skipLink: 'Skip to main content',
-    browseCheats: 'Try Now',
     browseCheatsNav: 'Try Now',
-    browseCheatsMobile: 'Start checkout',
-    homeAria: 'DotaCheats home',
-    checkoutAria: 'Start checkout',
+    homeAria: 'EFT CHEATS home',
     menuOpen: 'Open menu',
-    menuClose: 'Close menu',
     themeLight: 'Switch to light mode',
-    themeDark: 'Switch to dark mode',
     languageSwitcherLabel: 'Language',
     languageNames: {
       en: 'English',

@@ -1,0 +1,735 @@
+[
+  {
+    "tag": "Caractéristiques",
+    "title": "Tarkov Loot ESP : Comment filtrer le butin par prix, catégorie et conteneur",
+    "slug": "tarkov-loot-esp-filters-price-category-containers",
+    "image": "/images/gameplay/eft-esp-daylight-player-highlights.webp",
+    "imageAlt": "Vue du raid Escape From Tarkov avec étiquettes ESP de butin indiquant les noms et les prix des articles",
+    "desc": "Un aperçu pratique du butin ESP de Tarkov : filtres de prix, catégories de butin, conteneurs et préréglages, et comment garder votre écran lisible au lieu d'être encombré.",
+    "metaTitle": "Tarkov Loot ESP : filtres, prix et conteneurs expliqués",
+    "metaDescription": "Découvrez comment Tarkov Loot ESP fonctionne, y compris les filtres de prix minimaux, les catégories de butin, les conteneurs, les objets de quête et les préréglages, et comment le configurer pour des raids plus rapides et plus propres.",
+    "date": "2026-07-16",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Le butin est la seule raison pour laquelle la plupart des gens organisent des raids à Tarkov. C’est aussi là que l’on perd beaucoup de temps. Vous videz une pièce, ouvrez trois conteneurs et repartez sans rien qui vaut les emplacements. Loot ESP existe pour résoudre ce problème, et la différence entre une bonne et une mauvaise configuration se résume aux filtres."
+      },
+      {
+        "type": "h2",
+        "text": "Ce que fait réellement le butin ESP"
+      },
+      {
+        "type": "p",
+        "text": "Loot ESP dessine des étiquettes sur les objets et les conteneurs dans le monde, afin que vous puissiez voir ce qui se trouve à proximité sans vérifier chaque étagère et chaque tiroir. Dans le menu de triche d'Escape From Tarkov, la section de butin couvre les objets au sol, les conteneurs, les cachettes, les cadavres, les ordinateurs et autres endroits similaires, avec la distance et le prix indiqués à côté de ce qu'elle trouve."
+      },
+      {
+        "type": "p",
+        "text": "L’erreur que font la plupart des gens est de tout allumer. Un écran rempli d’étiquettes pour des éléments courants n’est que du bruit. Les outils qui comptent sont les filtres."
+      },
+      {
+        "type": "h2",
+        "text": "Commencez avec un prix minimal"
+      },
+      {
+        "type": "p",
+        "text": "Le paramètre le plus utile est le prix minimal. Fixez un sol, et tout ce qui se trouve en dessous ne sera tout simplement pas dessiné. Si vous recherchez un but lucratif, un étage supérieur vous permet de garder une vue dégagée et de vous indiquer les objets qui valent la peine d'être transportés. Si vous recherchez des objets de troc ou des besoins de quête spécifiques, baissez-le plus bas et utilisez plutôt les options de recherche et de catégorie."
+      },
+      {
+        "type": "p",
+        "text": "Il existe également une option pour ignorer les éléments que vous n'avez pas sélectionnés, ce qui est pratique une fois que vous avez une courte liste de ce qui vous intéresse."
+      },
+      {
+        "type": "h2",
+        "text": "Utilisez des catégories au lieu d'une liste géante"
+      },
+      {
+        "type": "p",
+        "text": "Le butin est regroupé en catégories telles que militaire, technique, médical et précieux, avec un groupe commun distinct pour les objets du quotidien. La sélection de catégories vous permet de décider du type de raid que vous effectuez. Une course médicale rapide et une course de butin technique nécessitent des étiquettes très différentes."
+      },
+      {
+        "type": "p",
+        "text": "Les types de conteneurs sont filtrés séparément. Vous pouvez choisir si les caisses à bois, les cachettes, les ordinateurs, les cadavres et les cadavres sont affichés, ce qui est important car chaque conteneur que vous vérifiez coûte du temps et expose votre position."
+      },
+      {
+        "type": "h2",
+        "text": "Dessiner la distance, l'affichage des prix et les couleurs"
+      },
+      {
+        "type": "p",
+        "text": "Dessiner la distance contrôle la distance à laquelle les étiquettes apparaissent. La courte distance permet de garder les choses bien rangées à l’intérieur des bâtiments. Une distance plus longue est utile sur les cartes ouvertes. L'affichage des prix ajoute de la valeur à chaque étiquette et la coloration personnalisée du butin vous permet de faire ressortir les objets de grande valeur afin que votre œil les trouve instantanément. Choisissez des couleurs que vous pouvez lire d’un seul coup d’œil."
+      },
+      {
+        "type": "h2",
+        "text": "Objets de quête et extraits"
+      },
+      {
+        "type": "p",
+        "text": "Quest ESP marque les éléments et objectifs liés à la quête, ce qui vous évite beaucoup de retours en arrière si vous travaillez sur des tâches. Les marqueurs d'extraction et de transition indiquent où vous pouvez partir, ce qui est utile lorsqu'un raid commence à mal se dérouler et que vous devez vous engager sur un itinéraire."
+      },
+      {
+        "type": "h2",
+        "text": "Les préréglages permettent de gagner du temps"
+      },
+      {
+        "type": "p",
+        "text": "Les préréglages de butin vous permettent de stocker une configuration de filtre et de basculer entre eux. Un préréglage pour les courses de grande valeur, un pour la chasse aux quêtes, un pour un balayage général. Le système de configuration prend également en charge l'enregistrement, le chargement, l'importation et l'exportation, afin que vous ne reconstruisiez pas votre configuration à chaque fois."
+      },
+      {
+        "type": "h2",
+        "text": "Gardez-le lisible"
+      },
+      {
+        "type": "p",
+        "text": "Une bonne règle est d’en montrer moins que ce dont vous pensez avoir besoin. Fixez un prix plancher, choisissez deux ou trois catégories et gardez une distance de tirage raisonnable. Si vous louchez sur les étiquettes, c’est que vous en avez trop."
+      },
+      {
+        "type": "h2",
+        "text": "Commencer"
+      },
+      {
+        "type": "p",
+        "text": "Si vous souhaitez obtenir un butin ESP avec le prix complet, la catégorie, le conteneur et les commandes prédéfinies, les [Escape From Tarkov cheats](/product/) l'incluent aux côtés du joueur ESP, de l'aimbot et des options diverses. Vérifiez la page d'état après les correctifs avant de les charger, consultez [setup Requirements](/blog/how-to-set-up-escape-from-tarkov-cheats-requirements/) et notez que le composant Cloud DMA est requis pour bénéficier de toutes les fonctionnalités. Les forfaits commencent par un [abonnement mensuel ou à vie](/blog/escape-from-tarkov-cheats-price-monthly-vs-lifetime/), avec une option à vie si vous prévoyez de rester à long terme."
+      }
+    ]
+  },
+  {
+    "tag": "Caractéristiques",
+    "title": "Réglages de l'aimbot Tarkov expliqués : FOV, os, choix de cible et plus",
+    "slug": "tarkov-aimbot-settings-explained",
+    "image": "/images/gameplay/eft-esp-night-vision-skeletons.webp",
+    "imageAlt": "Onglet Aimbot du menu de triche Escape From Tarkov affichant les options de FOV et de cible",
+    "desc": "Chaque menu Aimbot semble écrasant la première fois. Voici ce que font les principales options de l’aimbot Tarkov et comment les configurer sans faire de dégâts.",
+    "metaTitle": "Réglages de l'aimbot Tarkov expliqués : FOV, os et cibles",
+    "metaDescription": "Un guide simple des options de l'aimbot Tarkov, y compris la clé de visée, le champ de vision, les contrôles de visibilité, l'os intelligent, la sélection et la prédiction des cibles, avec des conseils sur la création d'une configuration.",
+    "date": "2026-05-10",
+    "readTime": "7 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "L'onglet Aimbot dans un menu de triche de Tarkov comporte de nombreuses options, et la plupart d'entre elles ne sont utiles que si vous comprenez ce qu'elles changent. Ceci est une présentation pas à pas des principales options, basée sur les options répertoriées pour les cheats Escape From Tarkov."
+      },
+      {
+        "type": "h2",
+        "text": "Les bases : clé de visée et FOV"
+      },
+      {
+        "type": "p",
+        "text": "Activer la visée active la fonction et la touche de visée décide du moment où elle s'enclenche. La plupart des gens l'associent à un bouton de la souris sur lequel ils appuient déjà lorsqu'ils se battent, cela semble donc naturel."
+      },
+      {
+        "type": "p",
+        "text": "FOV est le cercle autour de votre réticule dans lequel les cibles peuvent être sélectionnées. Vous pouvez le dessiner à l'écran, définir sa taille, le colorer et le rendre dynamique. Un champ de vision plus petit signifie que l'aimbot ne réagit qu'aux cibles proches de l'endroit où vous regardez déjà. Un grand champ de vision signifie qu'il peut attraper des personnes loin de votre réticule, ce qui est plus puissant mais semble également beaucoup plus évident pour quiconque vous regarde."
+      },
+      {
+        "type": "h2",
+        "text": "Distance et visibilité"
+      },
+      {
+        "type": "p",
+        "text": "La distance maximale de l'aimbot limite la distance à laquelle il ciblera. Les engagements de Tarkov varient énormément d'une carte à l'autre, donc une valeur inférieure convient aux cartes intérieures lourdes et une valeur plus élevée aux cartes ouvertes."
+      },
+      {
+        "type": "p",
+        "text": "Only Visible indique à l'aimbot d'ignorer les cibles que vous ne pouvez pas réellement voir. Activez-le si vous souhaitez un comportement qui reste plus proche de ce qu'un joueur normal pourrait voir. Laissez-le désactivé et vous demandez à l’outil de suivre la couverture."
+      },
+      {
+        "type": "h2",
+        "text": "Sélection des cibles et coéquipiers"
+      },
+      {
+        "type": "p",
+        "text": "La sélection de la cible décide qui sera choisi lorsque plus d'une personne est à portée. Les options de coéquipier vous permettent de marquer vos coéquipiers afin de ne pas les pointer du doigt, avec la possibilité d'ajouter rapidement un coéquipier. Si vous jouez en groupe, configurez-le avant le raid, pas pendant celui-ci."
+      },
+      {
+        "type": "h2",
+        "text": "Bones : os intelligent, os forcé et priorité"
+      },
+      {
+        "type": "p",
+        "text": "Smart Bone permet à l'aimbot de choisir parmi une liste de parties du corps, et l'option de priorité vous permet de les classer. Forcer l'os le verrouille sur un. Dans un jeu où l'armure et les munitions décident des combats, le choix des os compte délibérément plus que de les laisser par défaut."
+      },
+      {
+        "type": "h2",
+        "text": "Des extras à connaître"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "La prédiction tient compte du mouvement de la cible.",
+          "Le verrouillage de la cible vous maintient sur une cible une fois choisie.",
+          "Afficher la cible et la couleur de la cible en surbrillance qui est actuellement sélectionnée.",
+          "Dessiner un réticule vous donne un point de référence clair.",
+          "Les traceurs de balles montrent où vont vos tirs, ce qui aide lors du réglage d'une configuration.",
+          "L'accès instantané existe en option, mais il s'agit du paramètre le plus agressif de la liste."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Une façon sensée de créer une configuration"
+      },
+      {
+        "type": "p",
+        "text": "Commencez petit. Choisissez un champ de vision modeste, activez Uniquement visible, définissez une distance qui convient à votre carte habituelle et utilisez Smart Bone avec une courte liste. Modifiez un paramètre à la fois et testez-le. Enregistrez le résultat dans le système de configuration, qui prend en charge l'enregistrement, le chargement, l'importation et l'exportation."
+      },
+      {
+        "type": "p",
+        "text": "Les paramètres qui semblent flagrants ont tendance à attirer l’attention des autres joueurs, et aucun paramètre ne supprime entièrement les risques. Tricher dans un jeu en ligne peut entraîner des bannissements, alors construisez votre configuration en gardant cela à l'esprit."
+      },
+      {
+        "type": "h2",
+        "text": "Où l'obtenir"
+      },
+      {
+        "type": "p",
+        "text": "Si vous souhaitez le menu complet de l'aimbot ainsi que les outils ESP et divers, consultez les [Tarkov aimbot options](/product/). Il est vendu uniquement pour les raids principaux et utilise une clé distincte d'Arena, et le composant Cloud DMA est requis pour bénéficier de toutes les fonctionnalités. Associez-le à [loot ESP filters](/blog/tarkov-loot-esp-filters-price-category-containers/) et lisez [BattlEye considérations](/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/) avant de partir en raid."
+      }
+    ]
+  },
+  {
+    "tag": "Guides d'achat",
+    "title": "Prix des cheats Escape From Tarkov : mensuel ou à vie",
+    "slug": "escape-from-tarkov-cheats-price-monthly-vs-lifetime",
+    "image": "/images/gameplay/eft-esp-enemies-through-concrete-wall.webp",
+    "imageAlt": "Escape From Tarkov triche les options de plan mensuel et à vie",
+    "desc": "Mensuel ou à vie ?Voici les prix, le seuil de rentabilité et les éléments supplémentaires à vérifier avant de payer.",
+    "metaTitle": "Prix des cheats Escape From Tarkov : mensuel ou à vie",
+    "metaDescription": "Le mois coûte 35 $ et la durée de vie est de 150 $ avec les mêmes fonctionnalités. Découvrez quand chacun a du sens, ce qui est vendu séparément et ce qu'il faut vérifier avant d'acheter.",
+    "date": "2026-10-15",
+    "readTime": "5 min read",
+    "featured": true,
+    "body": [
+      {
+        "type": "p",
+        "text": "Si vous recherchez des cheats pour Escape From Tarkov, le prix est probablement l’une des premières choses auxquelles vous souhaitez obtenir une réponse. Voici les chiffres réels et comment choisir entre les deux plans."
+      },
+      {
+        "type": "h2",
+        "text": "Les deux plans"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Planifier",
+          "Accéder",
+          "Prix"
+        ],
+        "rows": [
+          [
+            "Mensuel",
+            "31 days",
+            "$35"
+          ],
+          [
+            "Durée de vie",
+            "Accès illimité",
+            "$150 once"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Les deux forfaits incluent les mêmes fonctionnalités. Vous ne payez pas plus pour des outils supplémentaires. La seule différence est la durée pendant laquelle vous avez accès."
+      },
+      {
+        "type": "h2",
+        "text": "Quand la mensualité a du sens"
+      },
+      {
+        "type": "p",
+        "text": "Une mensualité est la façon la moins risquée de commencer. Si vous testez la triche sur votre propre configuration, ne jouez que par courtes rafales ou si vous n'êtes pas sûr de rester avec Tarkov jusqu'au prochain wipe, 35 $ pour 31 jours maintiennent votre engagement faible."
+      },
+      {
+        "type": "h2",
+        "text": "Quand la vie a du sens"
+      },
+      {
+        "type": "p",
+        "text": "Le calcul est simple. Quatre mois d'accès mensuel coûtent 140 $.Le cinquième mois vous fait dépasser 150 $.Si vous prévoyez d’utiliser le cheat pendant cinq mois ou plus, la durée de vie est l’option la moins chère et vous arrêtez de penser aux renouvellements."
+      },
+      {
+        "type": "p",
+        "text": "La durée de vie convient également aux personnes qui jouent régulièrement sur des wipes et ne souhaitent pas racheter."
+      },
+      {
+        "type": "h2",
+        "text": "Que devez-vous savoir d'autre avant de payer"
+      },
+      {
+        "type": "p",
+        "text": "DMA en nuage.[Cloud DMA](/blog/tarkov-cloud-dma-explained-do-you-need-it/) est requis pour bénéficier de toutes les fonctionnalités et constitue un achat distinct des forfaits mensuels et à vie. Prévoyez-le à l’avance pour qu’il n’y ait pas de surprises."
+      },
+      {
+        "type": "p",
+        "text": "Raids uniquement. Ce produit est destiné aux principaux raids Tarkov. Il utilise une clé distincte d’Arena, donc un achat ici ne couvre pas Arena."
+      },
+      {
+        "type": "p",
+        "text": "Votre PC. Vous avez besoin de Windows 10 ou 11 avec HVCI, Core Isolation, TPM et Secure Boot activés. Notre [system requis](/blog/how-to-set-up-escape-from-tarkov-cheats-requirements/) couvre cela plus en détail."
+      },
+      {
+        "type": "p",
+        "text": "Livraison et accompagnement. La livraison est instantanée après l'achat et vous obtenez un chargeur à utiliser. Si quelque chose ne va pas, vous pouvez ouvrir un ticket sur le site ou contacter Discord avec votre identifiant de commande."
+      },
+      {
+        "type": "p",
+        "text": "Après les correctifs. Vérifiez la page d'état après les correctifs majeurs avant de vous lancer dans un raid."
+      },
+      {
+        "type": "h2",
+        "text": "Ce qui est inclus dans le prix"
+      },
+      {
+        "type": "p",
+        "text": "L'ensemble de fonctionnalités couvre le joueur ESP avec boîte, squelette, santé, distance et plus encore, le butin ESP avec filtres de prix et de catégorie, un aimbot avec FOV, options d'os et de visibilité, pas de recul et autres options diverses, et un système de configuration pour sauvegarder et partager les configurations. Il est également décrit comme étant résistant aux flux pour la plupart des outils de capture."
+      },
+      {
+        "type": "h2",
+        "text": "Prêt à acheter"
+      },
+      {
+        "type": "p",
+        "text": "Si vous avez fait votre choix, rendez-vous sur la page [buy Escape From Tarkov cheats](/go/escape-from-tarkov/) pour choisir mensuellement ou à vie. Si vous êtes indécis, commencez mensuellement. Vous pouvez toujours décider de vous engager plus tard."
+      }
+    ]
+  },
+  {
+    "tag": "Guides d'achat",
+    "title": "Tarkov Cloud DMA expliqué : qu'est-ce que c'est et si vous en avez besoin",
+    "slug": "tarkov-cloud-dma-explained-do-you-need-it",
+    "image": "/images/gameplay/eft-esp-daylight-player-highlights.webp",
+    "imageAlt": "Schéma de configuration de la triche Escape From Tarkov avec connexion Cloud DMA",
+    "desc": "Cloud DMA apparaît dans presque toutes les conversations de triche de Tarkov. Voici de quoi il s’agit et où il s’intègre dans votre achat.",
+    "metaTitle": "Tarkov Cloud DMA expliqué : en avez-vous besoin ?",
+    "metaDescription": "Cloud DMA est requis pour bénéficier de toutes les fonctionnalités de nos cheats Escape From Tarkov. Voici ce que cela signifie, son rapport avec les plans et ce qu'il faut savoir avant d'acheter.",
+    "date": "2026-06-04",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Si vous avez regardé les cheats de Tarkov pendant plus de cinq minutes, vous avez vu le terme DMA. Cloud DMA est la version qui apparaît dans nos produits, et il vaut la peine de la comprendre avant d'acheter."
+      },
+      {
+        "type": "h2",
+        "text": "DMA en termes simples"
+      },
+      {
+        "type": "p",
+        "text": "DMA signifie accès direct à la mémoire. Dans le monde de la triche, une configuration DMA signifie traditionnellement utiliser un matériel distinct pour lire les données du jeu au lieu de tout exécuter sur la même machine que le jeu. Cette approche est populaire car Tarkov utilise BattlEye, qui fonctionne au niveau du noyau."
+      },
+      {
+        "type": "h2",
+        "text": "Où s'intègre Cloud DMA"
+      },
+      {
+        "type": "p",
+        "text": "Cloud DMA est l'option hébergée répertoriée avec les cheats [Escape From Tarkov avec Cloud DMA](/product/). Le produit répertorie Cloud DMA dans son ensemble de fonctionnalités et il est décrit comme requis pour bénéficier de toutes les fonctionnalités. Si vous recherchez des étapes exactes sur la manière dont la connexion est établie, celles-ci sont fournies après l'achat via le guide et les canaux d'assistance, suivez donc les instructions actuelles plutôt que de vous fier aux conseils généraux d'Internet."
+      },
+      {
+        "type": "h2",
+        "text": "Quel est le rapport avec le plan que vous achetez"
+      },
+      {
+        "type": "p",
+        "text": "Cette partie fait trébucher les gens. Les [plans](/blog/escape-from-tarkov-cheats-price-monthly-vs-lifetime/) mensuels et à vie couvrent la triche elle-même. Cloud DMA est un achat distinct. Ainsi, le coût total de fonctionnement du produit avec toutes les fonctions correspond au forfait que vous choisissez plus Cloud DMA."
+      },
+      {
+        "type": "h2",
+        "text": "En avez-vous besoin ?"
+      },
+      {
+        "type": "p",
+        "text": "Si vous voulez toutes les fonctionnalités, oui. La page produit indique que Cloud DMA est requis pour bénéficier de toutes les fonctionnalités. Si vous souhaitez uniquement parcourir le menu, vous n’aurez peut-être pas besoin de vous y précipiter, mais vous n’obtiendrez pas une expérience complète sans lui."
+      },
+      {
+        "type": "h2",
+        "text": "Ce dont votre PC a encore besoin"
+      },
+      {
+        "type": "p",
+        "text": "Cloud DMA ne supprime pas votre propre configuration système requise. Le produit demande Windows 10 ou 11 avec HVCI, Core Isolation, TPM et Secure Boot activés. Lisez notre [setup checklist](/blog/how-to-set-up-escape-from-tarkov-cheats-requirements/) pour une liste de contrôle complète."
+      },
+      {
+        "type": "h2",
+        "text": "Questions à poser à l'assistance avant d'acheter"
+      },
+      {
+        "type": "p",
+        "text": "Si vous n'êtes pas sûr, demandez avant de payer, pas après. Les bonnes questions sont de savoir quel est l'ordre d'installation actuel, que faire après un correctif et quelles informations inclure dans un ticket. Le support est disponible via un ticket sur le site ou sur Discord. Incluez votre numéro de commande lorsque vous les contactez."
+      },
+      {
+        "type": "h2",
+        "text": "Étape suivante"
+      },
+      {
+        "type": "p",
+        "text": "Une fois que vous savez ce que vous achetez, la page [Escape From Tarkov triche avec Cloud DMA](/product/) affiche les deux plans et les exigences Cloud DMA.N'oubliez pas que le produit est uniquement destiné aux raids principaux et utilise une clé distincte de celle d'Arena."
+      }
+    ]
+  },
+  {
+    "tag": "Anti-triche",
+    "title": "BattlEye et cheats Escape From Tarkov : ce que vous devez savoir",
+    "slug": "battleye-and-escape-from-tarkov-cheats-what-to-know",
+    "image": "/images/gameplay/eft-esp-night-vision-skeletons.webp",
+    "imageAlt": "Écran de chargement anti-triche BattlEye pour Escape From Tarkov",
+    "desc": "BattlEye est l'anti-triche derrière Tarkov. Voici une explication claire de ce que c’est, des risques et de la manière de l’aborder de manière judicieuse.",
+    "metaTitle": "BattlEye et cheats Tarkov : ce que vous devez savoir",
+    "metaDescription": "Un regard honnête sur BattlEye dans Escape From Tarkov, ce que cela signifie pour les utilisateurs de triche, pourquoi les vérifications de statut sont importantes après les correctifs et que faire en cas de ban.",
+    "date": "2026-09-07",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Escape From Tarkov utilise BattlEye comme anti-triche. Si vous envisagez d’utiliser des cheats dans le jeu, vous devez comprendre ce que cela signifie."
+      },
+      {
+        "type": "h2",
+        "text": "Qu'est-ce que BattleEye ?"
+      },
+      {
+        "type": "p",
+        "text": "BattlEye est un anti-triche au niveau du noyau. Cela signifie qu'il fonctionne avec un accès approfondi à votre système et qu'il est utilisé dans un certain nombre de jeux. Dans Tarkov, c'est la couche principale qui tente d'attraper les logiciels de triche."
+      },
+      {
+        "type": "h2",
+        "text": "Ce que cela signifie pour les utilisateurs tricheurs"
+      },
+      {
+        "type": "p",
+        "text": "Soyons directs. Aucune triche n'élimine le risque de ban, et tout vendeur qui vous dit le contraire vend trop. Les fournisseurs d'anti-triche mettent à jour leur détection et leur correctif de jeux. Ce que vous pouvez faire, c'est utiliser un produit qui est activement entretenu et l'aborder avec prudence."
+      },
+      {
+        "type": "p",
+        "text": "C'est pourquoi la page du produit vous demande de vérifier la page d'état après les correctifs avant de les charger. Si un correctif vient d'arriver, attendez que l'état soit mis à jour."
+      },
+      {
+        "type": "h2",
+        "text": "Pourquoi les bans de compte et les bans de matériel diffèrent"
+      },
+      {
+        "type": "p",
+        "text": "Certaines bans s'appliquent à votre compte. D'autres associent la pénalité à vos identifiants matériels. Une ban matériel suit votre PC, pas seulement votre connexion, ce qui la rend beaucoup plus perturbatrice. Nous abordons cela en détail dans notre article [HWID ban](/blog/tarkov-hwid-ban-how-hwid-spoofer-works/)."
+      },
+      {
+        "type": "h2",
+        "text": "Des habitudes qui réduisent votre exposition"
+      },
+      {
+        "type": "p",
+        "text": "Ce sont des points pratiques, pas des garanties."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Gardez vos paramètres modestes. Un comportement évident attire les rapports des autres joueurs.",
+          "Suivez exactement le guide de configuration actuel et ne sautez pas d'étapes.",
+          "Répondez à la configuration système requise répertoriée pour le produit, notamment HVCI, Core Isolation, TPM et Secure Boot.",
+          "Vérifiez l’état après chaque gros patch.",
+          "Ne partagez pas les détails de votre chargeur ou de votre commande."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Si un ban se produit"
+      },
+      {
+        "type": "p",
+        "text": "Si votre compte est banni, ce compte disparaît et vous en aurez besoin d’un nouveau. Si votre matériel est signalé, un usurpateur matériel est un moyen par lequel les gens tentent de revenir avec une nouvelle empreinte matérielle. Notre [HWID spoofer](/hwid-spoofer/) répertorie Escape From Tarkov sous les titres BattlEye et comprend un nettoyeur."
+      },
+      {
+        "type": "h2",
+        "text": "Prendre la décision"
+      },
+      {
+        "type": "p",
+        "text": "La tricherie comporte des risques et vous devez décider en gardant cela à l’esprit. Si vous décidez d'aller de l'avant, les [Escape From Tarkov cheats](/product/) sont vendus pour les raids principaux avec ESP, aimbot et diverses fonctionnalités, et [Cloud DMA](/blog/tarkov-cloud-dma-explained-do-you-need-it/) est requis pour une fonctionnalité complète. L'assistance est disponible par ticket ou Discord si vous avez besoin d'aide avec le processus en cours."
+      }
+    ]
+  },
+  {
+    "tag": "Aide au bannissement",
+    "title": "Ban HWID sur Tarkov : ce que c'est et comment fonctionne un spoofer HWID",
+    "slug": "tarkov-hwid-ban-how-hwid-spoofer-works",
+    "image": "/images/gameplay/eft-esp-enemies-through-concrete-wall.webp",
+    "imageAlt": "Interface de spoofer HWID pour les jeux BattlEye, y compris Escape From Tarkov",
+    "desc": "Un ban HWID suit votre matériel, pas seulement votre compte. Voici comment cela fonctionne et pour quoi un spoofer équipé d’un nettoyeur est conçu.",
+    "metaTitle": "Ban HWID sur Tarkov : comment fonctionne un spoofer HWID",
+    "metaDescription": "Frappé par un ban Tarkov HWID ?Découvrez ce que c'est, ce que change un spoofer, ce que fait le nettoyeur, ainsi que les exigences et les prix de notre HWID Spoofer.",
+    "date": "2026-05-17",
+    "readTime": "7 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Un ban HWID est l’une des choses les plus frustrantes qui puissent arriver dans Tarkov, car elle ne se limite pas à votre compte. Voici de quoi il s’agit et comment un spoofer s’intègre."
+      },
+      {
+        "type": "h2",
+        "text": "Qu'est-ce qu'un ban HWID"
+      },
+      {
+        "type": "p",
+        "text": "HWID signifie ID matériel. Un ban HWID lie la sanction aux identifiants de votre PC, tels que les numéros de série des disques, les adresses MAC et les identifiants GPU, plutôt qu'à votre compte uniquement. C’est pourquoi créer un nouveau compte ne résout souvent pas le problème. Le jeu reconnaît toujours la machine."
+      },
+      {
+        "type": "h2",
+        "text": "Ce qu'un spoofer change"
+      },
+      {
+        "type": "p",
+        "text": "Un usurpateur modifie ces identifiants matériels afin que votre PC présente une empreinte digitale différente. Le [HWID spoofer](/hwid-spoofer/) est conçu pour cela et il modifie les numéros de série des disques, les adresses MAC, les ID GPU et les identifiants associés."
+      },
+      {
+        "type": "h2",
+        "text": "À quoi sert le nettoyant"
+      },
+      {
+        "type": "p",
+        "text": "L'usurpation d'identité matérielle à elle seule ne suffit pas toujours, car des traces restantes peuvent rester sur votre système. Le spoofer comprend un nettoyeur qui efface ces traces avant de relancer le jeu. L’exécution du nettoyage fait partie du processus et non un supplément facultatif."
+      },
+      {
+        "type": "h2",
+        "text": "Tarkov est-il pris en charge"
+      },
+      {
+        "type": "p",
+        "text": "Oui. Escape From Tarkov est répertorié sous les titres [BattlEye](/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/), et le produit indique que le spoofing est acceptable sur tous les jeux BattlEye. Il répertorie également la prise en charge des titres EAC, des jeux Ricochet, de Valorant via Vanguard et autres."
+      },
+      {
+        "type": "h2",
+        "text": "Une limite honnête"
+      },
+      {
+        "type": "p",
+        "text": "Un spoofer traite les identifiants matériels. Cela n’annule pas un ban de compte. Si votre compte a été banni, vous aurez besoin d'un nouveau compte pour jouer. Et aucun outil ne garantit un résultat, alors suivez attentivement le guide actuel."
+      },
+      {
+        "type": "h2",
+        "text": "Conditions requises avant de commencer"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Windows 10 ou 11, 64 bits",
+          "HVCI, Core Isolation, TPM et Secure Boot activés",
+          "Droits d'administrateur pour les étapes d'usurpation d'identité et de nettoyage",
+          "Une connexion Internet stable pour l'activation et les mises à jour"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "L'ordre compte"
+      },
+      {
+        "type": "p",
+        "text": "Exécutez le spoofing et le nettoyage avant de lancer le jeu, et suivez les instructions actuelles de votre compte ou de votre canal de ticket pour connaître la séquence exacte. Si vous n'êtes pas sûr d'une étape, demandez à l'assistance avant de lancer le jeu."
+      },
+      {
+        "type": "h2",
+        "text": "Tarifs"
+      },
+      {
+        "type": "p",
+        "text": "Le HWID Spoofer coûte 50 $ par mois pendant 31 jours, ou 150 $ pour un accès à vie. La livraison est instantanée et l'assistance est disponible 24 heures sur 24."
+      },
+      {
+        "type": "h2",
+        "text": "Étape suivante"
+      },
+      {
+        "type": "p",
+        "text": "Si vous avez été frappé par un ban matériel ou si vous souhaitez vous préparer, consultez le [HWID spoofer](/hwid-spoofer/). Si vous regardez également la triche elle-même, les [Escape From Tarkov cheats](/product/) sont disponibles séparément."
+      }
+    ]
+  },
+  {
+    "tag": "Guides de configuration",
+    "title": "Comment installer les cheats Escape From Tarkov : prérequis et dépannage",
+    "slug": "how-to-set-up-escape-from-tarkov-cheats-requirements",
+    "image": "/images/gameplay/eft-esp-daylight-player-highlights.webp",
+    "imageAlt": "Liste de contrôle des paramètres de sécurité Windows pour la configuration de la triche Escape From Tarkov",
+    "desc": "La plupart des problèmes de configuration proviennent d'une courte liste de causes. Voici la liste de contrôle et les mesures à prendre lorsque les choses ne fonctionnent pas.",
+    "metaTitle": "Prérequis et checklist d'installation des cheats Tarkov",
+    "metaDescription": "Une liste de contrôle de configuration pratique pour les cheats Escape From Tarkov : Windows, HVCI, Core Isolation, TPM, Secure Boot, accès au chargeur, Cloud DMA et que faire en cas d'échec.",
+    "date": "2026-06-12",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "La plupart des problèmes rencontrés par les gens pour faire fonctionner les cheats Tarkov proviennent d'une courte liste de causes. Parcourez d’abord cette liste de contrôle."
+      },
+      {
+        "type": "h2",
+        "text": "Configuration système requise"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Windows 10 ou 11",
+          "Processeur Intel ou AMD",
+          "HVCI activé",
+          "Isolation du noyau activée",
+          "TPM activé",
+          "Démarrage sécurisé activé",
+          "Une connexion Internet stable"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ces paramètres sont répertoriés sur la page du produit, ne présumez donc pas que vous pouvez les ignorer."
+      },
+      {
+        "type": "h2",
+        "text": "Ce que vous recevez"
+      },
+      {
+        "type": "p",
+        "text": "Après l'achat, vous bénéficiez d'une livraison immédiate ainsi que d'un accès au chargeur. Le produit est destiné aux raids principaux de Tarkov et utilise une clé distincte de celle d'Arena, alors assurez-vous d'avoir acheté la bonne."
+      },
+      {
+        "type": "h2",
+        "text": "Cloud DMA"
+      },
+      {
+        "type": "p",
+        "text": "[Cloud DMA](/blog/tarkov-cloud-dma-explained-do-you-need-it/) est requis pour bénéficier de toutes les fonctionnalités et est acheté séparément des forfaits mensuels et à vie. Si des fonctionnalités semblent manquer, confirmez d’abord cette partie de votre configuration."
+      },
+      {
+        "type": "h2",
+        "text": "Avant chaque séance"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Vérifiez la page d'état, surtout après un patch Tarkov.",
+          "Assurez-vous que vos paramètres de sécurité Windows ci-dessus sont toujours activés, car les mises à jour peuvent les modifier.",
+          "Suivez le guide actuel dans votre compte pour la commande de lancement.",
+          "Chargez-vous dans un raid seulement après avoir effectué ce qui précède."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Si quelque chose ne fonctionne pas"
+      },
+      {
+        "type": "p",
+        "text": "Vérifiez d'abord l'état. Si un correctif vient de sortir, le produit attend peut-être une mise à jour."
+      },
+      {
+        "type": "p",
+        "text": "Revérifiez vos paramètres Windows. Vérifiez HVCI, Core Isolation, TPM et Secure Boot."
+      },
+      {
+        "type": "p",
+        "text": "Confirmez le produit. Les raids Tarkov et Arena utilisent des clés différentes."
+      },
+      {
+        "type": "p",
+        "text": "Contactez l'assistance. Vous pouvez ouvrir un ticket sur le site ou utiliser Discord. Incluez votre numéro de commande afin qu’ils puissent trouver rapidement votre achat. Décrivez ce que vous avez fait et ce qui s'est passé en termes simples."
+      },
+      {
+        "type": "h2",
+        "text": "Conseils de configuration pour les nouveaux utilisateurs"
+      },
+      {
+        "type": "p",
+        "text": "Le menu dispose d'un système de configuration qui vous permet d'enregistrer, de charger, d'importer et d'exporter des configurations. Une fois que vous avez trouvé une mise en page qui fonctionne, enregistrez-la. Cela permet de gagner beaucoup de temps après un correctif ou une réinstallation."
+      },
+      {
+        "type": "h2",
+        "text": "Prêt à commencer"
+      },
+      {
+        "type": "p",
+        "text": "Vous pouvez voir les [plan options](/blog/escape-from-tarkov-cheats-price-monthly-vs-lifetime/) et la liste complète des fonctionnalités sur la page [Escape From Tarkov cheats](/product/). L'accès mensuel coûte 35 $ et la durée de vie est de 150 $, avec les mêmes fonctionnalités sur les deux."
+      }
+    ]
+  },
+  {
+    "tag": "Caractéristiques",
+    "title": "Cheats streamproof Tarkov : ce que cela signifie pour les streamers",
+    "slug": "streamproof-tarkov-cheats-for-streamers",
+    "image": "/images/gameplay/eft-esp-night-vision-skeletons.webp",
+    "imageAlt": "Gameplay d'Escape From Tarkov capturé dans OBS sans superposition de triche visible",
+    "desc": "Streamproof signifie que l'ESP et le menu n'apparaissent pas dans votre capture. Voici ce que cela couvre et ce que cela ne couvre pas.",
+    "metaTitle": "Cheats streamproof Tarkov : OBS et enregistrement expliqués",
+    "metaDescription": "Ce que signifie streamproof pour les tricheurs de Tarkov, comment l'ESP et le menu restent hors d'OBS et de la plupart des outils de capture, et ce que les streamers et enregistreurs doivent toujours garder à l'esprit.",
+    "date": "2026-10-05",
+    "readTime": "6 min read",
+    "body": [
+      {
+        "type": "p",
+        "text": "Si vous diffusez ou enregistrez vos raids Tarkov, vous vous posez probablement une question sur les cheats : est-ce que quelqu'un verra la superposition dans mes images ?C’est à cela que sert Streamproof."
+      },
+      {
+        "type": "h2",
+        "text": "Ce que signifie Streamproof"
+      },
+      {
+        "type": "p",
+        "text": "Streamproof signifie que l'ESP et le menu ne sont pas intégrés dans votre capture. Les cheats Escape From Tarkov sont décrites comme étant à l'épreuve du streaming, l'ESP et les menus restant hors OBS et la plupart des outils de capture. Ce que vous voyez sur votre moniteur n’est pas ce que voient vos téléspectateurs."
+      },
+      {
+        "type": "h2",
+        "text": "Pourquoi c'est important"
+      },
+      {
+        "type": "p",
+        "text": "Au-delà des spectateurs, les enregistrements sont partagés, découpés et revus. Si une superposition apparaît dans un clip, tout le monde peut la voir. Garder la capture propre supprime ce problème particulier."
+      },
+      {
+        "type": "h2",
+        "text": "Ce qu'il ne couvre pas"
+      },
+      {
+        "type": "p",
+        "text": "Soyez réaliste quant aux limites."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Le libellé est « la plupart des outils de capture », pas tous les outils. Testez votre propre configuration avant de passer en direct.",
+          "Streamproof ne change pas la façon dont le jeu ou [BattlEye](/blog/battleye-and-escape-from-tarkov-cheats-what-to-know/) voit votre système. Cela n'affecte que ce qui est capturé à l'écran.",
+          "Votre comportement se voit toujours. La visée impossible, ou le fait de savoir où se trouvent les joueurs à travers les murs, est perceptible par les spectateurs et les autres joueurs."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Testez avant de mettre en ligne"
+      },
+      {
+        "type": "p",
+        "text": "Effectuez un court enregistrement test avant de diffuser. Ouvrez le menu, activez l'ESP, enregistrez quelques secondes et lisez-le. Si quelque chose apparaît, arrêtez-vous et contactez l'assistance."
+      },
+      {
+        "type": "h2",
+        "text": "Des paramètres qui conviennent aux streamers"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Gardez l'ESP minimal. Moins d’étiquettes semblent plus naturelles à l’écran.",
+          "Utilisez un champ de vision aimbot modeste et uniquement visible, comme indiqué dans notre guide [aimbot settings](/blog/tarkov-aimbot-settings-explained/).",
+          "Enregistrez une configuration conviviale pour le flux afin de pouvoir la charger rapidement.",
+          "Gardez vos raccourcis clavier mémorisés pour ne jamais avoir à fouiller dans le menu."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Plan et exigences"
+      },
+      {
+        "type": "p",
+        "text": "Le produit est destiné aux raids principaux, utilise une clé distincte d'Arena et nécessite Windows 10 ou 11 avec HVCI, Core Isolation, TPM et Secure Boot activés. Cloud DMA est requis pour bénéficier de toutes les fonctionnalités. L'accès mensuel coûte 35 $ et la durée de vie est de 150 $."
+      },
+      {
+        "type": "h2",
+        "text": "Commencez"
+      },
+      {
+        "type": "p",
+        "text": "Vous pouvez consulter les fonctionnalités et les plans sur la page [streamproof Tarkov cheats](/product/). Vérifiez la page d'état après les correctifs avant de démarrer une session et contactez l'assistance par ticket ou Discord si votre test de capture montre quelque chose d'inattendu."
+      }
+    ]
+  }
+]

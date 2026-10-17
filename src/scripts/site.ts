@@ -95,6 +95,8 @@ function armDeferred() {
         const control = target.closest('button');
         const slider = control?.closest<HTMLElement>('[data-media-slider]');
         if (!control || !slider || slider.dataset.mediaSliderBound === 'true') return;
+        if (control.dataset.sliderReplay === '1') return;
+        control.dataset.sliderReplay = '1';
         event.preventDefault();
         event.stopPropagation();
         void loadDeferred().then(() => control.click());

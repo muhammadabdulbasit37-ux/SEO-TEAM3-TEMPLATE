@@ -45,9 +45,9 @@ const topicLabelsByLocale: Record<string, Record<FaqTopic, string>> = {
   en: {
     all: 'All',
     plans: 'Plans',
-    esp: 'Map hack / ESP',
-    scripts: 'Scripts',
-    safety: 'Safety',
+    esp: 'ESP & loot',
+    aim: 'Aim & recoil',
+    safety: 'Anti-cheat',
     products: 'Products',
     blog: 'Blog',
     setup: 'Setup',
@@ -55,9 +55,9 @@ const topicLabelsByLocale: Record<string, Record<FaqTopic, string>> = {
   es: {
     all: 'Todo',
     plans: 'Planes',
-    esp: 'Map hack / ESP',
-    scripts: 'Scripts',
-    safety: 'Seguridad',
+    esp: 'ESP y botín',
+    aim: 'Aim & recoil',
+    safety: 'Anticheat',
     products: 'Productos',
     blog: 'Blog',
     setup: 'Setup',
@@ -65,9 +65,9 @@ const topicLabelsByLocale: Record<string, Record<FaqTopic, string>> = {
   de: {
     all: 'Alle',
     plans: 'Pläne',
-    esp: 'Map Hack / ESP',
-    scripts: 'Skripte',
-    safety: 'Sicherheit',
+    esp: 'ESP & Loot',
+    aim: 'Ziel & Rückstoß',
+    safety: 'Anti-Cheat',
     products: 'Produkte',
     blog: 'Blog',
     setup: 'Setup',
@@ -75,9 +75,9 @@ const topicLabelsByLocale: Record<string, Record<FaqTopic, string>> = {
   fr: {
     all: 'Tout',
     plans: 'Offres',
-    esp: 'Maphack / ESP',
-    scripts: 'Scripts',
-    safety: 'Sécurité',
+    esp: 'ESP et loot',
+    aim: 'Aim & recoil',
+    safety: 'Anti-triche',
     products: 'Produits',
     blog: 'Blog',
     setup: 'Setup',
@@ -86,7 +86,7 @@ const topicLabelsByLocale: Record<string, Record<FaqTopic, string>> = {
 
 const topicLabels = topicLabelsByLocale[locale] ?? topicLabelsByLocale.en;
 
-const filters = filterTopics ?? (['all', 'plans', 'esp', 'scripts', 'safety', 'products'] as FaqTopic[]);
+const filters = filterTopics ?? (['all', 'plans', 'esp', 'aim', 'safety', 'products'] as FaqTopic[]);
 ---
 
 <section
